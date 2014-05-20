@@ -30,7 +30,6 @@ global $menu;
 }
 add_action('admin_menu', 'remove_menus');
 
-
 /** 
  * Cleaner image captions
  */

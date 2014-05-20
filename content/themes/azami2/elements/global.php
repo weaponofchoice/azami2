@@ -1,5 +1,5 @@
-<?php if( have_rows('global') ): ?>
-	<?php while ( have_rows('global') ) : the_row(); ?>
+<?php if( have_rows('page_elements') ): ?>
+	<?php while ( have_rows('page_elements') ) : the_row(); ?>
 		
 		<?php if( get_row_layout() == 'intro'): ?>
 			<?php include(locate_template('elements/global/intro.php')); ?>

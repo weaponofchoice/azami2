@@ -1,5 +1,5 @@
-<?php if( have_rows('galleries') ): ?>
-	<?php while ( have_rows('galleries') ) : the_row(); ?>
+<?php if( have_rows('page_elements') ): ?>
+	<?php while ( have_rows('page_elements') ) : the_row(); ?>
 		
 		<?php if( get_row_layout() == 'gallery'): ?>
 			<?php include(locate_template('elements/galleries/gallery.php')); ?>
