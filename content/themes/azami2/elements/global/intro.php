@@ -1,6 +1,10 @@
 <div id="intro" class="row" style="background:url('<?php the_sub_field('intro_image'); ?>');">
 	
-	<?php if( have_rows('gallery_left') ): ?>
+	<?php if( have_rows('gallery_left') ):
+		
+		$images = get_field('gallery');
+		print $images;
+	?>
 	<div class="gallery gallery_intro gallery_left">
 		<div class="royalSlider rsDefault">
 			<?php while( have_rows('gallery_left') ): the_row(); ?>
