@@ -1,0 +1,44 @@
+.block_text{
+	height: auto;
+	overflow: hidden;
+	padding-top: rem-calc(220);
+	padding-bottom: rem-calc(220);
+		
+	.quote{
+		height: 100%;
+		
+		//To vertically align the quote
+		h3{
+			position: absolute;
+			top: 40%;
+			margin-top: -25%;
+		}
+	}
+	
+	article{
+		float: left !important;
+		
+		p{
+			text-indent: rem-calc(30);
+			margin-top: 1em;
+			margin-bottom: 2em;
+		}
+		
+		a{
+			color: $black;
+		}
+	}
+}
+
+//Media queries
+@media #{$medium-down}{
+	.block_text{
+		text-align: left !important;
+		padding-top: rem-calc(80);
+		padding-bottom: rem-calc(80);
+		
+		.quote{
+			display: none;
+		}
+	}
+}

@@ -1,0 +1,21 @@
+#arrow_scroll{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	bottom: 10%;
+	left: 50%;
+	margin-left: -20px;
+	z-index: 1000;
+	cursor: pointer;
+	
+	@include transform( rotate(45deg) );
+	border-bottom: rem-calc(5) solid $white;
+	border-right: rem-calc(5) solid $white;
+}
+
+//Media queries
+@media #{$medium-down}{
+	#arrow_scroll{
+		visibility: hidden;
+	}
+}

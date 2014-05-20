@@ -1,0 +1,118 @@
+footer{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin-top: rem-calc(100);
+	padding-top: rem-calc(100);
+	padding-bottom: rem-calc(100);
+	
+	background: $black;
+	
+	*{
+		color: $white;
+	}
+	
+	#container-logo{
+		width: 20%;
+		height: auto;
+		overflow: hidden;
+		margin-bottom: 3em;
+		margin-left: 8.33333%;
+	}
+	
+	p,a{
+		font-size: rem-calc(16);
+		margin-bottom: 0;
+	}
+	
+	.phonenumber{
+		a{
+			top: 0;
+		}
+	}
+	
+	a{
+		top: 1em;
+	}
+	
+	ul{
+		li{
+			&:last-child{
+				float: left !important;
+			}
+		}
+	}
+	
+	input[type="text"]{
+		background: $black;
+		border: none;
+		border-bottom: rem-calc(2) solid $white;
+		box-shadow: none;
+		cursor: text;
+		
+		font-family: "Apercu Bold", sans-serif;
+		font-size: rem-calc(16);
+		color: $white;
+		
+		&:focus{
+			background: $black;
+			box-shadow: none;
+			border-color: $white;
+			color: $white;
+		}
+	}
+	
+	button{
+		background: $black;
+		border: rem-calc(2) solid $white;
+		padding: .5em 3em;
+		margin-top: 1em;
+		
+		text-transform: uppercase;
+		font-family: "Apercu Bold", sans-serif;
+		font-size: rem-calc(16);
+		letter-spacing: rem-calc(2);
+				
+		&:hover,
+		&:active,
+		&:focus{
+			background: $white;
+			color: $black;
+		}
+	}
+}
+
+//Media queries
+@media #{$xxlarge-up}{
+	#Homepage-EN,
+	#Homepage-NL{
+		footer{
+			margin-top: rem-calc(150) !important;
+		}
+	}
+}
+
+@media #{$medium-down}{
+	footer{
+		padding-top: 0;
+		
+		#container-logo{
+			display: none;
+			/*width: 60%;
+			margin-bottom: 0;
+			margin-left: 10.33333%;*/
+		}
+		
+		ul{
+			li{
+				margin-top: 5em;
+			}
+		}
+	}
+}
+
+@media #{$medium-only}{	
+	.signup{
+		margin-top: 8em;
+	}
+}
