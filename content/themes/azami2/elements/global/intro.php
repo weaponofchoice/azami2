@@ -1,5 +1,6 @@
 <div id="intro" class="row">
 	
+	<!-- Left gallery -->
 	<?php
 	$images = get_sub_field('gallery_left');
 	
@@ -17,6 +18,7 @@
 	</div>
 	<?php endif; ?>
 	
+	<!-- Right gallery -->
 	<?php
 	$images = get_sub_field('gallery_right');
 	
@@ -34,9 +36,12 @@
 	</div>
 	<?php endif; ?>
 	
+	<!-- Typelogo -->
 	<?php
 	$logo = get_sub_field('logo_type');
 	?>
 	<div id="logo_type" class="medium-10 medium-centered large-8 large-centered columns"><img src="<?php echo $logo['url']; ?>" alt="" /></div>
+	
+	<!-- Scroll arrow -->
 	<div id="arrow_scroll"></div>
 </div>
