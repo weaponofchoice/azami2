@@ -1,0 +1,1 @@
+<div class="image_holder"><img src="<?php the_sub_field('image'); ?>"></div>
