@@ -1,21 +1,15 @@
-<?php if( have_rows('gallery_repeater') ): ?> 
+<?php
+$images = get_sub_field('images');
+if( $images ): ?>
 <div class="gallery">
 	<div class="royalSlider rsDefault">
-		<?php while( have_rows('gallery_repeater') ): the_row(); 
-
-			// vars
-			$image = get_sub_field('gallery_image');
-
-			?>
-
+		<?php foreach( $images as $image ): ?>
 			<li>
 				<div class="rsContent">
-					<img class="rsImg" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
-					<a class="small-22 small-offset-1 xlarge-20 xlarge-offset-2 columns" href="<?php the_sub_field('link'); ?>"><?php the_sub_field('gallery_title'); ?></a>
+					<img class="rsImg" src="<?php echo $image['url']; ?>" />
 				</div>
 			</li>
-
-		<?php endwhile; ?>
+		<?php endforeach; ?>
 	</div>
 </div>
 <?php endif; ?>
