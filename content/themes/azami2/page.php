@@ -6,7 +6,11 @@
  *
  *
  */
+get_header();
+
 include(locate_template('elements/global.php'));
 include(locate_template('elements/galleries.php'));
 include(locate_template('elements/text.php'));
+
+get_footer();
 ?>

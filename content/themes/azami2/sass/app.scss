@@ -7,15 +7,31 @@
 
 // General stylesheets, colors, fonts, typography rules, mixins etc.
 @import
-  "components/mixins",
-  "components/colors",
-  "components/fonts",
-  "components/typography";
+  "master/_mixins",
+  "master/_colors",
+  "master/fonts",
+  "master/_typography";
 
 // Elements
-//@import
-//  "components/_header",
-
-// Pages
-//@import
-//  "components/homepage";
+@import
+  "components/general/_header",
+  "components/general/_footer",
+  
+  "components/navigation/_menu",
+  "components/navigation/_menu_small",
+  "components/navigation/_hamburger",
+  "components/navigation/_arrow_scroll",
+  
+  "components/blocks/_block_intro",
+  "components/blocks/_block_text",
+  "components/blocks/_block_gallery",
+  
+  "components/other/lightbox",
+  "components/other/mailchimp",
+  "components/other/map",
+  
+  "components/royalslider/_royalslider",
+  "components/royalslider/_rs-collection",
+  "components/royalslider/_rs-default",
+  "components/royalslider/_gallery-intro",
+  "components/royalslider/_gallery-clients";
