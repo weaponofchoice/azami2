@@ -12,8 +12,8 @@ if $('.gallery_clients').length > 0
 		transitionSpeed: 200
 
 # Normal gallery
-if $('.gallery').length > 0
-	slider = $('.gallery')
+if $('.gallery').length or $('.gallery_content').length > 0
+	slider = $('.royalSlider')
 	
 	slider.royalSlider
 		# options go here
@@ -24,4 +24,5 @@ if $('.gallery').length > 0
 		transitionSpeed: 200,
 		controlNavigation: 'none',
 		arrowsNav: true,
-		arrowsNavHideOnTouch: true
+		arrowsNavHideOnTouch: true,
+		globalCaption: true

@@ -1,76 +1,64 @@
-#collectie-NL,
-#collectie-EN,
-#team-NL,
-#team-EN{
-	#menu{
-		top: 0;
-		top: 0;
-		z-index: 10;
-		bottom: inherit;
+.gallery_content{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	
+	p.uppercase{
+		margin-top: rem-calc(140);
+		text-align: center;
 	}
 	
-	.content-slider-bg{
-		width: 100%;
-		height: auto;
-		overflow: hidden;
+	.contentSlider{
+		width: 70%;
+		margin: 0 auto;
+		overflow: visible;
+		background: none;
+	
+		.rsOverflow{
+			height: 0 !important;
+			padding-bottom: 56.25% !important;//16:9
+			
+			img{
+				margin-top: 0 !important;
+			}
+		}
 		
-		p.uppercase{
-			margin-top: rem-calc(140);
+		.rsBullets{
+			visibility: hidden;
+		}
+		
+		.rsGCaption{
+			width: 100%;
+			margin: 1em 0 0;
 			text-align: center;
-		}
 		
-		.contentSlider{
-			width: 70%;
-			margin: 0 auto;
-			overflow: visible;
-			background: none;
-		
-			.rsOverflow{
-				height: 0 !important;
-				padding-bottom: 56.25% !important;//16:9
-				
-				img{
-					margin-top: 0 !important;
-				}
-			}
-			
-			.rsBullets{
-				visibility: hidden;
-			}
-			
-			.rsGCaption{
-				width: 100%;
-				margin: 1em 0 0;
-				text-align: center;
-			
-				.rsCaption{
-					width: 80%;
-					margin: 0 auto;
-				}
+			.rsCaption{
+				width: 80%;
+				margin: 0 auto;
 			}
 		}
 	}
+}
 
-	.royalSlider *{
-		color: black;
-	}
+.royalSlider *{
+	color: black;
+}
+
+.rsArrowLeft,
+.rsArrowRight{
+	top: -.5em;
+	margin-left: 0;
+	margin-right: 0;
 	
-	.rsArrowLeft,
-	.rsArrowRight{
-		top: -.5em;
-		margin-left: 0;
-		margin-right: 0;
+	.rsArrowIcn{
+		&:before{
+			width: rem-calc(10);
+			height: 30%;
+		}
 		
-		.rsArrowIcn{
-			&:before{
-				width: rem-calc(10);
-				height: 30%;
-			}
-			
-			&:after{
-				width: 30%;
-				height: rem-calc(10);
-			}
+		&:after{
+			width: 30%;
+			height: rem-calc(10);
 		}
 	}
 }

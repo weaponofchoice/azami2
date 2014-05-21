@@ -1,4 +1,4 @@
-<div class="content-slider-bg">
+<div class="gallery_content">
 	
 	<p class="uppercase"><?php the_sub_field('collection_title')?></p>
 	

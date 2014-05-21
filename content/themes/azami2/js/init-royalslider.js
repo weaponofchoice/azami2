@@ -12,8 +12,8 @@ if ($('.gallery_clients').length > 0) {
   });
 }
 
-if ($('.gallery').length > 0) {
-  slider = $('.gallery');
+if ($('.gallery').length || $('.gallery_content').length > 0) {
+  slider = $('.royalSlider');
   slider.royalSlider({
     keyboardNavEnabled: true,
     imageScaleMode: 'fill',
@@ -22,6 +22,7 @@ if ($('.gallery').length > 0) {
     transitionSpeed: 200,
     controlNavigation: 'none',
     arrowsNav: true,
-    arrowsNavHideOnTouch: true
+    arrowsNavHideOnTouch: true,
+    globalCaption: true
   });
 }
