@@ -11072,6 +11072,27 @@ img.rsImg {
     margin-left: -30%;
   }
 }
+/* line 1, ../sass/components/other/_employee.scss */
+.employee {
+  height: auto;
+  overflow: hidden;
+  padding-top: 8.75rem;
+}
+/* line 7, ../sass/components/other/_employee.scss */
+.employee:nth-child(even) .picture {
+  float: right;
+  margin-left: 0;
+  margin-right: 8.33333%;
+}
+/* line 14, ../sass/components/other/_employee.scss */
+.employee article {
+  float: left !important;
+}
+/* line 17, ../sass/components/other/_employee.scss */
+.employee article p {
+  text-indent: 1.875rem;
+}
+
 /* line 1, ../sass/components/other/_lightbox.scss */
 #imagelightbox {
   cursor: pointer;

@@ -1,0 +1,21 @@
+.employee{
+	height: auto;
+	overflow: hidden;
+	padding-top: rem-calc(140);
+	
+	&:nth-child(even){
+		.picture{
+			float: right;
+			margin-left: 0;
+			margin-right: 8.33333%;
+		}
+	}
+	
+	article{
+		float: left !important;
+		
+		p{
+			text-indent: rem-calc(30);
+		}
+	}
+}
