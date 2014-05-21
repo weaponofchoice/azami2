@@ -10137,6 +10137,11 @@ footer button:hover, footer button:active, footer button:focus {
     display: none;
   }
 }
+/* line 1, ../sass/components/text/_text_centered.scss */
+.text_centered {
+  text-align: center;
+}
+
 /* line 2, ../sass/components/text/_text_quote.scss */
 .text_quote .row {
   max-width: none;
