@@ -5,7 +5,7 @@
 	$images = get_sub_field('gallery_left');
 	
 	if( $images ): ?>
-	<div class="gallery gallery_intro gallery_left">
+	<div class="gallery_intro gallery_left">
 		<div class="royalSlider rsDefault">
 			<?php foreach( $images as $image ): ?>
 				<li>
@@ -23,7 +23,7 @@
 	$images = get_sub_field('gallery_right');
 	
 	if( $images ): ?>
-	<div class="gallery gallery_intro gallery_right">
+	<div class="gallery_intro gallery_right">
 		<div class="royalSlider rsDefault">
 			<?php foreach( $images as $image ): ?>
 				<li>
