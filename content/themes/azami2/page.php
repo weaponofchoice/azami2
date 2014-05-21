@@ -1,17 +1,46 @@
-<?php 
+<?php
 /*
  *
- * This redirects to the three main element categories.
- * From there, redirects will run to the individual element php files where the markup is build.
+ * This redirects to the individual element php files where the markup is build.
  *
  *
  */
-get_header();
+get_header(); 
 
-include(locate_template('elements/global.php'));
-include(locate_template('elements/galleries.php'));
-include(locate_template('elements/text.php'));
-include(locate_template('elements/other.php'));
+if( have_rows('page_elements') ): 
+	while ( have_rows('page_elements') ) : the_row(); 
+		
+		// Global elements
+		if( get_row_layout() == 'image'): 
+			include('elements/global/image.php');
+			
+		// Text elements
+		elseif( get_row_layout() == 'text'): 
+			 include('elements/text/text.php'); 
+		elseif( get_row_layout() == 'text_centered'): 
+			 include('elements/text/text_centered.php'); 
+		elseif( get_row_layout() == 'text_quote'): 
+			 include('elements/text/text_quote.php');
+			 
+		 // Galleries
+		elseif( get_row_layout() == 'gallery'): 	
+			 include('elements/galleries/gallery.php'); 
+		elseif( get_row_layout() == 'gallery_clients'): 
+			 include('elements/galleries/gallery_clients.php'); 
+		elseif( get_row_layout() == 'gallery_content'): 
+			 include('elements/galleries/gallery_content.php');
+			 
+		 // Other elements
+		elseif( get_row_layout() == 'intro'): 
+			 include('elements/other/intro.php'); 
+		elseif( get_row_layout() == 'employee'): 
+			 include('elements/other/employee.php'); 
+		elseif( get_row_layout() == 'construction'): 
+			 include('elements/other/construction.php'); 
+		endif; 
+			
+	endwhile; 
+endif; 
 
 get_footer();
 ?>
