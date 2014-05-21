@@ -1,6 +1,7 @@
 if $('body').length > 0	
 	# Declare variables
 	article = $('.text .row')
+	gallery = $('.gallery')
 	
 	# Determine heights
 	viewport = window.innerHeight
@@ -8,6 +9,7 @@ if $('body').length > 0
 	
 	# Apply heights
 	article.css "height", article_height
+	gallery.css "height", viewport
 	
 	$(window).on 'resize', ->
 			# Recalculate window height
@@ -15,3 +17,4 @@ if $('body').length > 0
 			
 			# Reapply heights
 			article.css "height", article_height
+			gallery.css "height", viewport
