@@ -1,0 +1,16 @@
+.text_quote{
+	.row{
+		max-width: none;
+		
+		.quote{
+			height: 100%;
+		
+			//To vertically align the quote
+			h3{
+				position: absolute;
+				top: 40%;
+				margin-top: -25%;
+			}
+		}
+	}
+}

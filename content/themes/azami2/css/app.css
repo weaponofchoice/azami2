@@ -7,7 +7,6 @@
  * Correct `block` display not defined in IE 8/9.
  */
 @import url("//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700");
-@import url(http://fonts.googleapis.com/css?family=Inconsolata:400,700);
 /* line 22, ../sass/_normalize.scss */
 article,
 aside,
@@ -9876,47 +9875,83 @@ th.hide-for-touch {
   display: table-cell !important;
 }
 
-/* line 4, ../sass/master/_typography.scss */
-h1, h2, h3, h4, h5, p {
-  font-family: 'Inconsolata', sans-serif;
-  line-height: 1.4;
-  margin-top: 0;
-  margin-bottom: 1rem;
+/* line 1, ../sass/master/_typography.scss */
+h2, h3, h4, p, a {
+  font-family: "Apercu Light", sans-serif;
+  font-size: 1em;
+  font-weight: 200;
+  color: black;
 }
-
+/* line 7, ../sass/master/_typography.scss */
+h2.uppercase, h3.uppercase, h4.uppercase, p.uppercase, a.uppercase {
+  text-transform: uppercase;
+}
 /* line 11, ../sass/master/_typography.scss */
-h1 {
-  font-size: 2.25rem;
+h2.underlined, h3.underlined, h4.underlined, p.underlined, a.underlined {
+  text-decoration: underline;
+}
+/* line 16, ../sass/master/_typography.scss */
+h2.bold, h3.bold, h4.bold, p.bold, a.bold,
+h2 strong,
+h3 strong,
+h4 strong,
+p strong,
+a strong {
+  font-family: "Apercu Bold", sans-serif;
 }
 
-/* line 12, ../sass/master/_typography.scss */
+/* line 21, ../sass/master/_typography.scss */
 h2 {
-  font-size: 1.75rem;
+  font-family: "Apercu Bold", sans-serif;
+  font-size: 1.875rem;
 }
 
-/* line 13, ../sass/master/_typography.scss */
+/* line 28, ../sass/master/_typography.scss */
 h3 {
+  font-family: "Apercu Bold", sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+/* line 35, ../sass/master/_typography.scss */
+h4 {
+  font-family: "Apercu Bold", sans-serif;
+  font-size: 1rem;
+}
+
+/* line 41, ../sass/master/_typography.scss */
+p {
   font-size: 1.25rem;
 }
 
-/* line 14, ../sass/master/_typography.scss */
-h4 {
-  font-size: 1em;
-  margin-bottom: 0;
+/* line 46, ../sass/master/_typography.scss */
+a {
+  font-family: "Apercu Regular", sans-serif;
+  font-size: 1.25rem;
+  color: white;
+  cursor: pointer;
+}
+/* line 53, ../sass/master/_typography.scss */
+a:hover {
+  color: white;
+}
+/* line 57, ../sass/master/_typography.scss */
+a img {
+  cursor: pointer;
 }
 
-/* line 15, ../sass/master/_typography.scss */
-h5 {
-  font-size: 1em;
-  margin-bottom: 0;
+@media only screen and (max-width: 1024px) {
+  /* line 65, ../sass/master/_typography.scss */
+  html {
+    font-size: 85%;
+  }
 }
-
-/* line 17, ../sass/master/_typography.scss */
-p {
-  color: black;
-  font-size: 1em;
+@media only screen and (max-width: 640px) {
+  /* line 71, ../sass/master/_typography.scss */
+  html {
+    font-size: 75%;
+  }
 }
-
 /* line 1, ../sass/components/global/_footer.scss */
 footer {
   width: 100%;
@@ -10025,46 +10060,51 @@ footer button:hover, footer button:active, footer button:focus {
 .text {
   height: auto;
   overflow: hidden;
-  padding-top: 13.75rem;
-  padding-bottom: 13.75rem;
+  padding-top: 12.5rem;
+  padding-bottom: 12.5rem;
 }
 /* line 7, ../sass/components/text/_text.scss */
-.text .quote {
-  height: 100%;
-}
-/* line 11, ../sass/components/text/_text.scss */
-.text .quote h3 {
-  position: absolute;
-  top: 40%;
-  margin-top: -25%;
-}
-/* line 18, ../sass/components/text/_text.scss */
 .text article {
   float: left !important;
 }
-/* line 21, ../sass/components/text/_text.scss */
+/* line 10, ../sass/components/text/_text.scss */
 .text article p {
   text-indent: 1.875rem;
   margin-top: 1em;
   margin-bottom: 2em;
 }
-/* line 27, ../sass/components/text/_text.scss */
+/* line 16, ../sass/components/text/_text.scss */
 .text article a {
   color: black;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 35, ../sass/components/text/_text.scss */
+  /* line 24, ../sass/components/text/_text.scss */
   .text {
     text-align: left !important;
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
-  /* line 40, ../sass/components/text/_text.scss */
+  /* line 29, ../sass/components/text/_text.scss */
   .text .quote {
     display: none;
   }
 }
+/* line 2, ../sass/components/text/_text_quote.scss */
+.text_quote .row {
+  max-width: none;
+}
+/* line 5, ../sass/components/text/_text_quote.scss */
+.text_quote .row .quote {
+  height: 100%;
+}
+/* line 9, ../sass/components/text/_text_quote.scss */
+.text_quote .row .quote h3 {
+  position: absolute;
+  top: 40%;
+  margin-top: -25%;
+}
+
 /* v1.0.5 */
 /* Core RS CSS file. 95% of the time you shouldn't change anything here. */
 /* line 3, ../sass/components/galleries/royalslider/_royalslider.scss */

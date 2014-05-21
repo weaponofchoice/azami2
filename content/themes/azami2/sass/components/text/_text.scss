@@ -1,19 +1,8 @@
 .text{
 	height: auto;
 	overflow: hidden;
-	padding-top: rem-calc(220);
-	padding-bottom: rem-calc(220);
-		
-	.quote{
-		height: 100%;
-		
-		//To vertically align the quote
-		h3{
-			position: absolute;
-			top: 40%;
-			margin-top: -25%;
-		}
-	}
+	padding-top: rem-calc(200);
+	padding-bottom: rem-calc(200);
 	
 	article{
 		float: left !important;

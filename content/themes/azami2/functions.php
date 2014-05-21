@@ -14,6 +14,11 @@ add_theme_support( 'post-thumbnails' );
 // Add support for automatic RSS feed links
 add_theme_support( 'automatic-feed-links' );
 
+/*
+ * Includes
+ */
+require_once('includes/enqueue-scripts.php');
+
 /**
  * Remove unused items from Admin
  * Add as many items as you like to hide to the $restriced array
