@@ -19,8 +19,9 @@ if ($('.gallery_clients').length > 0) {
   };
   image.imageLightbox({
     enableKeyboard: true,
+    preloadNext: true,
     quitOnImgClick: true,
-    animationSpeed: 100,
+    animationSpeed: 75,
     onStart: function() {
       overlayOn();
       return closeButtonOn();

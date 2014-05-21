@@ -5,6 +5,7 @@ if ($('.gallery_clients').length > 0) {
   slider = $('.gallery');
   slider.royalSlider({
     keyboardNavEnabled: false,
+    imageScaleMode: 'fill',
     slidesSpacing: 0,
     loop: true,
     transitionSpeed: 200
