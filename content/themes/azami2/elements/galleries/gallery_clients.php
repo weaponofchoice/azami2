@@ -1,15 +1,22 @@
-<?php
-$images = get_sub_field('images');
-if( $images ): ?>
+<?php if( have_rows('gallery_slide') ): ?> 
 <div class="gallery gallery_clients">
-	<div class="royalSlider rsDefault">
-		<?php foreach( $images as $image ): ?>
+	<?php while( have_rows('gallery_slide') ): the_row(); ?>
+		<div class="royalSlider rsDefault">
 			<li>
 				<div class="rsContent">
-					<img class="rsImg" src="<?php echo $image['url']; ?>" />
+					<?php if( have_rows('images') ): ?>
+						<?php while( have_rows('images') ): the_row(); ?>
+							<a 
+								class="lightbox"
+								href="<?php the_sub_field('client'); ?>" 
+								data-imagelightbox="overlay"
+								style="background:url('<?php the_sub_field('client'); ?>');">
+							</a>
+						<?php endwhile; ?>
+					<?php endif; ?>
 				</div>
 			</li>
-		<?php endforeach; ?>
-	</div>
+		</div>
+	<?php endwhile; ?>
 </div>
 <?php endif; ?>
