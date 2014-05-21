@@ -1,4 +1,4 @@
-<div class="block_text">
+<div class="text">
 	<div class="row">
 		<div class="quote medium-6 medium-offset-2 large-5 large-offset-3 xlarge-4 xlarge-offset-4 xxlarge-3 xxlarge-offset-5 columns">
 			<h3><?php the_sub_field('quote'); ?></h3>
