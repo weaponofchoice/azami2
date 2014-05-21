@@ -1,4 +1,4 @@
-.block_text{
+.text{
 	height: auto;
 	overflow: hidden;
 	padding-top: rem-calc(220);
@@ -32,7 +32,7 @@
 
 //Media queries
 @media #{$medium-down}{
-	.block_text{
+	.text{
 		text-align: left !important;
 		padding-top: rem-calc(80);
 		padding-bottom: rem-calc(80);

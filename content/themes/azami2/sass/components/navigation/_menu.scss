@@ -65,29 +65,6 @@
 					}
 				}
 			}
-			
-			//Language buttons
-			&.button_lang,
-			&.lang-item{
-				margin: 0 .5em 0 0;
-				padding: .1em .3em;
-				border: 2px solid white;
-				line-height: 2.5;
-		
-				&:hover{
-					background: $white;
-					color: $black;
-					cursor: pointer;
-			
-					a{
-						color: $black;
-					}
-				}
-		
-				a{
-					font-size: rem-calc(12);
-				}
-			}
 		}
 	}
 }
