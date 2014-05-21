@@ -1,3 +1,14 @@
+if $('.gallery_clients').length > 0
+	slider = $('.gallery')
+	
+	slider.royalSlider
+		# options go here
+		keyboardNavEnabled: false
+		slidesSpacing: 0,
+		loop: true,
+		transitionSpeed: 200
+
+
 if $('.gallery').length > 0
 	slider = $('.gallery')
 	
