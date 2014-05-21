@@ -9875,6 +9875,50 @@ th.hide-for-touch {
   display: table-cell !important;
 }
 
+/* line 1, ../sass/master/_general.scss */
+.row {
+  max-width: none;
+}
+
+/* line 6, ../sass/master/_general.scss */
+* {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  cursor: default;
+  line-height: 1;
+  list-style: none;
+  text-decoration: none;
+  word-wrap: break-word;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+}
+/* line 23, ../sass/master/_general.scss */
+*::selection {
+  background: #333333;
+  color: white;
+}
+
+/* line 29, ../sass/master/_general.scss */
+ul {
+  margin-left: 0;
+}
+
+/* line 33, ../sass/master/_general.scss */
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* line 38, ../sass/master/_general.scss */
+#content {
+  max-width: 1920px;
+  margin: 0px auto;
+  z-index: 997;
+}
+
 /* line 1, ../sass/master/_typography.scss */
 h2, h3, h4, p, a {
   font-family: "Apercu Light", sans-serif;
@@ -10064,28 +10108,31 @@ footer button:hover, footer button:active, footer button:focus {
   padding-bottom: 12.5rem;
 }
 /* line 7, ../sass/components/text/_text.scss */
-.text article {
-  float: left !important;
+.text .row {
+  max-width: 43.75rem;
 }
 /* line 10, ../sass/components/text/_text.scss */
-.text article p {
-  text-indent: 1.875rem;
+.text .row article {
+  float: left !important;
+}
+/* line 13, ../sass/components/text/_text.scss */
+.text .row article p {
   margin-top: 1em;
   margin-bottom: 2em;
 }
-/* line 16, ../sass/components/text/_text.scss */
-.text article a {
+/* line 18, ../sass/components/text/_text.scss */
+.text .row article a {
   color: black;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 24, ../sass/components/text/_text.scss */
+  /* line 27, ../sass/components/text/_text.scss */
   .text {
     text-align: left !important;
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
-  /* line 29, ../sass/components/text/_text.scss */
+  /* line 32, ../sass/components/text/_text.scss */
   .text .quote {
     display: none;
   }
@@ -10103,6 +10150,10 @@ footer button:hover, footer button:active, footer button:focus {
   position: absolute;
   top: 40%;
   margin-top: -25%;
+}
+/* line 17, ../sass/components/text/_text_quote.scss */
+.text_quote .row article p {
+  text-indent: 1.875rem;
 }
 
 /* v1.0.5 */

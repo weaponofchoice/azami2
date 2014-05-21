@@ -1,0 +1,42 @@
+.row{
+	max-width: none;
+}
+
+// Resets
+*{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	cursor: default;
+	line-height: 1;
+	
+	list-style: none;
+	text-decoration: none;
+	word-wrap:break-word;
+	
+	outline: none;
+	
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-backface-visibility: hidden;
+	
+	&::selection{
+		background: $gray-dark;
+		color: $white;
+	}
+}
+
+ul{
+	margin-left: 0;
+}
+
+body{
+	width: 100%;
+	overflow-x: hidden;
+}
+
+#content{
+	max-width: 1920px;
+	margin: 0px auto;
+	z-index: 997; //Is set because of lightbox
+}

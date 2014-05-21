@@ -4,17 +4,20 @@
 	padding-top: rem-calc(200);
 	padding-bottom: rem-calc(200);
 	
-	article{
-		float: left !important;
+	.row{
+		max-width: rem-calc(700);
 		
-		p{
-			text-indent: rem-calc(30);
-			margin-top: 1em;
-			margin-bottom: 2em;
-		}
+		article{
+			float: left !important;
 		
-		a{
-			color: $black;
+			p{
+				margin-top: 1em;
+				margin-bottom: 2em;
+			}
+		
+			a{
+				color: $black;
+			}
 		}
 	}
 }
