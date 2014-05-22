@@ -1,8 +1,6 @@
 #home-NL,
 #home-EN{
-	.gallery{
-		&:last-child{
-			margin-bottom: 0 !important;
-		}
+	footer{
+		margin-top: rem-calc(-140);
 	}
 }

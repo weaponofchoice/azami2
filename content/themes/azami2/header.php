@@ -29,9 +29,6 @@
 	})();
 	</script>
 	
-	<!-- Google maps -->
-	<script src='http://maps.googleapis.com/maps/api/js?sensor=true' type='text/javascript'></script>
-	
 	<!-- WP_HEAD() -->
 	<?php wp_head(); ?>
   </head>
