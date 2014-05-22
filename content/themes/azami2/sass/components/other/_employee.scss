@@ -3,7 +3,7 @@
 	overflow: hidden;
 	//padding-bottom: rem-calc(140);
 	
-	&:nth-child(odd){
+	&:nth-child(even){
 		.picture{
 			float: right;
 			margin-left: 0;

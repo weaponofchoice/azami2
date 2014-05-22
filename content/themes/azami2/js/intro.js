@@ -6,6 +6,8 @@ if ($('.gallery_left').length > 0) {
   slider.royalSlider({
     imageScaleMode: 'fill',
     slidesSpacing: 0,
+    sliderDrag: false,
+    sliderTouch: false,
     loop: true,
     transitionSpeed: 200,
     transitionType: 'fade',
@@ -24,6 +26,8 @@ if ($('.gallery_right').length > 0) {
   slider.royalSlider({
     imageScaleMode: 'fill',
     slidesSpacing: 0,
+    sliderDrag: false,
+    sliderTouch: false,
     loop: true,
     transitionSpeed: 500,
     transitionType: 'fade',

@@ -11021,7 +11021,7 @@ img.rsImg {
   overflow: hidden;
 }
 /* line 7, ../sass/components/other/_employee.scss */
-.employee:nth-child(odd) .picture {
+.employee:nth-child(even) .picture {
   float: right;
   margin-left: 0;
   margin-right: 8.33333%;

@@ -14,6 +14,7 @@ function enqueue_theme_scripts() {
 		wp_enqueue_script( 'imagelightbox', get_template_directory_uri() . '/js/vendor/imagelightbox.js', 'jquery', false, true );
 		wp_enqueue_script( 'gmaps', get_template_directory_uri() . '/js/vendor/gmaps.js', 'jquery', false, true );
 		wp_enqueue_script( 'stickykit', get_template_directory_uri() . '/js/vendor/stickykit.js', 'jquery', false, true );
+		wp_enqueue_script( 'scrollto', get_template_directory_uri() . '/js/vendor/scrollto.js', 'jquery', false, true );
 		
 		wp_enqueue_script( 'init-royalslider', get_template_directory_uri() . '/js/init-royalslider.js', 'royalslider', false, true );
 		wp_enqueue_script( 'intro', get_template_directory_uri() . '/js/intro.js', 'royalslider', false, true );
@@ -22,6 +23,7 @@ function enqueue_theme_scripts() {
 		wp_enqueue_script( 'init-stickykit', get_template_directory_uri() . '/js/init-stickykit.js', 'stickykit', false, true );
 		
 		wp_enqueue_script( 'home', get_template_directory_uri() . '/js/home.js', 'jquery', false, true );
+		wp_enqueue_script( 'scroll', get_template_directory_uri() . '/js/scroll.js', 'scrollto', false, true );
  	else:
 		// All concatenated and compressed JS in one file:
 		wp_enqueue_script( 'application', get_template_directory_uri() . '/js/app.min.js', array('jquery'), false, true	);
