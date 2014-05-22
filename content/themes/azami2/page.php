@@ -15,6 +15,8 @@ if( have_rows('page_elements') ):
 		// Global elements
 		if( get_row_layout() == 'image'): 
 			include('elements/global/image.php');
+		elseif( get_row_layout() == 'image_promo'):
+			include('elements/global/image_promo.php');
 			
 		// Text elements
 		elseif( get_row_layout() == 'text'): 
