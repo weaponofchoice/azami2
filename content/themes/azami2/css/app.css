@@ -9920,7 +9920,7 @@ body {
   z-index: 997;
 }
 
-/* line 53, ../sass/master/_general.scss */
+/* line 52, ../sass/master/_general.scss */
 .text,
 .text_quote,
 .text_centered,
@@ -9928,8 +9928,7 @@ body {
 .gallery_content,
 .gallery_clients,
 .image,
-.employee,
-#intro {
+.employee {
   margin-bottom: 8.75rem !important;
 }
 
@@ -10768,38 +10767,37 @@ img.rsImg {
 }
 /* line 1, ../sass/components/navigation/_menu.scss */
 .menu {
-  width: 100%;
+  width: 100% !important;
   height: 5rem;
+  position: absolute;
   display: inline;
   padding-left: 8.33335%;
   padding-right: 8.33335%;
   z-index: 999;
   background: black;
-  position: absolute;
-  top: 0;
 }
-/* line 17, ../sass/components/navigation/_menu.scss */
+/* line 14, ../sass/components/navigation/_menu.scss */
 .menu li {
   height: 100%;
   padding: 2em 0;
   display: inline-block;
   text-align: center;
 }
-/* line 24, ../sass/components/navigation/_menu.scss */
+/* line 21, ../sass/components/navigation/_menu.scss */
 .menu li.logo {
   height: 100%;
   padding: 0;
   margin-top: 1.25rem;
 }
-/* line 30, ../sass/components/navigation/_menu.scss */
+/* line 27, ../sass/components/navigation/_menu.scss */
 .menu li.logo a img {
   max-height: 100%;
 }
-/* line 38, ../sass/components/navigation/_menu.scss */
+/* line 35, ../sass/components/navigation/_menu.scss */
 .menu li.menu-item a {
   display: block;
 }
-/* line 42, ../sass/components/navigation/_menu.scss */
+/* line 39, ../sass/components/navigation/_menu.scss */
 .menu li.menu-item a:hover:after {
   content: ' ';
   width: 20%;
@@ -10807,7 +10805,7 @@ img.rsImg {
   margin: .5em auto 0;
   border-bottom: 0.125rem solid white;
 }
-/* line 52, ../sass/components/navigation/_menu.scss */
+/* line 49, ../sass/components/navigation/_menu.scss */
 .menu li.menu-item.current-menu-item {
   background: #222;
 }
@@ -11022,7 +11020,7 @@ img.rsImg {
   overflow: hidden;
 }
 /* line 7, ../sass/components/other/_employee.scss */
-.employee:nth-child(even) .picture {
+.employee:nth-child(odd) .picture {
   float: right;
   margin-left: 0;
   margin-right: 8.33333%;

@@ -33,8 +33,6 @@ if( have_rows('page_elements') ):
 			 include('elements/galleries/gallery_content.php');
 			 
 		 // Other elements
-		elseif( get_row_layout() == 'intro'): 
-			 include('elements/other/intro.php'); 
 		elseif( get_row_layout() == 'employee'): 
 			 include('elements/other/employee.php'); 
 		elseif( get_row_layout() == 'construction'): 

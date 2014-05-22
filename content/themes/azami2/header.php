@@ -35,6 +35,16 @@
 
   <body <?php body_class(); ?> id="<?php echo the_title(); ?>">
 	  <div id="content">
+		<?php if( have_rows('page_elements') ): ?>
+			<?php while( have_rows('page_elements') ): the_row(); ?>
+		
+				<?php if ( get_row_layout() == 'intro'): ?>
+					<?php include(locate_template('elements/other/intro.php')); ?>
+				<?php endif; ?>
+				
+			<?php endwhile; ?>
+		<?php endif; ?>
+		  
   		<div id="menu" class="menu row">
 			<li class="logo medium-5 large-4 columns"><a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/typelogo.png"></a></li>
 			
