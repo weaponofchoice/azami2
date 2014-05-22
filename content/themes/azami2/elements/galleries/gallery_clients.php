@@ -5,12 +5,14 @@
 			<li>
 				<div class="rsContent">
 					<?php if( have_rows('images') ): ?>
-						<?php while( have_rows('images') ): the_row(); ?>
+						<?php while( have_rows('images') ): the_row(); 
+							$gclients_url = get_sub_field('client');
+							?>
 							<a 
 								class="lightbox"
-								href="<?php the_sub_field('client'); ?>" 
+								href="<?php echo $gclients_url['sizes']['medium']; ?>" 
 								data-imagelightbox="overlay"
-								style="background:url('<?php the_sub_field('client'); ?>');">
+								style="background:url('<?php echo $gclients_url['sizes']['small']; ?>');">
 							</a>
 						<?php endwhile; ?>
 					<?php endif; ?>
