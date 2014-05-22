@@ -6,7 +6,13 @@
     <div class="royalSlider rsDefault contentSlider rsAutoHeight rsHor">
 		<?php
 			while(have_rows('gallery_slide')): the_row();
-			$gcontent_url = get_sub_field('image')['sizes']['medium'];
+			
+			// scaled images module
+			$gcontent = get_sub_field('image');
+			$gcontent_url = $gcontent['sizes']['medium'];
+			if (is_mobile()){
+				$gcontent_url = $gcontent['sizes']['small'];
+			}
 		?>
 			<div>
             	<img class="rsImg" src="<?php echo $gcontent_url; ?>" />

@@ -5,7 +5,9 @@
 			<li>
 				<div class="rsContent">
 					<?php if( have_rows('images') ): ?>
-						<?php while( have_rows('images') ): the_row(); 
+						<?php while( have_rows('images') ): the_row();
+							
+							// scaled images module
 							$gclients_url = get_sub_field('client');
 							?>
 							<a 

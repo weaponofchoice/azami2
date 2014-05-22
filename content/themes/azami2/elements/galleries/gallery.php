@@ -5,7 +5,17 @@ if( $images ): ?>
 	<div class="royalSlider rsDefault">
 		<?php
 			foreach( $images as $image ):
-			$g_url = $image['sizes']['large']; ?>
+			
+			// scaled images module
+			$g_url = $image['sizes']['large']; 
+			if (is_tablet()){
+				$g_url = $image['sizes']['medium'];
+			}
+			
+			if (is_mobile()){
+				$g_url = $image['sizes']['small'];
+			}
+			?>
 			<li>
 				<div class="rsContent">
 					<img class="rsImg" src="<?php echo $g_url; ?>" />
