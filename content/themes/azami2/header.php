@@ -6,7 +6,7 @@
 ?>
 <!doctype html>
 <!--[if IE 9]>    <html class="no-js lt-ie10" lang="en"> <![endif]-->
-<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if gt IE 9]><!--> <html <?php language_attributes(); ?>> <!--<![endif]-->
 
   <head>
     <meta charset="utf-8">
@@ -32,9 +32,17 @@
 	<!-- WP_HEAD() -->
 	<?php wp_head(); ?>
   </head>
-
+	
   <body <?php body_class(); ?> id="<?php echo the_title(); ?>">
 	  <div id="content">
+	  	<!-- Sending all English pages to 'contruction.php' for now -->
+	  	<?php
+	  	$lang = get_locale();
+	  	if($lang == 'en'){
+	  		include('construction.php');
+	  	}
+	  	?>
+		
 		<?php if( have_rows('page_elements') ): ?>
 			<?php while( have_rows('page_elements') ): the_row(); ?>
 		

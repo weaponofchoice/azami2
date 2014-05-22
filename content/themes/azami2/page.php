@@ -5,7 +5,7 @@
  *
  *
  */
-get_header(); 
+get_header();
 
 if( have_rows('page_elements') ): 
 	while ( have_rows('page_elements') ) : the_row();

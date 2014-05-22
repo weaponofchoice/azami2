@@ -11220,9 +11220,8 @@ img.rsImg {
     margin-bottom: -1.875rem;
   }
 }
-/* line 3, ../sass/pages/_home.scss */
-#home-NL .menu,
-#home-EN .menu {
+/* line 2, ../sass/pages/_home.scss */
+#home-NL .menu {
   top: inherit;
 }
 
@@ -11232,4 +11231,43 @@ img.rsImg {
   width: 70%;
   margin: 0 auto;
   padding: 4.375rem 0;
+}
+
+/* line 5, ../sass/pages/_construction.scss */
+#home-EN #footer,
+#collectie-EN #footer,
+#info-EN #footer,
+#team-EN #footer {
+  display: none;
+}
+
+/* line 11, ../sass/pages/_construction.scss */
+#Homepage-EN #intro {
+  display: none;
+}
+
+/* line 16, ../sass/pages/_construction.scss */
+#construction {
+  width: 100%;
+  max-height: 100%;
+  text-align: center !important;
+  overflow: hidden;
+}
+/* line 22, ../sass/pages/_construction.scss */
+#construction .block_text {
+  text-align: center !important;
+  padding-top: -13.75rem !important;
+}
+/* line 26, ../sass/pages/_construction.scss */
+#construction .block_text img {
+  margin-bottom: 3em;
+}
+/* line 30, ../sass/pages/_construction.scss */
+#construction .block_text h2 {
+  margin-bottom: 2em;
+}
+/* line 34, ../sass/pages/_construction.scss */
+#construction .block_text a {
+  text-decoration: underline;
+  color: black;
 }
