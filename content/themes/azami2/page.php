@@ -8,7 +8,7 @@
 get_header(); 
 
 if( have_rows('page_elements') ): 
-	while ( have_rows('page_elements') ) : the_row(); 
+	while ( have_rows('page_elements') ) : the_row();
 		
 		require('includes/scaled-images.php');
 		
@@ -38,7 +38,9 @@ if( have_rows('page_elements') ):
 		elseif( get_row_layout() == 'employee'): 
 			 include('elements/other/employee.php'); 
 		elseif( get_row_layout() == 'construction'): 
-			 include('elements/other/construction.php'); 
+			 include('elements/other/construction.php');
+		elseif( get_row_layout() == 'map'):
+			include('elements/other/map.php');
 		endif; 
 			
 	endwhile; 

@@ -12,10 +12,12 @@ function enqueue_theme_scripts() {
 		
 		wp_enqueue_script( 'royalslider', get_template_directory_uri() . '/js/vendor/royalslider.js', 'jquery', false, true );
 		wp_enqueue_script( 'imagelightbox', get_template_directory_uri() . '/js/vendor/imagelightbox.js', 'jquery', false, true );
+		wp_enqueue_script( 'gmaps', get_template_directory_uri() . '/js/vendor/gmaps.js', 'jquery', false, true );
 		
 		wp_enqueue_script( 'init-royalslider', get_template_directory_uri() . '/js/init-royalslider.js', 'royalslider', false, true );
 		wp_enqueue_script( 'intro', get_template_directory_uri() . '/js/intro.js', 'royalslider', false, true );
 		wp_enqueue_script( 'init-imagelightbox', get_template_directory_uri() . '/js/init-imagelightbox.js', 'imagelightbox', false, true );
+		wp_enqueue_script( 'init-gmaps', get_template_directory_uri() . '/js/init-gmaps.js', 'gmaps', false, true );
  	else:
 		// All concatenated and compressed JS in one file:
 		wp_enqueue_script( 'application', get_template_directory_uri() . '/js/app.min.js', array('jquery'), false, true	);

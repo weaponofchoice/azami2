@@ -1,6 +1,6 @@
 if $('body').length > 0	
 	# Declare variables
-	article = $('.text .row')
+	article = $('.text_quote .row')
 	gallery = $('.gallery')
 	intro = $('#intro')
 	
