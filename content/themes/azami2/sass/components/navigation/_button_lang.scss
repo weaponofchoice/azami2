@@ -1,27 +1,27 @@
 .menu{
-	ul{
-		li{
-			//Language buttons
-			&.button_lang,
-			&.lang-item{
-				margin: 0 .5em 0 0;
-				padding: .1em .3em;
-				border: 2px solid white;
-				line-height: 2.5;
-		
-				&:hover{
-					background: $white;
-					color: $black;
-					cursor: pointer;
-			
-					a{
-						color: $black;
-					}
-				}
+	li{
+		//Language buttons
+		&.button_lang,
+		&.lang-item{
+			height: auto;
+			margin: 1.2em .5em;
+			padding: 0 .7em;
+			border: 2px solid white;
+			line-height: 2.5;
+			float: right;
+	
+			&:hover{
+				background: $white;
+				color: $black;
+				cursor: pointer;
 		
 				a{
-					font-size: rem-calc(12);
+					color: $black;
 				}
+			}
+	
+			a{
+				font-size: rem-calc(14);
 			}
 		}
 	}

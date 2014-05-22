@@ -46,7 +46,7 @@
 		<?php endif; ?>
 		  
   		<div id="menu" class="menu row">
-			<li class="logo medium-5 large-4 columns"><a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/typelogo.png"></a></li>
+			<li class="logo medium-4 columns"><a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/typelogo.png"></a></li>
 			
 			<?php wp_nav_menu( array( 
 				'container' => '',
@@ -54,6 +54,7 @@
 				'theme_location' => 'main_menu'
 			) );
 			?>
+			<?php pll_the_languages(); ?>
   		</div>
 		
 		<div id="menu_small" class="menu row">
