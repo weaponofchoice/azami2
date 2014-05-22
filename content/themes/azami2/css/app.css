@@ -11200,3 +11200,16 @@ img.rsImg {
     margin-bottom: -1.875rem;
   }
 }
+/* line 4, ../sass/pages/_home.scss */
+#home-NL .gallery:last-child,
+#home-EN .gallery:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* line 3, ../sass/pages/_team.scss */
+#team-NL .gallery,
+#team-EN .gallery {
+  width: 70%;
+  margin: 0 auto;
+  padding: 4.375rem 0;
+}
