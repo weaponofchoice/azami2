@@ -10798,30 +10798,47 @@ img.rsImg {
 .menu li.menu-item a {
   display: block;
 }
-/* line 40, ../sass/components/navigation/_menu.scss */
-.menu li.menu-item a:hover:after {
+/* line 39, ../sass/components/navigation/_menu.scss */
+.menu li.menu-item a:after {
   content: ' ';
   width: 20%;
   display: block;
   margin: .5em auto 0;
-  border-bottom: 0.125rem solid white;
+  border-bottom: 2px solid transparent;
 }
-/* line 50, ../sass/components/navigation/_menu.scss */
-.menu li.menu-item.current-menu-item {
-  background: #222;
+/* line 48, ../sass/components/navigation/_menu.scss */
+.menu li.menu-item a:hover:after {
+  border-bottom: 2px solid white;
+}
+/* line 56, ../sass/components/navigation/_menu.scss */
+.menu li.menu-item.current-menu-item a:after {
+  content: ' ';
+  width: 20%;
+  display: block;
+  margin: .5em auto 0;
+  border-bottom: 2px solid white;
 }
 
 /* line 1, ../sass/components/navigation/_menu_small.scss */
 #menu_small {
   display: none;
-  padding: 0 0 1.5em 0;
+  padding-left: 0;
+  padding-right: 0;
 }
-/* line 5, ../sass/components/navigation/_menu_small.scss */
+/* line 6, ../sass/components/navigation/_menu_small.scss */
 #menu_small ul {
   z-index: 1000;
   background: black;
 }
 /* line 11, ../sass/components/navigation/_menu_small.scss */
+#menu_small ul li.logo {
+  width: auto;
+}
+/* line 15, ../sass/components/navigation/_menu_small.scss */
+#menu_small ul li.logo a img {
+  max-height: 50%;
+}
+/* line 23, ../sass/components/navigation/_menu_small.scss */
 #menu_small ul#menu_small_collapsed {
   -webkit-transform: translate3d(0, 0, -100%);
   -webkit-transition: .2s;
@@ -10834,31 +10851,30 @@ img.rsImg {
   text-align: center;
   padding-top: 3em;
 }
-/* line 25, ../sass/components/navigation/_menu_small.scss */
+/* line 37, ../sass/components/navigation/_menu_small.scss */
 #menu_small ul#menu_small_collapsed li {
   width: 100%;
-  margin-bottom: 1.5em;
   display: block;
 }
-/* line 31, ../sass/components/navigation/_menu_small.scss */
+/* line 42, ../sass/components/navigation/_menu_small.scss */
 #menu_small ul#menu_small_collapsed li a:after {
   width: 6%;
 }
-/* line 36, ../sass/components/navigation/_menu_small.scss */
+/* line 47, ../sass/components/navigation/_menu_small.scss */
 #menu_small ul#menu_small_collapsed li.logo {
   width: auto;
 }
-/* line 42, ../sass/components/navigation/_menu_small.scss */
+/* line 53, ../sass/components/navigation/_menu_small.scss */
 #menu_small ul.active {
   margin-top: 0px !important;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 50, ../sass/components/navigation/_menu_small.scss */
+  /* line 61, ../sass/components/navigation/_menu_small.scss */
   #menu_small {
     display: block;
   }
-  /* line 54, ../sass/components/navigation/_menu_small.scss */
+  /* line 65, ../sass/components/navigation/_menu_small.scss */
   #menu_small #menu_small_collapsed .lang-item {
     width: auto;
     display: inline;
@@ -10892,10 +10908,9 @@ img.rsImg {
   height: 1.25rem;
   margin-right: 0.9375rem;
   float: right;
-  top: .6em;
   background: transparent;
 }
-/* line 12, ../sass/components/navigation/_hamburger.scss */
+/* line 11, ../sass/components/navigation/_hamburger.scss */
 #hamburger a {
   background: white;
   width: 100%;

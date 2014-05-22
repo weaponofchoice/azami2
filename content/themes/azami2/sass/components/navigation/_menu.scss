@@ -36,19 +36,31 @@
 			a{
 				display: block;
 				
+				&:after{
+					content: ' ';
+					width: 20%;
+					display: block;
+					margin: .5em auto 0;
+					border-bottom: 2px solid transparent;
+				}
+				
 				&:hover{
 					&:after{
-						content: ' ';
-						width: 20%;
-						display: block;
-						margin: .5em auto 0;
-						border-bottom: rem-calc(2) solid $white;
+						border-bottom: 2px solid $white;
 					}
 				}
 			}
 			
 			&.current-menu-item{
-				background: #222;
+				a{
+					&:after{
+						content: ' ';
+						width: 20%;
+						display: block;
+						margin: .5em auto 0;
+						border-bottom: 2px solid $white;
+					}
+				}
 			}
 		}
 	}

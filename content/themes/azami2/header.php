@@ -55,3 +55,18 @@
 			) );
 			?>
   		</div>
+		
+		<div id="menu_small" class="menu row">
+			<ul class="small-20 small-centered columns">
+				<li class="logo columns"><a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/typelogo.png"></a></li>
+				<li id="hamburger"><a></a></li>
+			</ul>
+			<ul id="menu_small_collapsed">
+				<?php wp_nav_menu( array( 
+					'container' => '',
+					'items_wrap' => '%3$s',
+					'theme_location' => 'main_menu'
+				) );
+				?>
+			</ul>
+		</div>
