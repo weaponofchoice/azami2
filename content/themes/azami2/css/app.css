@@ -9919,6 +9919,24 @@ body {
   z-index: 997;
 }
 
+/* line 44, ../sass/master/_general.scss */
+.page {
+  padding-top: 8.75rem !important;
+}
+
+/* line 56, ../sass/master/_general.scss */
+.text,
+.text_quote,
+.text_centered,
+.gallery,
+.gallery_content,
+.gallery_clients,
+.image,
+.employee,
+#intro {
+  margin-bottom: 8.75rem !important;
+}
+
 /* line 1, ../sass/master/_typography.scss */
 h2, h3, h4, p, a {
   font-family: "Apercu Light", sans-serif;
@@ -10102,7 +10120,7 @@ footer button:hover, footer button:active, footer button:focus {
 }
 /* line 1, ../sass/components/global/_image.scss */
 .image {
-  width: 30%;
+  width: 40%;
   margin: 0 auto;
 }
 
@@ -10110,35 +10128,28 @@ footer button:hover, footer button:active, footer button:focus {
 .text {
   height: auto;
   overflow: hidden;
-  padding-top: 12.5rem;
-  padding-bottom: 12.5rem;
 }
-/* line 7, ../sass/components/text/_text.scss */
+/* line 5, ../sass/components/text/_text.scss */
 .text .row {
   max-width: 43.75rem;
 }
-/* line 10, ../sass/components/text/_text.scss */
+/* line 8, ../sass/components/text/_text.scss */
 .text .row article {
   float: left !important;
 }
-/* line 13, ../sass/components/text/_text.scss */
-.text .row article p {
-  margin-top: 1em;
-  margin-bottom: 2em;
-}
-/* line 18, ../sass/components/text/_text.scss */
+/* line 11, ../sass/components/text/_text.scss */
 .text .row article a {
   color: black;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 27, ../sass/components/text/_text.scss */
+  /* line 20, ../sass/components/text/_text.scss */
   .text {
     text-align: left !important;
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
-  /* line 32, ../sass/components/text/_text.scss */
+  /* line 25, ../sass/components/text/_text.scss */
   .text .quote {
     display: none;
   }
@@ -10643,7 +10654,6 @@ img.rsImg {
 }
 /* line 6, ../sass/components/galleries/_gallery_content.scss */
 .gallery_content p.uppercase {
-  margin-top: 8.75rem;
   text-align: center;
 }
 /* line 11, ../sass/components/galleries/_gallery_content.scss */
@@ -10946,23 +10956,28 @@ img.rsImg {
   }
 }
 /* line 1, ../sass/components/other/_intro.scss */
+#intro {
+  margin-top: -8.75rem;
+}
+
+/* line 5, ../sass/components/other/_intro.scss */
 .gallery_intro {
   width: 50%;
   height: 100% !important;
   float: left;
   max-height: none !important;
 }
-/* line 7, ../sass/components/other/_intro.scss */
+/* line 11, ../sass/components/other/_intro.scss */
 .gallery_intro .royalSlider {
   height: 100% !important;
 }
-/* line 10, ../sass/components/other/_intro.scss */
+/* line 14, ../sass/components/other/_intro.scss */
 .gallery_intro .royalSlider li {
   width: 100%;
   height: 100%;
 }
 
-/* line 17, ../sass/components/other/_intro.scss */
+/* line 21, ../sass/components/other/_intro.scss */
 #intro {
   width: 100%;
   height: 56.25rem;
@@ -10973,21 +10988,21 @@ img.rsImg {
   background-repeat: no-repeat;
   z-index: 1000;
 }
-/* line 29, ../sass/components/other/_intro.scss */
+/* line 33, ../sass/components/other/_intro.scss */
 #intro #intro_image {
   width: 100%;
   height: 100%;
   max-width: none;
   z-index: 8;
 }
-/* line 36, ../sass/components/other/_intro.scss */
+/* line 40, ../sass/components/other/_intro.scss */
 #intro #logo_type {
   position: absolute;
   z-index: 999;
   top: 75%;
   left: 50%;
 }
-/* line 42, ../sass/components/other/_intro.scss */
+/* line 46, ../sass/components/other/_intro.scss */
 #intro #logo_type img {
   margin-left: -50%;
   margin-top: -25%;
@@ -10995,31 +11010,31 @@ img.rsImg {
 }
 
 @media only screen and (min-width: 641px) and (max-width: 768px) {
-  /* line 53, ../sass/components/other/_intro.scss */
+  /* line 57, ../sass/components/other/_intro.scss */
   #intro {
     max-height: 37.5rem !important;
   }
 }
 @media only screen and (max-width: 640px) {
-  /* line 63, ../sass/components/other/_intro.scss */
+  /* line 67, ../sass/components/other/_intro.scss */
   #intro {
     max-height: 18.75rem;
   }
 
-  /* line 67, ../sass/components/other/_intro.scss */
+  /* line 71, ../sass/components/other/_intro.scss */
   #logo_type {
     max-width: 70%;
     top: 80% !important;
   }
 }
 @media only screen and (min-width: 90.063em) {
-  /* line 76, ../sass/components/other/_intro.scss */
+  /* line 80, ../sass/components/other/_intro.scss */
   #intro #logo_type img {
     margin-left: -40%;
   }
 }
 @media only screen and (min-width: 120.063em) {
-  /* line 86, ../sass/components/other/_intro.scss */
+  /* line 90, ../sass/components/other/_intro.scss */
   #intro #logo_type img {
     margin-left: -30%;
   }
@@ -11028,7 +11043,6 @@ img.rsImg {
 .employee {
   height: auto;
   overflow: hidden;
-  padding-bottom: 8.75rem;
 }
 /* line 7, ../sass/components/other/_employee.scss */
 .employee:nth-child(even) .picture {
@@ -11165,22 +11179,23 @@ img.rsImg {
 #map {
   width: 100%;
   height: 25rem;
-  margin-bottom: -7.5rem;
+  margin-top: -7.5rem;
+  margin-bottom: 1.25rem;
 }
 
-/* line 6, ../sass/components/other/_map.scss */
+/* line 7, ../sass/components/other/_map.scss */
 .gm-style img {
   max-width: none;
 }
 
-/* line 7, ../sass/components/other/_map.scss */
+/* line 8, ../sass/components/other/_map.scss */
 .gm-style label {
   width: auto;
   display: inline;
 }
 
 @media only screen and (max-width: 640px) {
-  /* line 11, ../sass/components/other/_map.scss */
+  /* line 12, ../sass/components/other/_map.scss */
   #map {
     margin-bottom: -1.875rem;
   }

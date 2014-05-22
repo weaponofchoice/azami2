@@ -1,19 +1,12 @@
 .text{
 	height: auto;
 	overflow: hidden;
-	padding-top: rem-calc(200);
-	padding-bottom: rem-calc(200);
 	
 	.row{
 		max-width: rem-calc(700);
 		
 		article{
 			float: left !important;
-		
-			p{
-				margin-top: 1em;
-				margin-bottom: 2em;
-			}
 		
 			a{
 				color: $black;

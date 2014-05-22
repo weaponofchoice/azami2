@@ -40,3 +40,19 @@ body{
 	margin: 0px auto;
 	z-index: 997; //Is set because of lightbox
 }
+
+.page{
+	padding-top: rem-calc(140) !important;
+}
+
+.text,
+.text_quote,
+.text_centered,
+.gallery,
+.gallery_content,
+.gallery_clients,
+.image,
+.employee,
+#intro{
+	margin-bottom: rem-calc(140) !important;
+}
