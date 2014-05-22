@@ -9915,16 +9915,12 @@ body {
 /* line 38, ../sass/master/_general.scss */
 #content {
   max-width: 1920px;
-  margin: 0px auto;
+  margin: 0 auto;
+  padding-top: 13.75rem !important;
   z-index: 997;
 }
 
-/* line 44, ../sass/master/_general.scss */
-.page {
-  padding-top: 8.75rem !important;
-}
-
-/* line 56, ../sass/master/_general.scss */
+/* line 53, ../sass/master/_general.scss */
 .text,
 .text_quote,
 .text_centered,
@@ -10772,68 +10768,50 @@ img.rsImg {
 }
 /* line 1, ../sass/components/navigation/_menu.scss */
 .menu {
-  background: black;
+  width: 100%;
+  height: 5rem;
+  display: inline;
+  padding-left: 8.33335%;
+  padding-right: 8.33335%;
   z-index: 999;
-  visibility: visible;
-  -webkit-transition: .5s;
-  /*
-  &.sticky{
-  	position: fixed;
-  	top: 0;
-  	z-index: 10;
-  	bottom: inherit;
-  }*/
+  background: black;
+  position: absolute;
+  top: 0;
 }
-/* line 15, ../sass/components/navigation/_menu.scss */
-.menu ul {
-  padding: 1em 0 0;
+/* line 17, ../sass/components/navigation/_menu.scss */
+.menu li {
+  height: 100%;
+  padding: 2em 0;
+  display: inline-block;
   text-align: center;
 }
-/* line 22, ../sass/components/navigation/_menu.scss */
-.menu ul li {
-  display: inline;
-  line-height: 2;
-  white-space: nowrap;
+/* line 24, ../sass/components/navigation/_menu.scss */
+.menu li.logo {
+  height: 100%;
+  padding: 0;
+  margin-top: 1.25rem;
 }
-/* line 28, ../sass/components/navigation/_menu.scss */
-.menu ul li.logo {
-  float: left;
-  line-height: 1.5;
-  width: auto;
+/* line 30, ../sass/components/navigation/_menu.scss */
+.menu li.logo a img {
+  max-height: 100%;
 }
-/* line 33, ../sass/components/navigation/_menu.scss */
-.menu ul li.logo img {
-  max-height: 1.75rem;
-}
-/* line 40, ../sass/components/navigation/_menu.scss */
-.menu ul li.menu-item a {
+/* line 38, ../sass/components/navigation/_menu.scss */
+.menu li.menu-item a {
   display: block;
 }
-/* line 44, ../sass/components/navigation/_menu.scss */
-.menu ul li.menu-item a:hover:after {
+/* line 42, ../sass/components/navigation/_menu.scss */
+.menu li.menu-item a:hover:after {
   content: ' ';
   width: 20%;
-  height: 25px;
   display: block;
-  margin: -25px auto 0;
-  border-bottom: 2px solid white;
+  margin: .5em auto 0;
+  border-bottom: 0.125rem solid white;
 }
-/* line 57, ../sass/components/navigation/_menu.scss */
-.menu ul li.menu-item.current-menu-item a:after {
-  content: ' ';
-  width: 20%;
-  height: 25px;
-  display: block;
-  margin: -25px auto 0;
-  border-bottom: 2px solid white;
+/* line 52, ../sass/components/navigation/_menu.scss */
+.menu li.menu-item.current-menu-item {
+  background: #222;
 }
 
-@media only screen and (max-width: 768px) {
-  /* line 74, ../sass/components/navigation/_menu.scss */
-  #menu {
-    display: none;
-  }
-}
 /* line 1, ../sass/components/navigation/_menu_small.scss */
 #menu_small {
   display: none;
@@ -10956,7 +10934,7 @@ img.rsImg {
 }
 /* line 1, ../sass/components/other/_intro.scss */
 #intro {
-  margin-top: -8.75rem;
+  margin-top: -13.75rem;
 }
 
 /* line 5, ../sass/components/other/_intro.scss */

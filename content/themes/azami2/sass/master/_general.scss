@@ -37,12 +37,9 @@ body{
 
 #content{
 	max-width: 1920px;
-	margin: 0px auto;
+	margin: 0 auto;
+	padding-top: rem-calc(220) !important;
 	z-index: 997; //Is set because of lightbox
-}
-
-.page{
-	padding-top: rem-calc(140) !important;
 }
 
 .text,

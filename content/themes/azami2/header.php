@@ -35,3 +35,13 @@
 
   <body <?php body_class(); ?> id="<?php echo the_title(); ?>">
 	  <div id="content">
+  		<div id="menu" class="menu row">
+			<li class="logo medium-5 large-4 columns"><a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/typelogo.png"></a></li>
+			
+			<?php wp_nav_menu( array( 
+				'container' => '',
+				'items_wrap' => '%3$s',
+				'theme_location' => 'main_menu'
+			) );
+			?>
+  		</div>
