@@ -10,6 +10,8 @@ get_header();
 if( have_rows('page_elements') ): 
 	while ( have_rows('page_elements') ) : the_row(); 
 		
+		require('includes/scaled-images.php');
+		
 		// Global elements
 		if( get_row_layout() == 'image'): 
 			include('elements/global/image.php');
@@ -23,7 +25,7 @@ if( have_rows('page_elements') ):
 			 include('elements/text/text_quote.php');
 			 
 		 // Galleries
-		elseif( get_row_layout() == 'gallery'): 	
+		elseif( get_row_layout() == 'gallery'):
 			 include('elements/galleries/gallery.php'); 
 		elseif( get_row_layout() == 'gallery_clients'): 
 			 include('elements/galleries/gallery_clients.php'); 
