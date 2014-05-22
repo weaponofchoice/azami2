@@ -11217,6 +11217,12 @@ img.rsImg {
     margin-bottom: -1.875rem;
   }
 }
+/* line 3, ../sass/pages/_home.scss */
+#home-NL .menu,
+#home-EN .menu {
+  top: inherit;
+}
+
 /* line 3, ../sass/pages/_team.scss */
 #team-NL .gallery,
 #team-EN .gallery {
