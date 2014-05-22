@@ -7,10 +7,21 @@
 	if( $images ): ?>
 	<div class="gallery_intro gallery_left">
 		<div class="royalSlider rsDefault">
-			<?php foreach( $images as $image ): ?>
+			<?php foreach( $images as $image ): 
+				
+				// scaled images module
+				$gLintro_url = $image['sizes']['large']; 
+				if (is_tablet()){
+					$gLintro_url = $image['sizes']['medium'];
+				}
+			
+				if (is_mobile()){
+					$gLintro_url = $image['sizes']['small'];
+				}
+				?>
 				<li>
 					<div class="rsContent">
-						<img class="rsImg" src="<?php echo $image['url']; ?>" />
+						<img class="rsImg" src="<?php echo $gLintro_url; ?>" />
 					</div>
 				</li>
 			<?php endforeach; ?>
@@ -25,10 +36,21 @@
 	if( $images ): ?>
 	<div class="gallery_intro gallery_right">
 		<div class="royalSlider rsDefault">
-			<?php foreach( $images as $image ): ?>
+			<?php foreach( $images as $image ): 
+				
+				// scaled images module
+				$gRintro_url = $image['sizes']['large']; 
+				if (is_tablet()){
+					$gRintro_url = $image['sizes']['medium'];
+				}
+			
+				if (is_mobile()){
+					$gRintro_url = $image['sizes']['small'];
+				}
+				?>
 				<li>
 					<div class="rsContent">
-						<img class="rsImg" src="<?php echo $image['url']; ?>" />
+						<img class="rsImg" src="<?php echo $gRintro_url; ?>" />
 					</div>
 				</li>
 			<?php endforeach; ?>
