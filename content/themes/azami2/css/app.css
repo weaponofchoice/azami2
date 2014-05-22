@@ -10770,34 +10770,35 @@ img.rsImg {
   width: 100% !important;
   height: 5rem;
   position: absolute;
+  top: 0;
   display: inline;
   padding-left: 8.33335%;
   padding-right: 8.33335%;
   z-index: 999;
   background: black;
 }
-/* line 14, ../sass/components/navigation/_menu.scss */
+/* line 15, ../sass/components/navigation/_menu.scss */
 .menu li {
   height: 100%;
   padding: 2em 0;
   display: inline-block;
   text-align: center;
 }
-/* line 21, ../sass/components/navigation/_menu.scss */
+/* line 22, ../sass/components/navigation/_menu.scss */
 .menu li.logo {
   height: 100%;
   padding: 0;
   margin-top: 1.25rem;
 }
-/* line 27, ../sass/components/navigation/_menu.scss */
+/* line 28, ../sass/components/navigation/_menu.scss */
 .menu li.logo a img {
   max-height: 100%;
 }
-/* line 35, ../sass/components/navigation/_menu.scss */
+/* line 36, ../sass/components/navigation/_menu.scss */
 .menu li.menu-item a {
   display: block;
 }
-/* line 39, ../sass/components/navigation/_menu.scss */
+/* line 40, ../sass/components/navigation/_menu.scss */
 .menu li.menu-item a:hover:after {
   content: ' ';
   width: 20%;
@@ -10805,7 +10806,7 @@ img.rsImg {
   margin: .5em auto 0;
   border-bottom: 0.125rem solid white;
 }
-/* line 49, ../sass/components/navigation/_menu.scss */
+/* line 50, ../sass/components/navigation/_menu.scss */
 .menu li.menu-item.current-menu-item {
   background: #222;
 }
@@ -11176,6 +11177,11 @@ img.rsImg {
   }
 }
 /* line 3, ../sass/pages/_home.scss */
+#home-NL .menu,
+#home-EN .menu {
+  top: inherit;
+}
+/* line 7, ../sass/pages/_home.scss */
 #home-NL footer,
 #home-EN footer {
   margin-top: -8.75rem;
