@@ -2,14 +2,14 @@
 var slider;
 
 if ($('.gallery_left').length > 0) {
-  slider = $('.royalSlider');
+  slider = $('.gallery_left .royalSlider');
   slider.royalSlider({
     imageScaleMode: 'fill',
     slidesSpacing: 0,
     sliderDrag: false,
     sliderTouch: false,
     loop: true,
-    transitionSpeed: 200,
+    transitionSpeed: 250,
     transitionType: 'fade',
     controlNavigation: 'none',
     arrowsNav: false,
@@ -22,14 +22,14 @@ if ($('.gallery_left').length > 0) {
 }
 
 if ($('.gallery_right').length > 0) {
-  slider = $('.royalSlider');
+  slider = $('.gallery_right .royalSlider');
   slider.royalSlider({
     imageScaleMode: 'fill',
     slidesSpacing: 0,
     sliderDrag: false,
     sliderTouch: false,
     loop: true,
-    transitionSpeed: 500,
+    transitionSpeed: 250,
     transitionType: 'fade',
     controlNavigation: 'none',
     arrowsNav: false,

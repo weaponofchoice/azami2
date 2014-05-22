@@ -1,6 +1,6 @@
 # Left gallery
 if $('.gallery_left').length > 0
-	slider = $('.royalSlider')
+	slider = $('.gallery_left .royalSlider')
 	
 	slider.royalSlider
 		# options go here
@@ -9,7 +9,7 @@ if $('.gallery_left').length > 0
 		sliderDrag: false,
 		sliderTouch: false,
 		loop: true,
-		transitionSpeed: 200,
+		transitionSpeed: 250,
 		transitionType: 'fade',
 		controlNavigation: 'none',
 		arrowsNav: false,
@@ -20,7 +20,7 @@ if $('.gallery_left').length > 0
 
 # Right gallery
 if $('.gallery_right').length > 0
-	slider = $('.royalSlider')
+	slider = $('.gallery_right .royalSlider')
 	
 	slider.royalSlider
 		# options go here
@@ -29,7 +29,7 @@ if $('.gallery_right').length > 0
 		sliderDrag: false,
 		sliderTouch: false,
 		loop: true,
-		transitionSpeed: 500,
+		transitionSpeed: 250,
 		transitionType: 'fade',
 		controlNavigation: 'none',
 		arrowsNav: false,
