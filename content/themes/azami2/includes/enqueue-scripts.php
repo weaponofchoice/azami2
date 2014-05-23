@@ -9,6 +9,7 @@ function enqueue_theme_scripts() {
 		// Plugins
 		// For example:
 		wp_enqueue_script( 'height', get_template_directory_uri() . '/js/height.js', 'jquery', false, true );
+		wp_enqueue_script( 'pageload', get_template_directory_uri() . '/js/pageload.js', 'jquery', false, true );
 		
 		wp_enqueue_script( 'royalslider', get_template_directory_uri() . '/js/vendor/royalslider.js', 'jquery', false, true );
 		wp_enqueue_script( 'imagelightbox', get_template_directory_uri() . '/js/vendor/imagelightbox.js', 'jquery', false, true );

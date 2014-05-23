@@ -9910,16 +9910,17 @@ ul {
 body {
   width: 100%;
   overflow-x: hidden;
+  opacity: 0;
 }
 
-/* line 38, ../sass/master/_general.scss */
+/* line 39, ../sass/master/_general.scss */
 #content {
   margin: 0 auto;
   padding-top: 13.75rem !important;
   z-index: 997;
 }
 
-/* line 52, ../sass/master/_general.scss */
+/* line 53, ../sass/master/_general.scss */
 .text,
 .text_quote,
 .text_centered,
@@ -9931,13 +9932,13 @@ body {
   margin-bottom: 8.75rem !important;
 }
 
-/* line 56, ../sass/master/_general.scss */
+/* line 57, ../sass/master/_general.scss */
 .first {
   margin-top: 13.75rem !important;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 69, ../sass/master/_general.scss */
+  /* line 70, ../sass/master/_general.scss */
   .text,
   .text_quote,
   .text_centered,
@@ -9949,7 +9950,7 @@ body {
     margin-bottom: 5rem !important;
   }
 
-  /* line 73, ../sass/master/_general.scss */
+  /* line 74, ../sass/master/_general.scss */
   .first {
     margin-top: 7.5rem !important;
   }
