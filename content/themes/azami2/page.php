@@ -7,12 +7,12 @@
  */
 get_header();
 
-echo 'testing 1'
+echo "testing 1";
 
 if( have_rows('page_elements') ): 
 	while ( have_rows('page_elements') ) : the_row();
 	
-		echo 'testing 2'
+		echo "testing 2";
 		
 		require('includes/scaled-images.php');
 		
