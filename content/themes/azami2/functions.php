@@ -4,6 +4,7 @@
  * @subpackage HTML5_Boilerplate
  */
 
+
 /*
  * General theme configuration settings
  */
@@ -14,13 +15,6 @@ add_theme_support( 'post-thumbnails' );
 // Add support for automatic RSS feed links
 add_theme_support( 'automatic-feed-links' );
 
-/*
- * Includes
- */
-require_once('includes/enqueue-scripts.php');
-require_once('includes/image-sizes.php');
-require_once('includes/scaled-images.php');
-
 /**
  * Remove unused items from Admin
  * Add as many items as you like to hide to the $restriced array
@@ -28,7 +22,7 @@ require_once('includes/scaled-images.php');
 
 function remove_menus () {
 global $menu;
-	$restricted = array( __('Links'), __('Comments'), __('Posts') );
+	$restricted = array( __('Links') );
 	end ($menu);
 	while (prev($menu)){
 		$value = explode(' ',$menu[key($menu)][0]);
@@ -36,6 +30,17 @@ global $menu;
 	}
 }
 add_action('admin_menu', 'remove_menus');
+
+/**
+ * Purge Custom Post-types from cache after update
+ */
+add_action( 'edit_post', 'w3_flush_page_custom', 10, 1 );
+
+function w3_flush_page_custom( $post_id ) {
+	if ( function_exists('w3tc_pgcache_flush' ) ):
+		w3tc_pgcache_flush();
+	endif;
+}
 
 /** 
  * Cleaner image captions
@@ -101,6 +106,7 @@ add_filter('the_content', 'filter_ptags_on_images');
 if( function_exists('register_nav_menus') ):
   register_nav_menus( array(
 		'main_menu' => 'The main menu',
+		'sub_menu' => 'A submenu'
 		));
 endif;
 
