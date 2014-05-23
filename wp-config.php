@@ -1,8 +1,4 @@
 <?php
-error_reporting(E_ALL); ini_set('display_errors', 1);
-define( 'WP_DEBUG', true);
-
-
 // ===================================================
 // Load database info and local development parameters
 // ===================================================
