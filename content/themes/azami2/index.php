@@ -1,7 +1,7 @@
 <?php
 /**
  * @package WordPress
- * @subpackage Azami2
+ * @subpackage azami2
  */
 get_header(); ?>
 
