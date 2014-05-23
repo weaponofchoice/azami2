@@ -11068,32 +11068,38 @@ img.rsImg {
   pointer-events: none;
 }
 
-@media only screen and (min-width: 641px) and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   /* line 57, ../sass/components/other/_intro.scss */
+  #logo_type {
+    visibility: hidden;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 768px) {
+  /* line 63, ../sass/components/other/_intro.scss */
   #intro {
     max-height: 37.5rem !important;
   }
 }
 @media only screen and (max-width: 640px) {
-  /* line 67, ../sass/components/other/_intro.scss */
+  /* line 73, ../sass/components/other/_intro.scss */
   #intro {
     max-height: 18.75rem;
   }
 
-  /* line 71, ../sass/components/other/_intro.scss */
+  /* line 77, ../sass/components/other/_intro.scss */
   #logo_type {
     max-width: 70%;
     top: 80% !important;
   }
 }
 @media only screen and (min-width: 90.063em) {
-  /* line 80, ../sass/components/other/_intro.scss */
+  /* line 86, ../sass/components/other/_intro.scss */
   #intro #logo_type img {
     margin-left: -40%;
   }
 }
 @media only screen and (min-width: 120.063em) {
-  /* line 90, ../sass/components/other/_intro.scss */
+  /* line 96, ../sass/components/other/_intro.scss */
   #intro #logo_type img {
     margin-left: -30%;
   }

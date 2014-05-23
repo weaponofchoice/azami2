@@ -53,6 +53,12 @@
 }
 
 //Media queries
+@media #{$medium-down}{
+	#logo_type{
+		visibility: hidden;
+	}
+}
+
 @media #{$medium-only}{
 	#intro{
 		max-height: rem-calc(600) !important;
