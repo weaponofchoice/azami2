@@ -1,7 +1,10 @@
 <?php
 /**
- * @package WordPress
- * @subpackage Azami2
+ * The Header for azami2
+ *
+ * Displays all of the <head> section and everything up till <div id="main">
+ *
+ * @package azami-theme
  */
 ?>
 <!doctype html>
