@@ -123,5 +123,4 @@ function exclude_protected_action($query) {
 
 // Action to queue the filter at the right time
 add_action('pre_get_posts', 'exclude_protected_action');
-
 ?>
