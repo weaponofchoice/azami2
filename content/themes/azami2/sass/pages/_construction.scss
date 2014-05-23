@@ -1,0 +1,39 @@
+#home-EN,
+#collectie-EN,
+#info-EN,
+#team-EN{
+	#footer{
+		display: none;
+	}
+}
+
+#Homepage-EN{
+	#intro{
+		display: none;
+	}
+}
+
+#construction{
+	width: 100%;
+	max-height: 100%;
+	text-align: center !important;
+	overflow: hidden;
+	
+	.block_text{
+		text-align: center !important;
+		padding-top: rem-calc(-220) !important;
+		
+		img{
+			margin-bottom: 3em;
+		}
+		
+		h2{
+			margin-bottom: 2em;
+		}
+		
+		a{
+			text-decoration: underline;
+			color: $black;
+		}
+	}
+}

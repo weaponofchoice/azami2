@@ -1,0 +1,10 @@
+.image{
+	width: 40%;
+	margin: 0 auto;
+}
+
+@media #{$medium-down}{
+	.image{
+		width: 60%;
+	}
+}

@@ -1,0 +1,29 @@
+.text{
+	height: auto;
+	overflow: hidden;
+	
+	.row{
+		max-width: rem-calc(700);
+		
+		article{
+			float: left !important;
+		
+			a{
+				color: $black;
+			}
+		}
+	}
+}
+
+//Media queries
+@media #{$medium-down}{
+	.text{
+		text-align: left !important;
+		padding-top: rem-calc(80);
+		padding-bottom: rem-calc(80);
+		
+		.quote{
+			display: none;
+		}
+	}
+}

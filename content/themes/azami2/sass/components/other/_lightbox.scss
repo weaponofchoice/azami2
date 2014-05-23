@@ -1,0 +1,53 @@
+#imagelightbox{
+	cursor: pointer;
+	position: fixed;
+	z-index: 10000;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 10px;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 10px;
+	cursor: -webkit-zoom-out;
+	cursor: -moz-zoom-out;
+}
+
+#imagelightbox-overlay{
+	background-color: rgba(255,255,255,.99);
+	position: fixed;
+	z-index: 9998;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	-webkit-animation: fade-in 2s linear;
+	cursor: -webkit-zoom-out;
+	cursor: -moz-zoom-out;
+}
+
+#imagelightbox-close{
+	width: rem-calc(50);
+	height: rem-calc(50);
+	position: fixed;
+	top: 3em;
+	right: 3em;
+	z-index: 10000;
+	
+	background: transparent;
+	
+	&:after,
+	&:before{
+		content: ' ';
+		z-index: 10000;
+		
+		width: rem-calc(3);
+		height: rem-calc(50);
+		background: $gray-dark;
+		margin-top: 0;
+		margin-left: 0;
+		position: absolute;
+		-webkit-transform: rotate(45deg);
+		top: rem-calc(11);
+		left: rem-calc(23);
+	}
+	
+	&:before{
+		-webkit-transform: rotate(-45deg);
+	}
+}

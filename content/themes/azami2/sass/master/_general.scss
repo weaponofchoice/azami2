@@ -1,0 +1,76 @@
+.row{
+	max-width: none;
+}
+
+// Resets
+*{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	cursor: default;
+	line-height: 1;
+	
+	list-style: none;
+	text-decoration: none;
+	word-wrap:break-word;
+	
+	outline: none;
+	
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-backface-visibility: hidden;
+	
+	&::selection{
+		background: $gray-dark;
+		color: $white;
+	}
+}
+
+ul{
+	margin-left: 0;
+}
+
+body{
+	width: 100%;
+	overflow-x: hidden;
+}
+
+#content{
+	//max-width: 1920px;
+	margin: 0 auto;
+	padding-top: rem-calc(220) !important;
+	z-index: 997; //Is set because of lightbox
+}
+
+.text,
+.text_quote,
+.text_centered,
+.gallery,
+.gallery_content,
+.gallery_clients,
+.image,
+.employee{
+	margin-bottom: rem-calc(140) !important;
+}
+
+.first{
+	margin-top: rem-calc(220) !important;
+}
+
+//Media queries
+@media #{$medium-down}{
+	.text,
+	.text_quote,
+	.text_centered,
+	.gallery,
+	.gallery_content,
+	.gallery_clients,
+	.image,
+	.employee{
+		margin-bottom: rem-calc(80) !important;
+	}
+	
+	.first{
+		margin-top:rem-calc(120) !important;
+	}
+}

@@ -1,0 +1,64 @@
+// This is: "* = required field"
+#mc-indicates-required{
+	display: none;
+}
+
+// This says something like "made by Mailchimp"
+#mc_display_rewards{
+	display: none;
+}
+
+.mc_form_inside{
+	margin-top: 1.5em !important;
+}
+
+.mc_merge_var{
+	margin-bottom: 2em !important;
+	
+	input[type="text"]{
+		text-indent: 1em;
+	}
+	
+	&:nth-child(2),
+	&:nth-child(3){
+		width: 47%;
+		float: left;
+		z-index: 1000;
+	}
+	
+	&:nth-child(3){
+		float: right;
+	}
+}
+
+// Field label
+.mc_var_label{
+	display: none !important;
+}
+
+// Submit button
+.mc_signup_submit{
+	text-align: left !important;
+	
+	#mc_signup_submit{
+		width: auto !important;
+		
+		background: $black;
+		border: rem-calc(2) solid $white;
+		border-radius: 0;
+		padding: .5em 3em;
+		margin-top: 1em;
+	
+		text-transform: uppercase;
+		font-family: "Apercu Bold", sans-serif;
+		font-size: rem-calc(16);
+		letter-spacing: rem-calc(2);
+			
+		&:hover,
+		&:active,
+		&:focus{
+			background: $white;
+			color: $black;
+		}
+	}
+}

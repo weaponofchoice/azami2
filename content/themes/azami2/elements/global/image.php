@@ -1,0 +1,1 @@
+<div class="image"><img src="<?php echo $image_url; ?>"></div>

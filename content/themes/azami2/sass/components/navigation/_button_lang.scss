@@ -1,0 +1,28 @@
+.menu{
+	li{
+		//Language buttons
+		&.button_lang,
+		&.lang-item{
+			height: auto;
+			margin: 1.2em .5em;
+			padding: 0 .7em;
+			border: 2px solid white;
+			line-height: 2.5;
+			float: right;
+	
+			&:hover{
+				background: $white;
+				color: $black;
+				cursor: pointer;
+		
+				a{
+					color: $black;
+				}
+			}
+	
+			a{
+				font-size: rem-calc(14);
+			}
+		}
+	}
+}

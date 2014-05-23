@@ -1,0 +1,25 @@
+.text_quote{
+	max-width: rem-calc(1920);
+	margin: 0 auto;
+	
+	.row{	
+		max-width: none;
+		
+		.quote{
+			height: 100%;
+		
+			//To vertically align the quote
+			h3{
+				position: absolute;
+				top: 40%;
+				margin-top: -25%;
+			}
+		}
+		
+		article{
+			p{
+				text-indent: rem-calc(30);
+			}
+		}
+	}
+}

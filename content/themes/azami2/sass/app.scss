@@ -1,21 +1,48 @@
 // Frameworks, compass etc. Make sure to configure 'settings' and 'foundation'!
 @import
-  "_normalize",
-  "_settings",
-  "_foundation",
-  "compass/css3";
+	"_normalize",
+	"_settings",
+	"_foundation",
+	"compass/css3";
 
 // General stylesheets, colors, fonts, typography rules, mixins etc.
 @import
-  "components/mixins",
-  "components/colors",
-  "components/fonts",
-  "components/typography";
+	"master/_mixins",
+	"master/_colors",
+	"master/_general",
+	"master/_typography";
 
 // Elements
-//@import
-//  "components/_header",
+@import
+	"components/global/_header",
+	"components/global/_footer",
+	"components/global/image",
+	"components/global/image_promo",
 
+	"components/text/text",
+	"components/text/text_centered",
+	"components/text/text_quote",
+
+	"components/galleries/royalslider/_royalslider",
+	"components/galleries/royalslider/_rs-default",
+	"components/galleries/_gallery",
+	"components/galleries/_gallery_content",
+	"components/galleries/_gallery_clients",
+
+	"components/navigation/_menu",
+	"components/navigation/_menu_small",
+	"components/navigation/_button_lang",
+	"components/navigation/_hamburger",
+	"components/navigation/_arrow_scroll",
+	
+	"components/other/intro",
+	"components/other/employee",
+	"components/other/lightbox",
+	"components/other/mailchimp",
+	"components/other/map";
+	
 // Pages
-//@import
-//  "components/homepage";
+@import
+	"pages/_home",
+	"pages/_team",
+	"pages/construction";

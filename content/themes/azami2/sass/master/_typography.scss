@@ -1,0 +1,74 @@
+%base{
+	font-family: "Apercu Light", sans-serif;
+	font-size: 1em;
+	font-weight: 200;
+	color: $black;
+	
+	&.uppercase{
+		text-transform: uppercase;
+	}
+	
+	&.underlined{
+		text-decoration: underline;
+	}
+	
+	&.bold,
+	strong{
+		font-family: "Apercu Bold", sans-serif;
+	}
+}
+
+h2{
+	@extend %base;
+	font-family: "Apercu Bold", sans-serif;
+	font-size: rem-calc(30);
+}
+
+//Quote
+h3{
+	@extend %base;
+	font-family: "Apercu Bold", sans-serif;
+	font-size: rem-calc(40);
+	text-align: center;
+}
+
+h4{
+	@extend %base;
+	font-family: "Apercu Bold", sans-serif;
+	font-size: rem-calc(16);
+}
+
+p{
+	@extend %base;
+	font-size: rem-calc(20);
+}
+
+a{
+	@extend %base;
+	font-family: "Apercu Regular", sans-serif;
+	font-size: rem-calc(20);
+	color: $white;
+	cursor: pointer;
+	
+	&:hover{
+		color: $white;
+	}
+	
+	img{
+		cursor: pointer;
+	}
+}
+
+//Media queries
+//Font sizes at 75% from this point
+@media #{$large-down}{
+	html{
+		font-size: 85%;
+	}
+}
+
+@media #{$small-only}{
+	html{
+		font-size: 75%;
+	}
+}
