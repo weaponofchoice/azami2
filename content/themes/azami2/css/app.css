@@ -9931,6 +9931,29 @@ body {
   margin-bottom: 8.75rem !important;
 }
 
+/* line 56, ../sass/master/_general.scss */
+.first {
+  margin-top: 13.75rem !important;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 69, ../sass/master/_general.scss */
+  .text,
+  .text_quote,
+  .text_centered,
+  .gallery,
+  .gallery_content,
+  .gallery_clients,
+  .image,
+  .employee {
+    margin-bottom: 5rem !important;
+  }
+
+  /* line 73, ../sass/master/_general.scss */
+  .first {
+    margin-top: 7.5rem !important;
+  }
+}
 /* line 1, ../sass/master/_typography.scss */
 h2, h3, h4, p, a {
   font-family: "Apercu Light", sans-serif;
@@ -10117,6 +10140,12 @@ footer button:hover, footer button:active, footer button:focus {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 768px) {
+  /* line 7, ../sass/components/global/_image.scss */
+  .image {
+    width: 60%;
+  }
+}
 /* line 1, ../sass/components/global/_image_promo.scss */
 .image_promo {
   width: 100%;
@@ -10624,6 +10653,7 @@ img.rsImg {
 .gallery {
   width: 100%;
   height: 100%;
+  max-height: 50rem;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -10656,13 +10686,19 @@ img.rsImg {
     margin-top: -.8em;
   }
 }
-@media only screen and (min-width: 120.063em) {
+@media only screen and (max-width: 768px) {
   /* line 42, ../sass/components/galleries/_gallery.scss */
+  .gallery {
+    max-height: 31.25rem;
+  }
+}
+@media only screen and (min-width: 120.063em) {
+  /* line 48, ../sass/components/galleries/_gallery.scss */
   .gallery {
     padding-left: 12.5%;
     padding-right: 12.5%;
   }
-  /* line 46, ../sass/components/galleries/_gallery.scss */
+  /* line 52, ../sass/components/galleries/_gallery.scss */
   .gallery.gallery_intro {
     width: 49.99999%;
     padding-left: 0;

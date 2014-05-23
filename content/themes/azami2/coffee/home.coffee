@@ -3,4 +3,4 @@ if ('#home-NL').length or ('#home-EN').length > 0
 	first = text.first()
 	
 	# 13.5rem = 220px
-	first.css "margin-top", "13.5rem"
+	first.addClass "first"

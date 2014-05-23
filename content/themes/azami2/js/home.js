@@ -4,5 +4,5 @@ var first, text;
 if ('#home-NL'.length || '#home-EN'.length > 0) {
   text = $('.text_quote');
   first = text.first();
-  first.css("margin-top", "13.5rem");
+  first.addClass("first");
 }
