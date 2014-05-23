@@ -9,7 +9,15 @@
 			border: 2px solid white;
 			line-height: 2.5;
 			float: right;
-	
+			
+			&.current-lang{
+				background: $white;
+				
+				a{
+					color: $black;
+				}
+			}
+			
 			&:hover{
 				background: $white;
 				color: $black;
