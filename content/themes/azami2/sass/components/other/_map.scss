@@ -13,3 +13,9 @@
 		margin-bottom: rem-calc(-30);
 	}
 }
+
+@media screen and (min-width: 1920px){
+	#map{
+		height: rem-calc(800);
+	}
+}

@@ -1,5 +1,8 @@
 .text_quote{
-	.row{
+	max-width: rem-calc(1920);
+	margin: 0 auto;
+	
+	.row{	
 		max-width: none;
 		
 		.quote{
