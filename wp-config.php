@@ -6,8 +6,8 @@ if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
 	define( 'WP_LOCAL_DEV', true );
 	include( dirname( __FILE__ ) . '/local-config.php' );
 } else { // Server settings
-	define( 'DB_NAME', 'azami2' );
-	define( 'DB_USER', 'azami2_dev' );
+	define( 'DB_NAME', 'azami2_dev' );
+	define( 'DB_USER', 'azami2' );
 	define( 'DB_PASSWORD', 'jU6NpuFD' );
 	define( 'DB_HOST', 'localhost' ); // Probably 'localhost'
 }
