@@ -1,6 +1,6 @@
 var image = new google.maps.MarkerImage(
 		//'../content/themes/azami/img/marker.png',
-    'http://azami.woc-dev.nl/wordpress/../media/uploads/2014/04/marker.png',
+    'http://azami.woc-dev.nl/content/themes/azami2/img/marker.png',
     new google.maps.Size(66,66),    // size of the image
     new google.maps.Point(0,0), // origin, in this case top-left corner
     new google.maps.Point(33, 33)    // anchor, i.e. the point half-way along the bottom of the image
