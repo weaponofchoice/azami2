@@ -4,6 +4,7 @@
  * @subpackage HTML5_Boilerplate
  */
 
+
 /*
  * General theme configuration settings
  */
@@ -14,13 +15,6 @@ add_theme_support( 'post-thumbnails' );
 // Add support for automatic RSS feed links
 add_theme_support( 'automatic-feed-links' );
 
-/*
- * Includes
- */
-require_once('includes/enqueue-scripts.php');
-require_once('includes/image-sizes.php');
-require_once('includes/scaled-images.php');
-
 /**
  * Remove unused items from Admin
  * Add as many items as you like to hide to the $restriced array
@@ -28,7 +22,7 @@ require_once('includes/scaled-images.php');
 
 function remove_menus () {
 global $menu;
-	$restricted = array( __('Links'), __('Comments'), __('Posts') );
+	$restricted = array( __('Links') );
 	end ($menu);
 	while (prev($menu)){
 		$value = explode(' ',$menu[key($menu)][0]);
@@ -36,6 +30,17 @@ global $menu;
 	}
 }
 add_action('admin_menu', 'remove_menus');
+
+/**
+ * Purge Custom Post-types from cache after update
+ */
+add_action( 'edit_post', 'w3_flush_page_custom', 10, 1 );
+
+function w3_flush_page_custom( $post_id ) {
+	if ( function_exists('w3tc_pgcache_flush' ) ):
+		w3tc_pgcache_flush();
+	endif;
+}
 
 /** 
  * Cleaner image captions
@@ -101,6 +106,7 @@ add_filter('the_content', 'filter_ptags_on_images');
 if( function_exists('register_nav_menus') ):
   register_nav_menus( array(
 		'main_menu' => 'The main menu',
+		'sub_menu' => 'A submenu'
 		));
 endif;
 
@@ -123,5 +129,60 @@ function exclude_protected_action($query) {
 
 // Action to queue the filter at the right time
 add_action('pre_get_posts', 'exclude_protected_action');
+
+/**
+ * Custom image sizes
+ * add_image_size( $name, $width, $height, $crop )
+ */
+
+add_image_size( 'homepage_thumbnail', '', '150',  false);
+
+/**
+ * External scripts
+ */
+
+// Some custom settings for the_excerpt
+// Adding Foundation classes
+add_filter( "the_excerpt", "add_class_to_excerpt" );
+function add_class_to_excerpt( $excerpt ) {
+    return str_replace('<p', '<p class="medium-12 columns"', $excerpt);
+}
+
+// Controlling the length
+function custom_excerpt_length( $length ) {
+	return 30;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+// Creating the 'read more' link
+function new_excerpt_more( $more ) {
+	return ' <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('...', 'your-text-domain') . '</a>';
+}
+add_filter( 'excerpt_more', 'new_excerpt_more' );
+
+function enqueue_theme_scripts() {
+  // Unregister standard jQuery and reregister as google code.
+  wp_deregister_script('jquery');
+  wp_register_script( 'jquery', 'http://code.jquery.com/jquery-latest.min.js', null, false, true );
+	wp_enqueue_script( 'jquery' );
+	
+	if( WP_DEBUG ):
+		// Plugins
+		// For example:
+		
+		// Classes
+		// For example:
+		// wp_enqueue_script( 'main-nav', get_template_directory_uri() . '/js/main-nav.js', array('jquery'), false, true );
+		
+		// Pages, Formats, Elements etc.
+		// Scripts for pages, elements etc.
+		// wp_enqueue_script( 'application', get_template_directory_uri() . '/js/application.js', array('jquery'), false, true	);
+ 	else:
+		// All concatenated and compressed JS in one file:
+		wp_enqueue_script( 'application', get_template_directory_uri() . '/js/app.min.js', array('jquery'), false, true	);
+ 	endif;
+}
+
+add_action('wp_enqueue_scripts', 'enqueue_theme_scripts');
 
 ?>
