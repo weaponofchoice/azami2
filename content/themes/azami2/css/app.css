@@ -11256,7 +11256,7 @@ img.rsImg {
 .mc_merge_var:nth-child(2), .mc_merge_var:nth-child(3) {
   width: 47%;
   float: left;
-  z-index: 1000;
+  z-index: 997;
 }
 /* line 29, ../sass/components/other/_mailchimp.scss */
 .mc_merge_var:nth-child(3) {
