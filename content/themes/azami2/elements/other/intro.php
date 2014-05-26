@@ -2,7 +2,7 @@
 	
 	<!-- Left gallery -->
 	<?php
-	$images = echo get_sub_field('gallery_left');
+	$images = get_field('gallery_left');
 	print $images;
 	if( $images ): ?>
 	<div class="gallery_intro gallery_left">
