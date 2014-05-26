@@ -1,7 +1,21 @@
 <div id="intro" class="row">
 	
-	<!-- Left gallery -->
 	<?php
+	$test1 = get_sub_field('gallery_left');
+	print $test1;
+	
+	$test2 = echo get_sub_field('gallery_left');
+	print $test2;
+	
+	$test3 = the_sub_field('gallery_left');
+	print $test3;
+	
+	$test4 = get_field('gallery_left');
+	print $test4;
+	?>
+	
+	<!-- Left gallery -->
+	<!-- <?php
 	$images = get_sub_field('gallery_left');
 	
 	if( $images ): ?>
@@ -27,7 +41,7 @@
 			<?php endforeach; ?>
 		</div>
 	</div>
-	<?php endif; ?>
+	<?php endif; ?> -->
 	
 	<!-- Right gallery -->
 	<?php
