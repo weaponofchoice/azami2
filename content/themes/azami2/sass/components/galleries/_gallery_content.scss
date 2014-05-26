@@ -29,6 +29,8 @@
 		
 		.rsGCaption{
 			width: 100%;
+			height: auto;
+			overflow: hidden;
 			margin: 1em 0 0;
 			text-align: center;
 		
@@ -79,9 +81,9 @@
 		}
 		
 		.rsGCaption{
-			width: 90% !important;
-			padding-left: 1em;
-			margin: 1em 0 0 1em !important;
+			width: 80% !important;
+			margin: 1em auto !important;
+			float: none;
 			
 			.rsCaption{
 				width: 100% !important;
