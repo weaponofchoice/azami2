@@ -1,11 +1,9 @@
 <div id="intro" class="row">
 	
-
-	
 	<!-- Left gallery -->
 	<?php
-	$images = get_sub_field('gallery_left');
-	
+	$images = echo get_sub_field('gallery_left');
+	print $images;
 	if( $images ): ?>
 	<div class="gallery_intro gallery_left">
 		<div class="royalSlider rsDefault">
