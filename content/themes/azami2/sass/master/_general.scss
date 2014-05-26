@@ -74,10 +74,18 @@ body{
 	.first{
 		margin-top: rem-calc(120) !important;
 	}
+	
+	#content{
+		padding-top: rem-calc(130) !important;
+	}
 }
 
 @media #{$small-only}{
 	.first{
 		margin-top: rem-calc(152) !important;
+	}
+	
+	#content{
+		padding-top: rem-calc(80) !important;
 	}
 }
