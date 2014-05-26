@@ -77,5 +77,6 @@
 					'theme_location' => 'main_menu'
 				) );
 				?>
+				<?php pll_the_languages(); ?>
 			</ul>
 		</div>

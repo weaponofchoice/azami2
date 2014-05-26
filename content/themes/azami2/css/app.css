@@ -10070,18 +10070,23 @@ footer p, footer a {
   margin-bottom: 0;
 }
 /* line 28, ../sass/components/global/_footer.scss */
-footer .phonenumber a {
+footer .phonenumber,
+footer .email {
   top: 0;
 }
-/* line 33, ../sass/components/global/_footer.scss */
+/* line 32, ../sass/components/global/_footer.scss */
+footer .email {
+  cursor: pointer;
+}
+/* line 36, ../sass/components/global/_footer.scss */
 footer a {
   top: 1em;
 }
-/* line 39, ../sass/components/global/_footer.scss */
+/* line 42, ../sass/components/global/_footer.scss */
 footer ul li:last-child {
   float: left !important;
 }
-/* line 45, ../sass/components/global/_footer.scss */
+/* line 48, ../sass/components/global/_footer.scss */
 footer input[type="text"] {
   background: black;
   border: none;
@@ -10092,14 +10097,14 @@ footer input[type="text"] {
   font-size: 1rem;
   color: white;
 }
-/* line 56, ../sass/components/global/_footer.scss */
+/* line 59, ../sass/components/global/_footer.scss */
 footer input[type="text"]:focus {
   background: black;
   box-shadow: none;
   border-color: white;
   color: white;
 }
-/* line 64, ../sass/components/global/_footer.scss */
+/* line 67, ../sass/components/global/_footer.scss */
 footer button {
   background: black;
   border: 0.125rem solid white;
@@ -10110,38 +10115,38 @@ footer button {
   font-size: 1rem;
   letter-spacing: 0.125rem;
 }
-/* line 77, ../sass/components/global/_footer.scss */
+/* line 80, ../sass/components/global/_footer.scss */
 footer button:hover, footer button:active, footer button:focus {
   background: white;
   color: black;
 }
 
 @media only screen and (min-width: 120.063em) {
-  /* line 88, ../sass/components/global/_footer.scss */
+  /* line 91, ../sass/components/global/_footer.scss */
   #Homepage-EN footer,
   #Homepage-NL footer {
     margin-top: 9.375rem !important;
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 95, ../sass/components/global/_footer.scss */
+  /* line 98, ../sass/components/global/_footer.scss */
   footer {
     padding-top: 0;
   }
-  /* line 98, ../sass/components/global/_footer.scss */
+  /* line 101, ../sass/components/global/_footer.scss */
   footer #container-logo {
     display: none;
     /*width: 60%;
     margin-bottom: 0;
     margin-left: 10.33333%;*/
   }
-  /* line 106, ../sass/components/global/_footer.scss */
+  /* line 109, ../sass/components/global/_footer.scss */
   footer ul li {
     margin-top: 5em;
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 768px) {
-  /* line 114, ../sass/components/global/_footer.scss */
+  /* line 117, ../sass/components/global/_footer.scss */
   .signup {
     margin-top: 8em;
   }
@@ -11024,6 +11029,12 @@ img.rsImg {
 /* line 31, ../sass/components/navigation/_button_lang.scss */
 .menu li.button_lang a, .menu li.lang-item a {
   font-size: 0.875rem;
+}
+
+/* line 40, ../sass/components/navigation/_button_lang.scss */
+#menu_small #menu_small_collapsed .lang-item {
+  float: none;
+  padding: 1em;
 }
 
 /* line 3, ../sass/components/navigation/_hamburger.scss */
