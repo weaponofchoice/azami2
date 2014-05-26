@@ -43,10 +43,9 @@
 
 @media #{$medium-down}{
 	.gallery{
-		width: 70%;
+		width: 80%;
 		max-height: rem-calc(500);
 		margin: 0 auto;
-		padding: rem-calc(70) 0;
 	}
 }
 
