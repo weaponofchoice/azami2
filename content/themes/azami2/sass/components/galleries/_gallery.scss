@@ -28,22 +28,6 @@
 }
 
 //Media queries
-@media #{$small-only}{
-	.gallery{		
-		a{
-			font-size: rem-calc(34);
-			padding: 0 0.5em;
-			margin-top: -.8em;
-		}
-	}
-}
-
-@media #{$medium-down}{
-	.gallery{
-		max-height: rem-calc(500);
-	}
-}
-
 @media #{$xxlarge-up}{
 	.gallery{
 		padding-left: 12.5%;
@@ -53,6 +37,28 @@
 			width: 49.99999%;//somehow this solves an unexplainable white line in the middle
 			padding-left: 0;
 			padding-right: 0;
+		}
+	}
+}
+
+@media #{$medium-down}{
+	.gallery{
+		width: 70%;
+		max-height: rem-calc(500);
+		margin: 0 auto;
+		padding: rem-calc(70) 0;
+	}
+}
+
+@media #{$small-only}{
+	.gallery{
+		width: 100%;
+		max-height: rem-calc(400);
+			
+		a{
+			font-size: rem-calc(34);
+			padding: 0 0.5em;
+			margin-top: -.8em;
 		}
 	}
 }
