@@ -9955,6 +9955,12 @@ body {
     margin-top: 7.5rem !important;
   }
 }
+@media only screen and (max-width: 640px) {
+  /* line 80, ../sass/master/_general.scss */
+  .first {
+    margin-top: 9.5rem !important;
+  }
+}
 /* line 1, ../sass/master/_typography.scss */
 h2, h3, h4, p, a {
   font-family: "Apercu Light", sans-serif;
@@ -10173,6 +10179,13 @@ footer button:hover, footer button:active, footer button:focus {
   font-size: 3.75rem;
 }
 
+@media only screen and (max-width: 640px) {
+  /* line 30, ../sass/components/global/_image_promo.scss */
+  .image_promo a {
+    margin-top: -.5em;
+    font-size: 2.375rem;
+  }
+}
 /* line 1, ../sass/components/text/_text.scss */
 .text {
   height: auto;
