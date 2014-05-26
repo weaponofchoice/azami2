@@ -9965,11 +9965,6 @@ body {
   .first {
     margin-top: 9.5rem !important;
   }
-
-  /* line 88, ../sass/master/_general.scss */
-  #content {
-    padding-top: 5rem !important;
-  }
 }
 /* line 1, ../sass/master/_typography.scss */
 h2, h3, h4, p, a {
@@ -10682,7 +10677,7 @@ img.rsImg {
   width: 100%;
   height: 100%;
   max-height: 50rem;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   overflow: hidden;
 }
@@ -10719,8 +10714,14 @@ img.rsImg {
     padding-right: 0;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
   /* line 45, ../sass/components/galleries/_gallery.scss */
+  .gallery {
+    max-height: 37.5rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* line 51, ../sass/components/galleries/_gallery.scss */
   .gallery {
     width: 80%;
     max-height: 31.25rem;
@@ -10728,12 +10729,12 @@ img.rsImg {
   }
 }
 @media only screen and (max-width: 640px) {
-  /* line 53, ../sass/components/galleries/_gallery.scss */
+  /* line 59, ../sass/components/galleries/_gallery.scss */
   .gallery {
     width: 100%;
     max-height: 25rem;
   }
-  /* line 57, ../sass/components/galleries/_gallery.scss */
+  /* line 63, ../sass/components/galleries/_gallery.scss */
   .gallery a {
     font-size: 2.125rem;
     padding: 0 0.5em;
@@ -10773,36 +10774,38 @@ img.rsImg {
 /* line 30, ../sass/components/galleries/_gallery_content.scss */
 .gallery_content .contentSlider .rsGCaption {
   width: 100%;
+  max-width: 56.25rem;
   height: auto;
   overflow: hidden;
-  margin: 1em 0 0;
+  margin: 1em auto 0;
+  float: none;
   text-align: center;
 }
-/* line 37, ../sass/components/galleries/_gallery_content.scss */
+/* line 39, ../sass/components/galleries/_gallery_content.scss */
 .gallery_content .contentSlider .rsGCaption .rsCaption {
   width: 80%;
   margin: 0 auto;
 }
 
-/* line 45, ../sass/components/galleries/_gallery_content.scss */
+/* line 47, ../sass/components/galleries/_gallery_content.scss */
 .royalSlider * {
   color: black;
 }
 
-/* line 50, ../sass/components/galleries/_gallery_content.scss */
+/* line 52, ../sass/components/galleries/_gallery_content.scss */
 .rsArrowLeft,
 .rsArrowRight {
   top: -.5em;
   margin-left: 0;
   margin-right: 0;
 }
-/* line 56, ../sass/components/galleries/_gallery_content.scss */
+/* line 58, ../sass/components/galleries/_gallery_content.scss */
 .rsArrowLeft .rsArrowIcn:before,
 .rsArrowRight .rsArrowIcn:before {
   width: 0.625rem;
   height: 30%;
 }
-/* line 61, ../sass/components/galleries/_gallery_content.scss */
+/* line 63, ../sass/components/galleries/_gallery_content.scss */
 .rsArrowLeft .rsArrowIcn:after,
 .rsArrowRight .rsArrowIcn:after {
   width: 30%;
@@ -10810,25 +10813,25 @@ img.rsImg {
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 71, ../sass/components/galleries/_gallery_content.scss */
+  /* line 73, ../sass/components/galleries/_gallery_content.scss */
   .gallery_content p.uppercase {
     margin-top: 5rem;
   }
-  /* line 75, ../sass/components/galleries/_gallery_content.scss */
+  /* line 77, ../sass/components/galleries/_gallery_content.scss */
   .gallery_content .contentSlider {
     width: 100% !important;
   }
-  /* line 78, ../sass/components/galleries/_gallery_content.scss */
+  /* line 80, ../sass/components/galleries/_gallery_content.scss */
   .gallery_content .contentSlider .rsBullets {
     visibility: visible !important;
   }
-  /* line 83, ../sass/components/galleries/_gallery_content.scss */
+  /* line 85, ../sass/components/galleries/_gallery_content.scss */
   .gallery_content .rsGCaption {
     width: 80% !important;
     margin: 1em auto !important;
     float: none;
   }
-  /* line 88, ../sass/components/galleries/_gallery_content.scss */
+  /* line 90, ../sass/components/galleries/_gallery_content.scss */
   .gallery_content .rsGCaption .rsCaption {
     width: 100% !important;
     text-align: left;
@@ -10958,32 +10961,34 @@ img.rsImg {
   margin: 0;
   margin-top: -100%;
   text-align: center;
-  padding-top: 3em;
+  padding-top: 5em;
+  padding-bottom: 2em;
 }
-/* line 37, ../sass/components/navigation/_menu_small.scss */
+/* line 38, ../sass/components/navigation/_menu_small.scss */
 #menu_small ul#menu_small_collapsed li {
+  padding: 2em 0 0;
   width: 100%;
   display: block;
 }
-/* line 42, ../sass/components/navigation/_menu_small.scss */
+/* line 44, ../sass/components/navigation/_menu_small.scss */
 #menu_small ul#menu_small_collapsed li a:after {
-  width: 6%;
+  width: 12%;
 }
-/* line 47, ../sass/components/navigation/_menu_small.scss */
+/* line 49, ../sass/components/navigation/_menu_small.scss */
 #menu_small ul#menu_small_collapsed li.logo {
   width: auto;
 }
-/* line 53, ../sass/components/navigation/_menu_small.scss */
+/* line 55, ../sass/components/navigation/_menu_small.scss */
 #menu_small ul.active {
   margin-top: 0px !important;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 61, ../sass/components/navigation/_menu_small.scss */
+  /* line 63, ../sass/components/navigation/_menu_small.scss */
   #menu_small {
     display: block;
   }
-  /* line 65, ../sass/components/navigation/_menu_small.scss */
+  /* line 67, ../sass/components/navigation/_menu_small.scss */
   #menu_small #menu_small_collapsed .lang-item {
     width: auto;
     display: inline;
@@ -11157,20 +11162,21 @@ img.rsImg {
 }
 /* line 1, ../sass/components/other/_employee.scss */
 .employee {
+  max-width: 120rem;
   height: auto;
   overflow: hidden;
 }
-/* line 7, ../sass/components/other/_employee.scss */
+/* line 8, ../sass/components/other/_employee.scss */
 .employee:nth-child(even) .picture {
   float: right;
   margin-left: 0;
   margin-right: 8.33333%;
 }
-/* line 14, ../sass/components/other/_employee.scss */
+/* line 15, ../sass/components/other/_employee.scss */
 .employee article {
   float: left !important;
 }
-/* line 17, ../sass/components/other/_employee.scss */
+/* line 18, ../sass/components/other/_employee.scss */
 .employee article p {
   text-indent: 1.875rem;
 }
@@ -11325,6 +11331,12 @@ img.rsImg {
 /* line 2, ../sass/pages/_home.scss */
 #home-NL .menu {
   top: inherit;
+}
+
+/* line 3, ../sass/pages/_team.scss */
+#team-NL .gallery,
+#team-EN .gallery {
+  width: 80%;
 }
 
 /* line 5, ../sass/pages/_construction.scss */

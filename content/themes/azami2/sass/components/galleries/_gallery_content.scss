@@ -29,9 +29,11 @@
 		
 		.rsGCaption{
 			width: 100%;
+			max-width: rem-calc(900);
 			height: auto;
 			overflow: hidden;
-			margin: 1em 0 0;
+			margin: 1em auto 0;
+			float: none;
 			text-align: center;
 		
 			.rsCaption{
