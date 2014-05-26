@@ -10773,27 +10773,27 @@ img.rsImg {
   height: 0.625rem;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 768px) {
   /* line 69, ../sass/components/galleries/_gallery_content.scss */
-  .content-slider-bg p.uppercase {
+  .gallery_content p.uppercase {
     margin-top: 5rem;
   }
   /* line 73, ../sass/components/galleries/_gallery_content.scss */
-  .content-slider-bg .contentSlider {
+  .gallery_content .contentSlider {
     width: 100% !important;
   }
   /* line 76, ../sass/components/galleries/_gallery_content.scss */
-  .content-slider-bg .contentSlider .rsBullets {
+  .gallery_content .contentSlider .rsBullets {
     visibility: visible !important;
   }
   /* line 81, ../sass/components/galleries/_gallery_content.scss */
-  .content-slider-bg .rsGCaption {
+  .gallery_content .rsGCaption {
     width: 90% !important;
     padding-left: 1em;
     margin: 1em 0 0 1em !important;
   }
   /* line 86, ../sass/components/galleries/_gallery_content.scss */
-  .content-slider-bg .rsGCaption .rsCaption {
+  .gallery_content .rsGCaption .rsCaption {
     width: 100% !important;
     text-align: left;
   }
@@ -10886,6 +10886,12 @@ img.rsImg {
   border-bottom: 2px solid white;
 }
 
+@media only screen and (max-width: 768px) {
+  /* line 72, ../sass/components/navigation/_menu.scss */
+  #menu {
+    visibility: hidden;
+  }
+}
 /* line 1, ../sass/components/navigation/_menu_small.scss */
 #menu_small {
   display: none;
@@ -10957,16 +10963,24 @@ img.rsImg {
   float: right;
 }
 /* line 13, ../sass/components/navigation/_button_lang.scss */
+.menu li.button_lang.current-lang, .menu li.lang-item.current-lang {
+  background: white;
+}
+/* line 16, ../sass/components/navigation/_button_lang.scss */
+.menu li.button_lang.current-lang a, .menu li.lang-item.current-lang a {
+  color: black;
+}
+/* line 21, ../sass/components/navigation/_button_lang.scss */
 .menu li.button_lang:hover, .menu li.lang-item:hover {
   background: white;
   color: black;
   cursor: pointer;
 }
-/* line 18, ../sass/components/navigation/_button_lang.scss */
+/* line 26, ../sass/components/navigation/_button_lang.scss */
 .menu li.button_lang:hover a, .menu li.lang-item:hover a {
   color: black;
 }
-/* line 23, ../sass/components/navigation/_button_lang.scss */
+/* line 31, ../sass/components/navigation/_button_lang.scss */
 .menu li.button_lang a, .menu li.lang-item a {
   font-size: 0.875rem;
 }

@@ -64,8 +64,8 @@
 }
 
 //Media queries
-@media #{$small-only}{
-	.content-slider-bg{
+@media #{$medium-down}{
+	.gallery_content{
 		p.uppercase{
 			margin-top: rem-calc(80);
 		}
