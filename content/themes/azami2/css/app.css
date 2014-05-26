@@ -11288,16 +11288,16 @@ img.rsImg {
   display: inline;
 }
 
-@media only screen and (max-width: 640px) {
+@media screen and (min-width: 1920px) {
   /* line 12, ../sass/components/other/_map.scss */
   #map {
-    margin-bottom: -1.875rem;
+    height: 50rem;
   }
 }
-@media screen and (min-width: 1920px) {
+@media only screen and (max-width: 768px) {
   /* line 18, ../sass/components/other/_map.scss */
   #map {
-    height: 50rem;
+    margin-top: -4.5rem;
   }
 }
 /* line 2, ../sass/pages/_home.scss */
