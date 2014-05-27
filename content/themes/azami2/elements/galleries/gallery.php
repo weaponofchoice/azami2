@@ -1,10 +1,15 @@
+<div class="gallery-troubleshooting">
 <?php
 $images = get_sub_field('images');
+print $images;
 if( $images ): ?>
+test1
 <div class="gallery">
 	<div class="royalSlider rsDefault">
 		<?php
 			foreach( $images as $image ):
+			
+				print $image;
 			
 			// scaled images module
 			$g_url = $image['sizes']['large']; 
@@ -16,6 +21,7 @@ if( $images ): ?>
 				$g_url = $image['sizes']['small'];
 			}
 			?>
+			test2
 			<li>
 				<div class="rsContent">
 					<img class="rsImg" src="<?php echo $g_url; ?>" />
@@ -25,3 +31,4 @@ if( $images ): ?>
 	</div>
 </div>
 <?php endif; ?>
+</div>
