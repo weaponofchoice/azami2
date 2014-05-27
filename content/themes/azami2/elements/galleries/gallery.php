@@ -2,6 +2,7 @@
 <?php
 $images = get_sub_field('images');
 print $images;
+var_dump(get_sub_field('images'));
 if( $images ): ?>
 test1
 <div class="gallery">
