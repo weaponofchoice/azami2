@@ -1,5 +1,5 @@
 <?php
-$images = get_field('images');
+$images = get_sub_field('images');
 if( $images ): ?>
 <div class="gallery">
 	<div class="royalSlider rsDefault">
