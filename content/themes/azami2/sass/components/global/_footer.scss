@@ -24,10 +24,13 @@ footer{
 		margin-bottom: 0;
 	}
 	
-	.phonenumber{
-		a{
-			top: 0;
-		}
+	.phonenumber,
+	.email{
+		top: 0;
+	}
+	
+	.email{
+		cursor: pointer;
 	}
 	
 	a{

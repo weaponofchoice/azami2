@@ -15,7 +15,7 @@
 							<p>Noordeinde 29</p>
 							<p>2514 GB Den Haag</p>
 							<p class="phonenumber">+31 (0)70 346 78 05</p>
-							<p>info@azami.nl</p>
+							<a href="mailto:info@azami.nl" class="email"><p>info@azami.nl</p></a>
 							<a class="underlined followus" href="https://www.facebook.com/AzamiTheHague" target="blank">Volg ons op Facebook</a>
 						</li>
 						<li class="signup small-20 small-offset-2 medium-20 medium-offset-2 large-6 large-offset-2 columns">
