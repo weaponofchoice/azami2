@@ -17,7 +17,15 @@ if( have_rows('page_elements') ):
 			include('elements/global/image.php');
 		elseif( get_row_layout() == 'image_promo'):
 			include('elements/global/image_promo.php');
-			
+		
+   		 // Galleries
+   		elseif( get_row_layout() == 'gallery'):
+   			 include('elements/galleries/gallery.php'); 
+   		elseif( get_row_layout() == 'gallery_clients'): 
+   			 include('elements/galleries/gallery_clients.php'); 
+   		elseif( get_row_layout() == 'gallery_content'): 
+   			 include('elements/galleries/gallery_content.php');
+		
 		// Text elements
 		elseif( get_row_layout() == 'text'): 
 			 include('elements/text/text.php'); 
@@ -26,13 +34,6 @@ if( have_rows('page_elements') ):
 		elseif( get_row_layout() == 'text_quote'): 
 			 include('elements/text/text_quote.php');
 			 
-		 // Galleries
-		elseif( get_row_layout() == 'gallery'):
-			 include('elements/galleries/gallery.php'); 
-		elseif( get_row_layout() == 'gallery_clients'): 
-			 include('elements/galleries/gallery_clients.php'); 
-		elseif( get_row_layout() == 'gallery_content'): 
-			 include('elements/galleries/gallery_content.php');
 			 
 		 // Other elements
 		elseif( get_row_layout() == 'employee'): 
