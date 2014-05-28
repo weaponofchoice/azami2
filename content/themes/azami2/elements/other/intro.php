@@ -3,7 +3,9 @@
 	<!-- Left gallery -->
 	<?php
 	$images = get_sub_field('gallery_left');
-
+	
+	var_dump($images);
+	
 	if( $images ): ?>
 	<div class="gallery_intro gallery_left">
 		<div class="royalSlider rsDefault">
