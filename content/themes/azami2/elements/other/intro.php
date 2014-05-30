@@ -1,61 +1,57 @@
 <div id="intro" class="row">
 	
 	<!-- Left gallery -->
-	<?php
-	$images = get_sub_field('gallery_left');
-	
-	var_dump($images);
-	
-	if( $images ): ?>
 	<div class="gallery_intro gallery_left">
-		<div class="royalSlider rsDefault">
-			<?php foreach( $images as $image ): 
-				
+	
+		<?php if(have_rows('gallery_left')): ?>
+	    <div class="royalSlider rsDefault rsAutoHeight rsHor">
+			<?php
+				while(have_rows('gallery_left')): the_row();
+			
 				// scaled images module
-				$gLintro_url = $image['sizes']['large']; 
+				$gLintro = get_sub_field('image');
+				$gLintro_url = $gLintro['sizes']['large'];
+			
 				if (is_tablet()){
-					$gLintro_url = $image['sizes']['medium'];
+					$gLintro_url = $gLintro['sizes']['medium'];
 				}
 			
 				if (is_mobile()){
-					$gLintro_url = $image['sizes']['small'];
+					$gLintro_url = $gLintro['sizes']['small'];
 				}
-				?>
-				<li>
-					<div class="rsContent">
-						<img class="rsImg" src="<?php echo $gLintro_url; ?>" />
-					</div>
-				</li>
-			<?php endforeach; ?>
+			?>
+				<div>
+	            	<img class="rsImg" src="<?php echo $gLintro_url; ?>" />
+				</div>
+			<?php endwhile; ?>		
 		</div>
 	</div>
 	<?php endif; ?>
 	
 	<!-- Right gallery -->
-	<?php
-	$images = get_sub_field('gallery_right');
-	
-	if( $images ): ?>
 	<div class="gallery_intro gallery_right">
-		<div class="royalSlider rsDefault">
-			<?php foreach( $images as $image ): 
-				
+	
+		<?php if(have_rows('gallery_right')): ?>
+	    <div class="royalSlider rsDefault rsAutoHeight rsHor">
+			<?php
+				while(have_rows('gallery_right')): the_row();
+			
 				// scaled images module
-				$gRintro_url = $image['sizes']['large']; 
+				$gRintro = get_sub_field('image');
+				$gRintro_url = $gRintro['sizes']['large'];
+			
 				if (is_tablet()){
-					$gRintro_url = $image['sizes']['medium'];
+					$gRintro_url = $gRintro['sizes']['medium'];
 				}
 			
 				if (is_mobile()){
-					$gRintro_url = $image['sizes']['small'];
+					$gRintro_url = $gRintro['sizes']['small'];
 				}
-				?>
-				<li>
-					<div class="rsContent">
-						<img class="rsImg" src="<?php echo $gRintro_url; ?>" />
-					</div>
-				</li>
-			<?php endforeach; ?>
+			?>
+				<div>
+	            	<img class="rsImg" src="<?php echo $gRintro_url; ?>" />
+				</div>
+			<?php endwhile; ?>		
 		</div>
 	</div>
 	<?php endif; ?>
