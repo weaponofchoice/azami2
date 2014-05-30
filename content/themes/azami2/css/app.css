@@ -10967,7 +10967,7 @@ img.rsImg {
   margin-top: -100%;
   text-align: center;
   padding-top: 5em;
-  padding-bottom: 2em;
+  padding-bottom: 7em;
 }
 /* line 38, ../sass/components/navigation/_menu_small.scss */
 #menu_small ul#menu_small_collapsed li {
@@ -11035,6 +11035,7 @@ img.rsImg {
 #menu_small #menu_small_collapsed .lang-item {
   float: none;
   padding: 1em;
+  top: 4em;
 }
 
 /* line 3, ../sass/components/navigation/_hamburger.scss */
