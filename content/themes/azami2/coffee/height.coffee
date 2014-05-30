@@ -10,7 +10,7 @@ if $('body').length > 0
 	
 	# Apply heights
 	article.css "height", article_height
-	gallery.css "height", viewport
+	gallery.css "height", viewport / 1.25
 	intro.css "height", viewport
 	
 	$(window).on 'resize', ->

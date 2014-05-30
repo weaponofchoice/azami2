@@ -8,7 +8,7 @@ if ($('body').length > 0) {
   viewport = window.innerHeight;
   article_height = article.height();
   article.css("height", article_height);
-  gallery.css("height", viewport);
+  gallery.css("height", viewport / 1.25);
   intro.css("height", viewport);
   $(window).on('resize', function() {
     viewport = window.innerHeight;
