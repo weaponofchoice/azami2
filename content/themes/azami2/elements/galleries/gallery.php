@@ -1,30 +1,28 @@
-<?php
-var_dump( get_sub_field('images') );
-
-$images = get_sub_field('images');
-if( $images ): ?>
 <div class="gallery">
-	<div class="royalSlider rsDefault">
+	
+	<?php if(have_rows('gallery_slide')): ?>
+    <div class="royalSlider rsDefault contentSlider rsAutoHeight rsHor">
 		<?php
-			foreach( $images as $image ):
+			while(have_rows('gallery_slide')): the_row();
 			
 			// scaled images module
-			$g_url = $image['sizes']['large'];
+			$g = get_sub_field('image');
+			$g_url = $g['sizes']['large'];
 			
 			if (is_tablet()){
-				$g_url = $image['sizes']['medium'];
+				$g_url = $g['sizes']['medium'];
 			}
 			
 			if (is_mobile()){
-				$g_url = $image['sizes']['small'];
+				$g_url = $g['sizes']['small'];
 			}
-			?>
-			<li>
-				<div class="rsContent">
-					<img class="rsImg" src="<?php echo $g_url; ?>" />
-				</div>
-			</li>
-		<?php endforeach; ?>
+		?>
+			<div>
+            	<img class="rsImg" src="<?php echo $g_url; ?>" />
+				<figure class="rsCaption"><h2><?php the_sub_field('title'); ?></h2></figure>
+				<figure class="rsCaption"><?php the_sub_field('text'); ?></figure>
+			</div>
+		<?php endwhile; ?>		
 	</div>
 </div>
 <?php endif; ?>
