@@ -10849,12 +10849,16 @@ img.rsImg {
     text-align: left;
   }
 }
-/* line 3, ../sass/components/galleries/_gallery_clients.scss */
+/* line 1, ../sass/components/galleries/_gallery_clients.scss */
+.gallery_clients {
+  max-height: 25rem;
+}
+/* line 5, ../sass/components/galleries/_gallery_clients.scss */
 .gallery_clients .royalSlider li {
   width: 100%;
   height: 100%;
 }
-/* line 7, ../sass/components/galleries/_gallery_clients.scss */
+/* line 9, ../sass/components/galleries/_gallery_clients.scss */
 .gallery_clients .royalSlider li a {
   width: 25%;
   height: 50%;
@@ -10870,13 +10874,13 @@ img.rsImg {
   top: 0;
   margin-top: 0;
 }
-/* line 26, ../sass/components/galleries/_gallery_clients.scss */
+/* line 28, ../sass/components/galleries/_gallery_clients.scss */
 .gallery_clients .royalSlider li a:nth-child(odd) {
   background: gold;
 }
 
 @media only screen and (max-width: 640px) {
-  /* line 40, ../sass/components/galleries/_gallery_clients.scss */
+  /* line 42, ../sass/components/galleries/_gallery_clients.scss */
   .gallery_clients .royalSlider li .rsContent a {
     width: 50%;
     padding: 0;
