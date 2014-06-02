@@ -4,7 +4,6 @@
 	overflow: hidden;
 	
 	p.uppercase{
-		//margin-top: rem-calc(140);
 		text-align: center;
 	}
 	
@@ -69,13 +68,16 @@
 
 //Media queries
 @media #{$medium-down}{
-	.gallery_content{
+	.gallery_content{		
 		p.uppercase{
-			margin-top: rem-calc(80);
+			text-align: left;
+			width: 80%;
+			margin: 1em auto;
 		}
 		
 		.contentSlider{
-			width: 100% !important;
+			width: 110% !important;
+			margin: 0 auto;
 			
 			.rsBullets{
 				visibility: visible !important;
@@ -83,9 +85,10 @@
 		}
 		
 		.rsGCaption{
-			width: 80% !important;
+			width: 70% !important;
 			margin: 1em auto !important;
 			float: none;
+			left: -5%;
 			
 			.rsCaption{
 				width: 100% !important;
