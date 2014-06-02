@@ -118,3 +118,10 @@ footer{
 		margin-top: 8em;
 	}
 }
+
+@media #{$small-only}{
+	.button{
+		width: 100%;
+		padding: 1.5em 3em;
+	}
+}

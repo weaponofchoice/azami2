@@ -10151,6 +10151,13 @@ footer button:hover, footer button:active, footer button:focus {
     margin-top: 8em;
   }
 }
+@media only screen and (max-width: 640px) {
+  /* line 123, ../sass/components/global/_footer.scss */
+  .button {
+    width: 100%;
+    padding: 1.5em 3em;
+  }
+}
 /* line 1, ../sass/components/global/_image.scss */
 .image {
   width: 40%;
