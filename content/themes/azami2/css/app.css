@@ -10833,8 +10833,8 @@ img.rsImg {
   }
   /* line 78, ../sass/components/galleries/_gallery_content.scss */
   .gallery_content .contentSlider {
-    width: 110% !important;
-    margin: 0 auto;
+    width: 120% !important;
+    margin-left: -10%;
   }
   /* line 82, ../sass/components/galleries/_gallery_content.scss */
   .gallery_content .contentSlider .rsBullets {
@@ -10842,12 +10842,11 @@ img.rsImg {
   }
   /* line 87, ../sass/components/galleries/_gallery_content.scss */
   .gallery_content .rsGCaption {
-    width: 70% !important;
+    width: 65% !important;
     margin: 1em auto !important;
     float: none;
-    left: -5%;
   }
-  /* line 93, ../sass/components/galleries/_gallery_content.scss */
+  /* line 92, ../sass/components/galleries/_gallery_content.scss */
   .gallery_content .rsGCaption .rsCaption {
     width: 100% !important;
     text-align: left;

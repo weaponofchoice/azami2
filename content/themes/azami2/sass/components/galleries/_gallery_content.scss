@@ -76,8 +76,8 @@
 		}
 		
 		.contentSlider{
-			width: 110% !important;
-			margin: 0 auto;
+			width: 120% !important;
+			margin-left: -10%;
 			
 			.rsBullets{
 				visibility: visible !important;
@@ -85,10 +85,9 @@
 		}
 		
 		.rsGCaption{
-			width: 70% !important;
+			width: 65% !important;
 			margin: 1em auto !important;
 			float: none;
-			left: -5%;
 			
 			.rsCaption{
 				width: 100% !important;
