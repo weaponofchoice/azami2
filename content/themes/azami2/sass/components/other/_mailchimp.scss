@@ -36,6 +36,11 @@
 	display: none !important;
 }
 
+.mc_input,
+#mc_signup_submit{
+	font-size: rem-calc(20) !important;
+}
+
 // Submit button
 .mc_signup_submit{
 	text-align: left !important;
