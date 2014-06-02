@@ -21,13 +21,6 @@ add_theme_support( 'post-thumbnails' );
 add_theme_support( 'automatic-feed-links' );
 
 /**
- * Includes
- */
-require_once('includes/enqueue-scripts.php');
-require_once('includes/image-sizes.php');
-require_once('includes/scaled-images.php');
-
-/**
  * Remove unused items from Admin
  * Add as many items as you like to hide to the $restriced array
  */
