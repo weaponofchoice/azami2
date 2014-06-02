@@ -1,4 +1,6 @@
 <?php
+define('WP_DEBUG', true);
+
 // ===================================================
 // Load database info and local development parameters
 // ===================================================
