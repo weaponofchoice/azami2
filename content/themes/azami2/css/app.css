@@ -11320,7 +11320,7 @@ img.rsImg {
 }
 /* line 43, ../sass/components/other/_mailchimp.scss */
 .mc_signup_submit #mc_signup_submit {
-  width: auto !important;
+  width: auto;
   background: black;
   border: 0.125rem solid white;
   border-radius: 0;
