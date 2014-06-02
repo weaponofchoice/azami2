@@ -67,6 +67,11 @@
 	}
 }
 
+#menu,
+.is_stuck{
+	bottom: inherit !important;
+}
+
 //Media queries
 @media #{$medium-down}{	
 	#menu{

@@ -10957,8 +10957,14 @@ img.rsImg {
   border-bottom: 2px solid white;
 }
 
+/* line 71, ../sass/components/navigation/_menu.scss */
+#menu,
+.is_stuck {
+  bottom: inherit !important;
+}
+
 @media only screen and (max-width: 768px) {
-  /* line 72, ../sass/components/navigation/_menu.scss */
+  /* line 77, ../sass/components/navigation/_menu.scss */
   #menu {
     visibility: hidden;
   }
