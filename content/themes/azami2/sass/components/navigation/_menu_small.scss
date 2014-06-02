@@ -9,11 +9,11 @@
 		z-index: 1000;
 		background: $black;
 		
-		li{
+		li{			
 			&.logo{
 				width: auto;
 				
-				a{
+				a{	
 					img{
 						max-height: 50%;
 					}
@@ -41,10 +41,14 @@
 				padding: 2em 0 0;
 				width: 100%;
 				display: block;
+				text-align: left;
 				
 				a{
+					font-size: rem-calc(24);
+					
 					&:after{
 						width: 12%;
+						margin: .5em 0 0;
 					}
 				}
 				

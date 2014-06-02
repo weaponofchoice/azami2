@@ -10990,33 +10990,39 @@ img.rsImg {
   padding: 2em 0 0;
   width: 100%;
   display: block;
+  text-align: left;
 }
 /* line 46, ../sass/components/navigation/_menu_small.scss */
+#menu_small ul#menu_small_collapsed li a {
+  font-size: 1.5rem;
+}
+/* line 49, ../sass/components/navigation/_menu_small.scss */
 #menu_small ul#menu_small_collapsed li a:after {
   width: 12%;
+  margin: .5em 0 0;
 }
-/* line 51, ../sass/components/navigation/_menu_small.scss */
+/* line 55, ../sass/components/navigation/_menu_small.scss */
 #menu_small ul#menu_small_collapsed li.logo {
   width: auto;
 }
-/* line 57, ../sass/components/navigation/_menu_small.scss */
+/* line 61, ../sass/components/navigation/_menu_small.scss */
 #menu_small ul.active {
   margin-top: 0px !important;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 65, ../sass/components/navigation/_menu_small.scss */
+  /* line 69, ../sass/components/navigation/_menu_small.scss */
   #menu_small {
     display: block;
   }
-  /* line 69, ../sass/components/navigation/_menu_small.scss */
+  /* line 73, ../sass/components/navigation/_menu_small.scss */
   #menu_small #menu_small_collapsed .lang-item {
     width: auto;
     display: inline;
   }
 }
-/* line 5, ../sass/components/navigation/_button_lang.scss */
-.menu li.button_lang, .menu li.lang-item {
+/* line 4, ../sass/components/navigation/_button_lang.scss */
+.menu li.lang-item {
   height: auto;
   margin: 1.2em .5em;
   padding: 0 .7em;
@@ -11024,27 +11030,28 @@ img.rsImg {
   line-height: 2.5;
   float: right;
 }
-/* line 13, ../sass/components/navigation/_button_lang.scss */
-.menu li.button_lang.current-lang, .menu li.lang-item.current-lang {
+/* line 12, ../sass/components/navigation/_button_lang.scss */
+.menu li.lang-item.current-lang {
   background: white;
 }
-/* line 16, ../sass/components/navigation/_button_lang.scss */
-.menu li.button_lang.current-lang a, .menu li.lang-item.current-lang a {
+/* line 15, ../sass/components/navigation/_button_lang.scss */
+.menu li.lang-item.current-lang a {
+  font-size: 1.25rem;
   color: black;
 }
 /* line 21, ../sass/components/navigation/_button_lang.scss */
-.menu li.button_lang:hover, .menu li.lang-item:hover {
+.menu li.lang-item:hover {
   background: white;
   color: black;
   cursor: pointer;
 }
 /* line 26, ../sass/components/navigation/_button_lang.scss */
-.menu li.button_lang:hover a, .menu li.lang-item:hover a {
+.menu li.lang-item:hover a {
   color: black;
 }
 /* line 31, ../sass/components/navigation/_button_lang.scss */
-.menu li.button_lang a, .menu li.lang-item a {
-  font-size: 0.875rem;
+.menu li.lang-item a {
+  font-size: 0.875rem !important;
 }
 
 /* line 40, ../sass/components/navigation/_button_lang.scss */

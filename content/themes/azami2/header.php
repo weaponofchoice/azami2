@@ -48,7 +48,7 @@
 				<li class="logo columns"><a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/typelogo.png"></a></li>
 				<li id="hamburger"><a></a></li>
 			</ul>
-			<ul id="menu_small_collapsed">
+			<ul id="menu_small_collapsed" class="columns">
 				<?php wp_nav_menu( array( 
 					'container' => '',
 					'items_wrap' => '%3$s',
