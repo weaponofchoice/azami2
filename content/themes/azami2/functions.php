@@ -4,6 +4,11 @@
  * @subpackage HTML5_Boilerplate
  */
 
+// Removing upgrade message
+add_action('admin_menu','wphidenag');
+function wphidenag() {
+remove_action( 'admin_notices', 'update_nag', 3 );
+}
 
 /*
  * General theme configuration settings
