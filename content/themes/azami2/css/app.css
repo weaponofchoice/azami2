@@ -9963,7 +9963,7 @@ body {
 @media only screen and (max-width: 640px) {
   /* line 84, ../sass/master/_general.scss */
   .first {
-    margin-top: 9.5rem !important;
+    margin-top: 4.5rem !important;
   }
 }
 /* line 1, ../sass/master/_typography.scss */
@@ -10891,7 +10891,7 @@ img.rsImg {
   display: inline;
   padding-left: 8.33335%;
   padding-right: 8.33335%;
-  z-index: 999;
+  z-index: 1001;
   background: black;
 }
 /* line 15, ../sass/components/navigation/_menu.scss */
@@ -10948,21 +10948,23 @@ img.rsImg {
   display: none;
   padding-left: 0;
   padding-right: 0;
+  z-index: 1001;
+  top: 0;
 }
-/* line 6, ../sass/components/navigation/_menu_small.scss */
+/* line 8, ../sass/components/navigation/_menu_small.scss */
 #menu_small ul {
   z-index: 1000;
   background: black;
 }
-/* line 11, ../sass/components/navigation/_menu_small.scss */
+/* line 13, ../sass/components/navigation/_menu_small.scss */
 #menu_small ul li.logo {
   width: auto;
 }
-/* line 15, ../sass/components/navigation/_menu_small.scss */
+/* line 17, ../sass/components/navigation/_menu_small.scss */
 #menu_small ul li.logo a img {
   max-height: 50%;
 }
-/* line 23, ../sass/components/navigation/_menu_small.scss */
+/* line 25, ../sass/components/navigation/_menu_small.scss */
 #menu_small ul#menu_small_collapsed {
   -webkit-transform: translate3d(0, 0, -100%);
   -webkit-transition: .2s;
@@ -10976,31 +10978,31 @@ img.rsImg {
   padding-top: 5em;
   padding-bottom: 7em;
 }
-/* line 38, ../sass/components/navigation/_menu_small.scss */
+/* line 40, ../sass/components/navigation/_menu_small.scss */
 #menu_small ul#menu_small_collapsed li {
   padding: 2em 0 0;
   width: 100%;
   display: block;
 }
-/* line 44, ../sass/components/navigation/_menu_small.scss */
+/* line 46, ../sass/components/navigation/_menu_small.scss */
 #menu_small ul#menu_small_collapsed li a:after {
   width: 12%;
 }
-/* line 49, ../sass/components/navigation/_menu_small.scss */
+/* line 51, ../sass/components/navigation/_menu_small.scss */
 #menu_small ul#menu_small_collapsed li.logo {
   width: auto;
 }
-/* line 55, ../sass/components/navigation/_menu_small.scss */
+/* line 57, ../sass/components/navigation/_menu_small.scss */
 #menu_small ul.active {
   margin-top: 0px !important;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 63, ../sass/components/navigation/_menu_small.scss */
+  /* line 65, ../sass/components/navigation/_menu_small.scss */
   #menu_small {
     display: block;
   }
-  /* line 67, ../sass/components/navigation/_menu_small.scss */
+  /* line 69, ../sass/components/navigation/_menu_small.scss */
   #menu_small #menu_small_collapsed .lang-item {
     width: auto;
     display: inline;
@@ -11148,33 +11150,38 @@ img.rsImg {
   #logo_type {
     visibility: hidden;
   }
+
+  /* line 61, ../sass/components/other/_intro.scss */
+  #intro {
+    margin-top: -3.125rem;
+  }
 }
 @media only screen and (min-width: 641px) and (max-width: 768px) {
-  /* line 63, ../sass/components/other/_intro.scss */
+  /* line 67, ../sass/components/other/_intro.scss */
   #intro {
     max-height: 37.5rem !important;
   }
 }
 @media only screen and (max-width: 640px) {
-  /* line 73, ../sass/components/other/_intro.scss */
+  /* line 77, ../sass/components/other/_intro.scss */
   #intro {
     max-height: 18.75rem;
   }
 
-  /* line 77, ../sass/components/other/_intro.scss */
+  /* line 81, ../sass/components/other/_intro.scss */
   #logo_type {
     max-width: 70%;
     top: 80% !important;
   }
 }
 @media only screen and (min-width: 90.063em) {
-  /* line 86, ../sass/components/other/_intro.scss */
+  /* line 90, ../sass/components/other/_intro.scss */
   #intro #logo_type img {
     margin-left: -40%;
   }
 }
 @media only screen and (min-width: 120.063em) {
-  /* line 96, ../sass/components/other/_intro.scss */
+  /* line 100, ../sass/components/other/_intro.scss */
   #intro #logo_type img {
     margin-left: -30%;
   }
@@ -11347,8 +11354,9 @@ img.rsImg {
     margin-top: -4.5rem;
   }
 }
-/* line 2, ../sass/pages/_home.scss */
-#home-NL .menu {
+/* line 3, ../sass/pages/_home.scss */
+#home-NL #menu,
+#home-EN #menu {
   top: inherit;
 }
 
