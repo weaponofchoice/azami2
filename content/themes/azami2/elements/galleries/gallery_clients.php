@@ -1,12 +1,12 @@
 <?php if( have_rows('gallery_slide') ): ?> 
 <div class="gallery gallery_clients">
-	<?php while( have_rows('gallery_slide') ): the_row(); ?>
-		<div class="royalSlider rsDefault">
+	<div class="royalSlider rsDefault">
+		<?php while( have_rows('gallery_slide') ): the_row(); ?>
 			<li>
 				<div class="rsContent">
 					<?php if( have_rows('images') ): ?>
 						<?php while( have_rows('images') ): the_row();
-							
+						
 							// scaled images module
 							$gclients_url = get_sub_field('client');
 							?>
@@ -20,7 +20,7 @@
 					<?php endif; ?>
 				</div>
 			</li>
-		</div>
-	<?php endwhile; ?>
+		<?php endwhile; ?>
+	</div>
 </div>
 <?php endif; ?>
