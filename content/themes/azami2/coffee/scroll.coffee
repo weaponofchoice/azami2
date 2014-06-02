@@ -4,6 +4,9 @@ if $('#arrow_scroll').length > 0
 	intro = $('#intro')
 	introHeight = intro.height()
 	
+	$(window).on 'resize', ->
+		introHeight = intro.height()
+	
 	arrow.click ->
 		page.scrollTo introHeight, 500, 'ease-in-out'
 		

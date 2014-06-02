@@ -6,6 +6,9 @@ if ($('#arrow_scroll').length > 0) {
   page = $(window);
   intro = $('#intro');
   introHeight = intro.height();
+  $(window).on('resize', function() {
+    return introHeight = intro.height();
+  });
   arrow.click(function() {
     return page.scrollTo(introHeight, 500, 'ease-in-out');
   });
