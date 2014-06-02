@@ -10070,7 +10070,7 @@ footer p, footer a {
   margin-bottom: 0;
 }
 /* line 28, ../sass/components/global/_footer.scss */
-footer .phonenumber,
+footer .phonenumber a,
 footer .email {
   top: 0;
 }
