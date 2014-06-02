@@ -10148,7 +10148,7 @@ footer button:hover, footer button:active, footer button:focus {
   footer p,
   footer a,
   footer h4 {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 768px) {
