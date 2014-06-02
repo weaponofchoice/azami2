@@ -1,6 +1,4 @@
 .gallery_clients{
-	max-height: rem-calc(400);
-	
 	.royalSlider{
 		li{
 			width: 100%;
@@ -34,6 +32,12 @@
 }
 
 //Media queries
+@media #{$medium-down}{
+	.gallery_clients{
+		max-height: rem-calc(400);
+	}
+}
+
 @media #{$small-only}{
 	.gallery_clients{
 		.royalSlider{

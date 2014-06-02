@@ -19,12 +19,8 @@ footer{
 		margin-left: 8.33333%;
 	}
 	
-	h4{
-		font-size: rem-calc(18);
-	}
-	
-	
 	p,a{
+		font-size: rem-calc(16);
 		margin-bottom: 0;
 	}
 	
@@ -113,6 +109,12 @@ footer{
 			li{
 				margin-top: 5em;
 			}
+		}
+		
+		p,
+		a,
+		h4{
+			font-size: rem-calc(18);
 		}
 	}
 }
