@@ -9,7 +9,8 @@ if $('.gallery').length or $('.gallery_content').length > 0
 		slidesSpacing: 0,
 		loop: true,
 		transitionSpeed: 200,
-		controlNavigation: 'none',
+		controlNavigation: 'bullets',
 		arrowsNav: true,
+		arrowsNavAutoHide: true,
 		arrowsNavHideOnTouch: true,
 		globalCaption: true

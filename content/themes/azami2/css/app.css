@@ -10611,19 +10611,19 @@ img.rsImg {
 }
 /* line 39, ../sass/components/galleries/royalslider/_rs-default.scss */
 .gallery .rsArrow .rsArrowIcn:before {
+  content: ' ';
   width: 1.25rem;
   height: 50%;
   position: absolute;
   background: white;
-  content: " ";
 }
 /* line 47, ../sass/components/galleries/royalslider/_rs-default.scss */
 .gallery .rsArrow .rsArrowIcn:after {
+  content: ' ';
   height: 1.25rem;
   width: 50%;
   position: absolute;
   background: white;
-  content: " ";
 }
 /* line 57, ../sass/components/galleries/royalslider/_rs-default.scss */
 .gallery .rsArrow.rsArrowLeft, .gallery .rsArrow.rsArrowRight {
@@ -10661,22 +10661,20 @@ img.rsImg {
 /* Bullets */
 /* line 98, ../sass/components/galleries/royalslider/_rs-default.scss */
 .rsDefault .rsBullets {
-  position: absolute;
   z-index: 35;
-  bottom: 1em;
+  bottom: 2em;
   width: 100%;
-  margin-bottom: -55%;
   background: none;
   text-align: center;
 }
-/* line 108, ../sass/components/galleries/royalslider/_rs-default.scss */
+/* line 106, ../sass/components/galleries/royalslider/_rs-default.scss */
 .rsDefault .rsBullets .rsBullet {
   display: inline-block;
   *display: inline;
   *zoom: 1;
   padding: 0 .2em;
 }
-/* line 114, ../sass/components/galleries/royalslider/_rs-default.scss */
+/* line 112, ../sass/components/galleries/royalslider/_rs-default.scss */
 .rsDefault .rsBullets .rsBullet span {
   display: block;
   width: 0.625rem;
@@ -10685,7 +10683,7 @@ img.rsImg {
   background: white;
   cursor: pointer;
 }
-/* line 125, ../sass/components/galleries/royalslider/_rs-default.scss */
+/* line 123, ../sass/components/galleries/royalslider/_rs-default.scss */
 .rsDefault .rsBullets .rsNavSelected span {
   background-color: black;
 }
