@@ -10858,11 +10858,15 @@ img.rsImg {
   }
 }
 /* line 3, ../sass/components/galleries/_gallery_clients.scss */
+.gallery_clients .royalSlider .rsBullets {
+  visibility: hidden;
+}
+/* line 7, ../sass/components/galleries/_gallery_clients.scss */
 .gallery_clients .royalSlider li {
   width: 100%;
   height: 100%;
 }
-/* line 7, ../sass/components/galleries/_gallery_clients.scss */
+/* line 11, ../sass/components/galleries/_gallery_clients.scss */
 .gallery_clients .royalSlider li a {
   width: 25%;
   height: 50%;
@@ -10878,23 +10882,23 @@ img.rsImg {
   top: 0;
   margin-top: 0;
 }
-/* line 26, ../sass/components/galleries/_gallery_clients.scss */
+/* line 30, ../sass/components/galleries/_gallery_clients.scss */
 .gallery_clients .royalSlider li a:nth-child(odd) {
   background: gold;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 36, ../sass/components/galleries/_gallery_clients.scss */
+  /* line 40, ../sass/components/galleries/_gallery_clients.scss */
   .gallery_clients {
     width: 100% !important;
   }
 }
 @media only screen and (max-width: 640px) {
-  /* line 42, ../sass/components/galleries/_gallery_clients.scss */
+  /* line 46, ../sass/components/galleries/_gallery_clients.scss */
   .gallery_clients {
     max-height: 25rem;
   }
-  /* line 48, ../sass/components/galleries/_gallery_clients.scss */
+  /* line 52, ../sass/components/galleries/_gallery_clients.scss */
   .gallery_clients .royalSlider li .rsContent a {
     width: 50%;
     padding: 0;
@@ -11231,9 +11235,10 @@ img.rsImg {
 }
 /* line 15, ../sass/components/other/_employee.scss */
 .employee article {
+  margin-top: 1em;
   float: left !important;
 }
-/* line 18, ../sass/components/other/_employee.scss */
+/* line 19, ../sass/components/other/_employee.scss */
 .employee article p {
   text-indent: 1.875rem;
 }
