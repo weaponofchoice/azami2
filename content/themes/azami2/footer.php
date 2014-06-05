@@ -1,6 +1,5 @@
 			<footer id="footer">
 				<div class="row">
-					<div id="container-logo"><img src="<?php bloginfo('template_directory'); ?>/img/typelogo.png" /></div>
 					<ul>
 						<li class="small-20 small-offset-2 medium-10 medium-offset-2 large-5 large-offset-2 columns">
 							<h4 class="uppercase">Openingstijden</h4>
