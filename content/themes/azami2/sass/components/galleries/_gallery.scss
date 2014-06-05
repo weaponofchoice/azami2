@@ -11,6 +11,10 @@
 		height: 100%;
 		margin: 0;
 		text-align: center;
+		
+		.rsBullets{
+			visibility: hidden;
+		}
 	}
 	
 	a{
@@ -52,6 +56,12 @@
 		width: 80%;
 		max-height: rem-calc(500);
 		margin: 0 auto;
+		
+		.royalSlider{
+			.rsBullets{
+				visibility: visible !important;
+			}
+		}
 	}
 }
 
