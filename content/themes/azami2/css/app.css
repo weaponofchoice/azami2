@@ -11348,35 +11348,32 @@ img.rsImg {
   margin-top: 1.5em !important;
 }
 
-/* line 15, ../sass/components/other/_mailchimp.scss */
-.mc_merge_var {
-  margin-bottom: 2em !important;
-}
-/* line 18, ../sass/components/other/_mailchimp.scss */
+/* line 16, ../sass/components/other/_mailchimp.scss */
 .mc_merge_var input[type="text"] {
   text-indent: 1em;
+  font-family: "Apercu Regular", sans-serif;
 }
-/* line 23, ../sass/components/other/_mailchimp.scss */
+/* line 22, ../sass/components/other/_mailchimp.scss */
 .mc_merge_var:nth-child(2), .mc_merge_var:nth-child(3) {
   width: 47%;
   float: left;
   z-index: 997;
 }
-/* line 29, ../sass/components/other/_mailchimp.scss */
+/* line 28, ../sass/components/other/_mailchimp.scss */
 .mc_merge_var:nth-child(3) {
   float: right;
 }
 
-/* line 35, ../sass/components/other/_mailchimp.scss */
+/* line 34, ../sass/components/other/_mailchimp.scss */
 .mc_var_label {
   display: none !important;
 }
 
-/* line 40, ../sass/components/other/_mailchimp.scss */
+/* line 39, ../sass/components/other/_mailchimp.scss */
 .mc_signup_submit {
   text-align: left !important;
 }
-/* line 43, ../sass/components/other/_mailchimp.scss */
+/* line 42, ../sass/components/other/_mailchimp.scss */
 .mc_signup_submit #mc_signup_submit {
   width: auto;
   background: black;
@@ -11390,14 +11387,14 @@ img.rsImg {
   font-size: 1rem;
   letter-spacing: 0.125rem;
 }
-/* line 60, ../sass/components/other/_mailchimp.scss */
+/* line 59, ../sass/components/other/_mailchimp.scss */
 .mc_signup_submit #mc_signup_submit:hover, .mc_signup_submit #mc_signup_submit:active, .mc_signup_submit #mc_signup_submit:focus {
   background: white;
   color: black;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 70, ../sass/components/other/_mailchimp.scss */
+  /* line 69, ../sass/components/other/_mailchimp.scss */
   .mc_input,
   #mc_signup_submit {
     font-size: 1.25rem !important;
