@@ -13,4 +13,5 @@ $image_promo_url = $image_promo['sizes']['large'];
 
 // element: other > EMPLOYEE
 $emp_url = $emp['sizes']['medium'];
+$emp_idol_url = $emp_idol['sizes']['medium'];
 ?>

@@ -10,6 +10,8 @@ function wphidenag() {
 remove_action( 'admin_notices', 'update_nag', 3 );
 }
 
+add_filter('show_admin_bar', '__return_false');
+
 /*
  * General theme configuration settings
  */

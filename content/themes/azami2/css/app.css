@@ -11253,19 +11253,30 @@ img.rsImg {
   overflow: hidden;
 }
 /* line 8, ../sass/components/other/_employee.scss */
+.employee .picture {
+  padding-left: 0;
+  padding-right: 0;
+  background-size: cover !important;
+  background-position: center center;
+}
+/* line 17, ../sass/components/other/_employee.scss */
 .employee:nth-child(even) .picture {
   float: right;
   margin-left: 0;
   margin-right: 8.33333%;
 }
-/* line 15, ../sass/components/other/_employee.scss */
+/* line 24, ../sass/components/other/_employee.scss */
 .employee article {
   margin-top: 1em;
   float: left !important;
 }
-/* line 19, ../sass/components/other/_employee.scss */
+/* line 28, ../sass/components/other/_employee.scss */
 .employee article p {
   text-indent: 1.875rem;
+}
+/* line 34, ../sass/components/other/_employee.scss */
+.employee img:hover {
+  opacity: 0;
 }
 
 /* line 1, ../sass/components/other/_lightbox.scss */
