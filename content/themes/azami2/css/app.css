@@ -10991,8 +10991,14 @@ img.rsImg {
   bottom: inherit !important;
 }
 
+/* line 75, ../sass/components/navigation/_menu.scss */
+.is_stuck {
+  position: fixed;
+  top: 0 !important;
+}
+
 @media only screen and (max-width: 768px) {
-  /* line 77, ../sass/components/navigation/_menu.scss */
+  /* line 82, ../sass/components/navigation/_menu.scss */
   #menu {
     visibility: hidden;
   }

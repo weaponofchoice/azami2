@@ -72,6 +72,11 @@
 	bottom: inherit !important;
 }
 
+.is_stuck{
+	position: fixed;
+	top: 0 !important;
+}
+
 //Media queries
 @media #{$medium-down}{	
 	#menu{
