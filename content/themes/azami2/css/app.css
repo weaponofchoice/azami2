@@ -10930,36 +10930,35 @@ img.rsImg {
   width: 100% !important;
   height: 5rem;
   position: absolute;
-  top: 0;
   display: inline;
   padding-left: 8.33335%;
   padding-right: 8.33335%;
   z-index: 1001;
   background: black;
 }
-/* line 15, ../sass/components/navigation/_menu.scss */
+/* line 14, ../sass/components/navigation/_menu.scss */
 .menu li {
   height: 100%;
   padding: 2em 0;
   display: inline-block;
   text-align: center;
 }
-/* line 22, ../sass/components/navigation/_menu.scss */
+/* line 21, ../sass/components/navigation/_menu.scss */
 .menu li.logo {
   height: 100%;
   padding: 0;
   margin-top: 1.25rem;
   margin-right: 4%;
 }
-/* line 29, ../sass/components/navigation/_menu.scss */
+/* line 28, ../sass/components/navigation/_menu.scss */
 .menu li.logo a img {
   max-height: 50%;
 }
-/* line 37, ../sass/components/navigation/_menu.scss */
+/* line 36, ../sass/components/navigation/_menu.scss */
 .menu li.menu-item a {
   display: block;
 }
-/* line 40, ../sass/components/navigation/_menu.scss */
+/* line 39, ../sass/components/navigation/_menu.scss */
 .menu li.menu-item a:after {
   content: ' ';
   width: 20%;
@@ -10967,11 +10966,11 @@ img.rsImg {
   margin: .5em auto 0;
   border-bottom: 2px solid transparent;
 }
-/* line 49, ../sass/components/navigation/_menu.scss */
+/* line 48, ../sass/components/navigation/_menu.scss */
 .menu li.menu-item a:hover:after {
   border-bottom: 2px solid white;
 }
-/* line 57, ../sass/components/navigation/_menu.scss */
+/* line 56, ../sass/components/navigation/_menu.scss */
 .menu li.menu-item.current-menu-item a:after {
   content: ' ';
   width: 20%;
@@ -10980,13 +10979,13 @@ img.rsImg {
   border-bottom: 2px solid white;
 }
 
-/* line 80, ../sass/components/navigation/_menu.scss */
+/* line 69, ../sass/components/navigation/_menu.scss */
 .sticky-wrapper {
   height: 0 !important;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 86, ../sass/components/navigation/_menu.scss */
+  /* line 75, ../sass/components/navigation/_menu.scss */
   #menu {
     visibility: hidden;
   }
@@ -11421,12 +11420,6 @@ img.rsImg {
     margin-top: -4.5rem;
   }
 }
-/* line 3, ../sass/pages/_home.scss */
-#home-NL #menu,
-#home-EN #menu {
-  top: inherit;
-}
-
 /* line 3, ../sass/pages/_team.scss */
 #team-NL .gallery,
 #team-EN .gallery {
