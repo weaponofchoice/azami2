@@ -10722,19 +10722,6 @@
 		"outputStyle": 0,
 		"syntaxCheckerStyle": 1
 		},
-	"\/content\/themes\/azami2\/coffee\/init-stickykit.coffee": {
-		"createSourceMap": 0,
-		"fileType": 32,
-		"ignore": 1,
-		"ignoreWasSetByUser": 1,
-		"inputAbbreviatedPath": "\/content\/themes\/azami2\/coffee\/init-stickykit.coffee",
-		"minifyOutput": 1,
-		"outputAbbreviatedPath": "\/content\/themes\/azami2\/coffee\/init-stickykit.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"syntaxCheckerStyle": 1
-		},
 	"\/content\/themes\/azami2\/coffee\/intro.coffee": {
 		"createSourceMap": 0,
 		"fileType": 32,
@@ -11146,17 +11133,6 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/content\/themes\/azami2\/js\/init-stickykit.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/content\/themes\/azami2\/js\/init-stickykit.js",
-		"outputAbbreviatedPath": "\/content\/themes\/azami2\/js\/min\/init-stickykit-ck.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
 	"\/content\/themes\/azami2\/js\/intro.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -11269,21 +11245,10 @@
 		},
 	"\/content\/themes\/azami2\/js\/vendor\/sticky.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/content\/themes\/azami2\/js\/vendor\/sticky.js",
 		"outputAbbreviatedPath": "\/content\/themes\/azami2\/js\/vendor\/min\/sticky-ck.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/content\/themes\/azami2\/js\/vendor\/stickykit.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/content\/themes\/azami2\/js\/vendor\/stickykit.js",
-		"outputAbbreviatedPath": "\/content\/themes\/azami2\/js\/vendor\/min\/stickykit-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -24989,43 +24954,43 @@
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/content\/themes\/azami2\/js\/init-royalslider.js",
+			"linkedFileAbbreviatedPath": "\/content\/themes\/azami2\/js\/vendor\/sticky.js",
 			"position": 5,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/content\/themes\/azami2\/js\/vendor\/imagelightbox.js",
+			"linkedFileAbbreviatedPath": "\/content\/themes\/azami2\/js\/init-sticky.js",
 			"position": 6,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/content\/themes\/azami2\/js\/init-imagelightbox.js",
+			"linkedFileAbbreviatedPath": "\/content\/themes\/azami2\/js\/init-royalslider.js",
 			"position": 7,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/content\/themes\/azami2\/js\/vendor\/gmaps.js",
+			"linkedFileAbbreviatedPath": "\/content\/themes\/azami2\/js\/vendor\/imagelightbox.js",
 			"position": 8,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/content\/themes\/azami2\/js\/init-gmaps.js",
+			"linkedFileAbbreviatedPath": "\/content\/themes\/azami2\/js\/init-imagelightbox.js",
 			"position": 9,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/content\/themes\/azami2\/js\/vendor\/stickykit.js",
+			"linkedFileAbbreviatedPath": "\/content\/themes\/azami2\/js\/vendor\/gmaps.js",
 			"position": 10,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/content\/themes\/azami2\/js\/init-stickykit.js",
+			"linkedFileAbbreviatedPath": "\/content\/themes\/azami2\/js\/init-gmaps.js",
 			"position": 11,
 			"type": 0
 			},
