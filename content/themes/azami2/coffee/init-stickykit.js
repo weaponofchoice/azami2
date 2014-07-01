@@ -1,0 +1,1 @@
+(function(){var n,t;$(".menu").length>0&&(t=$(".menu"),n=$("#intro").height(),t.stick_in_parent())}).call(this);
