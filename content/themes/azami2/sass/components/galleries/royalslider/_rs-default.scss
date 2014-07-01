@@ -31,6 +31,11 @@
 		display: block !important;
 		cursor: pointer;
 		z-index: 9;
+		background: none;
+		
+		*{
+			background: none;
+		}
 		
 		.rsArrowIcn{		
 			width: rem-calc(200);
