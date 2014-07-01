@@ -4,7 +4,7 @@
 .rsSlide,
 .rsVideoFrameHolder,
 .rsThumbs{
-	background: $black;
+	background: $white;
 	color: $white;
 	overflow: hidden;
 }
@@ -13,6 +13,10 @@
 	li, div{
 		height: 100%;
 	}
+}
+
+.royalSlider *{
+	background: $white;
 }
 
 
