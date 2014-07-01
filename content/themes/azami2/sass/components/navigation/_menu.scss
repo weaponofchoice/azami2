@@ -70,8 +70,10 @@
 .sticky-wrapper{
 	height: 0 !important;
 	
-	.menu{
-		top: 0 !important;
+	&.is-sticky{
+		.menu{
+			top: 0 !important;
+		}
 	}
 }
 

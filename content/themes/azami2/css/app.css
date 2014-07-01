@@ -10984,13 +10984,13 @@ img.rsImg {
 .sticky-wrapper {
   height: 0 !important;
 }
-/* line 73, ../sass/components/navigation/_menu.scss */
-.sticky-wrapper .menu {
+/* line 74, ../sass/components/navigation/_menu.scss */
+.sticky-wrapper.is-sticky .menu {
   top: 0 !important;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 80, ../sass/components/navigation/_menu.scss */
+  /* line 82, ../sass/components/navigation/_menu.scss */
   #menu {
     visibility: hidden;
   }
