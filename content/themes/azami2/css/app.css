@@ -9932,13 +9932,8 @@ body {
   margin-bottom: 8.75rem !important;
 }
 
-/* line 57, ../sass/master/_general.scss */
-.first {
-  margin-top: 13.75rem !important;
-}
-
 @media only screen and (max-width: 768px) {
-  /* line 70, ../sass/master/_general.scss */
+  /* line 66, ../sass/master/_general.scss */
   .text,
   .text_quote,
   .text_centered,
@@ -9950,18 +9945,18 @@ body {
     margin-bottom: 5rem !important;
   }
 
-  /* line 74, ../sass/master/_general.scss */
+  /* line 70, ../sass/master/_general.scss */
   .first {
     margin-top: 7.5rem !important;
   }
 
-  /* line 78, ../sass/master/_general.scss */
+  /* line 74, ../sass/master/_general.scss */
   #content {
     padding-top: 8.125rem !important;
   }
 }
 @media only screen and (max-width: 640px) {
-  /* line 84, ../sass/master/_general.scss */
+  /* line 80, ../sass/master/_general.scss */
   .first {
     margin-top: 4.5rem !important;
   }
@@ -10985,20 +10980,13 @@ img.rsImg {
   border-bottom: 2px solid white;
 }
 
-/* line 71, ../sass/components/navigation/_menu.scss */
-#menu,
-.is_stuck {
-  bottom: inherit !important;
-}
-
-/* line 75, ../sass/components/navigation/_menu.scss */
-.is_stuck {
-  position: fixed;
-  top: 0 !important;
+/* line 80, ../sass/components/navigation/_menu.scss */
+.sticky-wrapper {
+  height: 0 !important;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 82, ../sass/components/navigation/_menu.scss */
+  /* line 86, ../sass/components/navigation/_menu.scss */
   #menu {
     visibility: hidden;
   }
@@ -11159,28 +11147,23 @@ img.rsImg {
   }
 }
 /* line 1, ../sass/components/other/_intro.scss */
-#intro {
-  margin-top: -13.75rem;
-}
-
-/* line 5, ../sass/components/other/_intro.scss */
 .gallery_intro {
   width: 50%;
   height: 100% !important;
   float: left;
   max-height: none !important;
 }
-/* line 11, ../sass/components/other/_intro.scss */
+/* line 7, ../sass/components/other/_intro.scss */
 .gallery_intro .royalSlider {
   height: 100% !important;
 }
-/* line 14, ../sass/components/other/_intro.scss */
+/* line 10, ../sass/components/other/_intro.scss */
 .gallery_intro .royalSlider li {
   width: 100%;
   height: 100%;
 }
 
-/* line 21, ../sass/components/other/_intro.scss */
+/* line 17, ../sass/components/other/_intro.scss */
 #intro {
   width: 100%;
   height: 56.25rem;
@@ -11191,21 +11174,21 @@ img.rsImg {
   background-repeat: no-repeat;
   z-index: 1000;
 }
-/* line 33, ../sass/components/other/_intro.scss */
+/* line 29, ../sass/components/other/_intro.scss */
 #intro #intro_image {
   width: 100%;
   height: 100%;
   max-width: none;
   z-index: 8;
 }
-/* line 40, ../sass/components/other/_intro.scss */
+/* line 36, ../sass/components/other/_intro.scss */
 #intro #logo_type {
   position: absolute;
   z-index: 999;
   top: 67%;
   left: 50%;
 }
-/* line 46, ../sass/components/other/_intro.scss */
+/* line 42, ../sass/components/other/_intro.scss */
 #intro #logo_type img {
   margin-left: -50%;
   margin-top: -25%;
@@ -11213,42 +11196,42 @@ img.rsImg {
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 57, ../sass/components/other/_intro.scss */
+  /* line 53, ../sass/components/other/_intro.scss */
   #logo_type {
     visibility: hidden;
   }
 
-  /* line 61, ../sass/components/other/_intro.scss */
+  /* line 57, ../sass/components/other/_intro.scss */
   #intro {
     margin-top: -3.125rem;
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 768px) {
-  /* line 67, ../sass/components/other/_intro.scss */
+  /* line 63, ../sass/components/other/_intro.scss */
   #intro {
     max-height: 37.5rem !important;
   }
 }
 @media only screen and (max-width: 640px) {
-  /* line 77, ../sass/components/other/_intro.scss */
+  /* line 73, ../sass/components/other/_intro.scss */
   #intro {
     max-height: 18.75rem;
   }
 
-  /* line 81, ../sass/components/other/_intro.scss */
+  /* line 77, ../sass/components/other/_intro.scss */
   #logo_type {
     max-width: 70%;
     top: 80% !important;
   }
 }
 @media only screen and (min-width: 90.063em) {
-  /* line 90, ../sass/components/other/_intro.scss */
+  /* line 86, ../sass/components/other/_intro.scss */
   #intro #logo_type img {
     margin-left: -40%;
   }
 }
 @media only screen and (min-width: 120.063em) {
-  /* line 100, ../sass/components/other/_intro.scss */
+  /* line 96, ../sass/components/other/_intro.scss */
   #intro #logo_type img {
     margin-left: -30%;
   }

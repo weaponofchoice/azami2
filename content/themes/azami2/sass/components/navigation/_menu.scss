@@ -67,14 +67,18 @@
 	}
 }
 
-#menu,
-.is_stuck{
-	bottom: inherit !important;
-}
+//#menu,
+//.is_stuck{
+//	bottom: inherit !important;
+//}
+//
+//.is_stuck{
+//	position: fixed;
+//	top: 0 !important;
+//}
 
-.is_stuck{
-	position: fixed;
-	top: 0 !important;
+.sticky-wrapper{
+	height: 0 !important;
 }
 
 //Media queries
