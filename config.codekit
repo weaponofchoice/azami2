@@ -10660,8 +10660,8 @@
 	"\/content\/themes\/azami2\/coffee\/height.coffee": {
 		"createSourceMap": 0,
 		"fileType": 32,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/content\/themes\/azami2\/coffee\/height.coffee",
 		"minifyOutput": 1,
 		"outputAbbreviatedPath": "\/content\/themes\/azami2\/coffee\/height.js",
@@ -10673,8 +10673,8 @@
 	"\/content\/themes\/azami2\/coffee\/home.coffee": {
 		"createSourceMap": 0,
 		"fileType": 32,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/content\/themes\/azami2\/coffee\/home.coffee",
 		"minifyOutput": 1,
 		"outputAbbreviatedPath": "\/content\/themes\/azami2\/coffee\/home.js",
@@ -10686,8 +10686,8 @@
 	"\/content\/themes\/azami2\/coffee\/init-imagelightbox.coffee": {
 		"createSourceMap": 0,
 		"fileType": 32,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/content\/themes\/azami2\/coffee\/init-imagelightbox.coffee",
 		"minifyOutput": 1,
 		"outputAbbreviatedPath": "\/content\/themes\/azami2\/coffee\/init-imagelightbox.js",
@@ -10699,8 +10699,8 @@
 	"\/content\/themes\/azami2\/coffee\/init-royalslider.coffee": {
 		"createSourceMap": 0,
 		"fileType": 32,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/content\/themes\/azami2\/coffee\/init-royalslider.coffee",
 		"minifyOutput": 1,
 		"outputAbbreviatedPath": "\/content\/themes\/azami2\/coffee\/init-royalslider.js",
@@ -10712,8 +10712,8 @@
 	"\/content\/themes\/azami2\/coffee\/init-stickykit.coffee": {
 		"createSourceMap": 0,
 		"fileType": 32,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/content\/themes\/azami2\/coffee\/init-stickykit.coffee",
 		"minifyOutput": 1,
 		"outputAbbreviatedPath": "\/content\/themes\/azami2\/coffee\/init-stickykit.js",
@@ -10725,8 +10725,8 @@
 	"\/content\/themes\/azami2\/coffee\/intro.coffee": {
 		"createSourceMap": 0,
 		"fileType": 32,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/content\/themes\/azami2\/coffee\/intro.coffee",
 		"minifyOutput": 1,
 		"outputAbbreviatedPath": "\/content\/themes\/azami2\/coffee\/intro.js",
@@ -10738,8 +10738,8 @@
 	"\/content\/themes\/azami2\/coffee\/menu_small.coffee": {
 		"createSourceMap": 0,
 		"fileType": 32,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/content\/themes\/azami2\/coffee\/menu_small.coffee",
 		"minifyOutput": 1,
 		"outputAbbreviatedPath": "\/content\/themes\/azami2\/coffee\/menu_small.js",
@@ -10751,8 +10751,8 @@
 	"\/content\/themes\/azami2\/coffee\/pageload.coffee": {
 		"createSourceMap": 0,
 		"fileType": 32,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/content\/themes\/azami2\/coffee\/pageload.coffee",
 		"minifyOutput": 1,
 		"outputAbbreviatedPath": "\/content\/themes\/azami2\/coffee\/pageload.js",
@@ -10764,8 +10764,8 @@
 	"\/content\/themes\/azami2\/coffee\/scroll.coffee": {
 		"createSourceMap": 0,
 		"fileType": 32,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/content\/themes\/azami2\/coffee\/scroll.coffee",
 		"minifyOutput": 1,
 		"outputAbbreviatedPath": "\/content\/themes\/azami2\/coffee\/scroll.js",
@@ -10777,8 +10777,8 @@
 	"\/content\/themes\/azami2\/coffee\/scrollto.coffee": {
 		"createSourceMap": 0,
 		"fileType": 32,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/content\/themes\/azami2\/coffee\/scrollto.coffee",
 		"minifyOutput": 1,
 		"outputAbbreviatedPath": "\/content\/themes\/azami2\/coffee\/scrollto.js",
@@ -11140,12 +11140,12 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/content\/themes\/azami2\/js\/init-stickyKit.js": {
+	"\/content\/themes\/azami2\/js\/init-stickykit.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/content\/themes\/azami2\/js\/init-stickyKit.js",
-		"outputAbbreviatedPath": "\/content\/themes\/azami2\/js\/min\/init-stickyKit-ck.js",
+		"inputAbbreviatedPath": "\/content\/themes\/azami2\/js\/init-stickykit.js",
+		"outputAbbreviatedPath": "\/content\/themes\/azami2\/js\/min\/init-stickykit-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -11197,8 +11197,8 @@
 		},
 	"\/content\/themes\/azami2\/js\/scrollto.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/content\/themes\/azami2\/js\/scrollto.js",
 		"outputAbbreviatedPath": "\/content\/themes\/azami2\/js\/min\/scrollto-ck.js",
 		"outputPathIsOutsideProject": 0,
@@ -25002,7 +25002,7 @@
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/content\/themes\/azami2\/js\/init-stickyKit.js",
+			"linkedFileAbbreviatedPath": "\/content\/themes\/azami2\/js\/init-stickykit.js",
 			"position": 10,
 			"type": 0
 			},
