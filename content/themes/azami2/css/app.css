@@ -10200,10 +10200,11 @@ footer button:hover, footer button:active, footer button:focus {
   color: white;
   font-family: "Apercu Bold", sans-serif;
   font-size: 3.75rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
 }
 
 @media only screen and (max-width: 640px) {
-  /* line 30, ../sass/components/global/_image_promo.scss */
+  /* line 32, ../sass/components/global/_image_promo.scss */
   .image_promo a {
     margin-top: -.5em;
     font-size: 2.375rem;
