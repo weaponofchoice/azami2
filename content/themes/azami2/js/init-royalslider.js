@@ -6,6 +6,8 @@ if ($('.gallery').length || $('.gallery_content').length > 0) {
   slider.royalSlider({
     keyboardNavEnabled: true,
     imageScaleMode: 'fill',
+    imageAlignCenter: true,
+    autoScaleSlider: false,
     slidesSpacing: 0,
     loop: true,
     transitionSpeed: 200,

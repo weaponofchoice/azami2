@@ -109,9 +109,13 @@
 		z-index: 35;
 		bottom: 2em;
 		width: 100%;
-
+		
 		background: none;
 		text-align: center;
+		
+		*{
+			background: none;
+		}
 		
 		.rsBullet {
 			display: inline-block;

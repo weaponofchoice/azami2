@@ -1,7 +1,7 @@
 <div class="gallery">
 	
 	<?php if(have_rows('gallery_slide')): ?>
-    <div class="royalSlider rsDefault contentSlider rsAutoHeight rsHor">
+    <div class="royalSlider rsDefault rsAutoHeight rsHor">
 		<?php
 			while(have_rows('gallery_slide')): the_row();
 			

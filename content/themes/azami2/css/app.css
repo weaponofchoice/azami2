@@ -10688,13 +10688,17 @@ img.rsImg {
   text-align: center;
 }
 /* line 116, ../sass/components/galleries/royalslider/_rs-default.scss */
+.rsDefault .rsBullets * {
+  background: none;
+}
+/* line 120, ../sass/components/galleries/royalslider/_rs-default.scss */
 .rsDefault .rsBullets .rsBullet {
   display: inline-block;
   *display: inline;
   *zoom: 1;
   padding: 0 .2em;
 }
-/* line 122, ../sass/components/galleries/royalslider/_rs-default.scss */
+/* line 126, ../sass/components/galleries/royalslider/_rs-default.scss */
 .rsDefault .rsBullets .rsBullet span {
   display: block;
   width: 0.625rem;
@@ -10703,7 +10707,7 @@ img.rsImg {
   background: white;
   cursor: pointer;
 }
-/* line 133, ../sass/components/galleries/royalslider/_rs-default.scss */
+/* line 137, ../sass/components/galleries/royalslider/_rs-default.scss */
 .rsDefault .rsBullets .rsNavSelected span {
   background-color: black;
 }
@@ -10809,17 +10813,19 @@ img.rsImg {
 }
 /* line 20, ../sass/components/galleries/_gallery_content.scss */
 .gallery_content .contentSlider .rsOverflow img {
+  width: 100%;
   margin-top: 0 !important;
+  margin-left: 0 !important;
 }
-/* line 25, ../sass/components/galleries/_gallery_content.scss */
+/* line 27, ../sass/components/galleries/_gallery_content.scss */
 .gallery_content .contentSlider .rsArrow {
   top: 0;
 }
-/* line 29, ../sass/components/galleries/_gallery_content.scss */
+/* line 31, ../sass/components/galleries/_gallery_content.scss */
 .gallery_content .contentSlider .rsBullets {
   visibility: hidden;
 }
-/* line 33, ../sass/components/galleries/_gallery_content.scss */
+/* line 35, ../sass/components/galleries/_gallery_content.scss */
 .gallery_content .contentSlider .rsGCaption {
   width: 100%;
   max-width: 56.25rem;
@@ -10830,31 +10836,31 @@ img.rsImg {
   float: none;
   text-align: center;
 }
-/* line 43, ../sass/components/galleries/_gallery_content.scss */
+/* line 45, ../sass/components/galleries/_gallery_content.scss */
 .gallery_content .contentSlider .rsGCaption .rsCaption {
   width: 80%;
   margin: 0 auto;
 }
 
-/* line 51, ../sass/components/galleries/_gallery_content.scss */
+/* line 53, ../sass/components/galleries/_gallery_content.scss */
 .royalSlider * {
   color: black;
 }
 
-/* line 56, ../sass/components/galleries/_gallery_content.scss */
+/* line 58, ../sass/components/galleries/_gallery_content.scss */
 .rsArrowLeft,
 .rsArrowRight {
   top: -.5em;
   margin-left: 0;
   margin-right: 0;
 }
-/* line 62, ../sass/components/galleries/_gallery_content.scss */
+/* line 64, ../sass/components/galleries/_gallery_content.scss */
 .rsArrowLeft .rsArrowIcn:before,
 .rsArrowRight .rsArrowIcn:before {
   width: 0.625rem;
   height: 30%;
 }
-/* line 67, ../sass/components/galleries/_gallery_content.scss */
+/* line 69, ../sass/components/galleries/_gallery_content.scss */
 .rsArrowLeft .rsArrowIcn:after,
 .rsArrowRight .rsArrowIcn:after {
   width: 30%;
@@ -10862,28 +10868,28 @@ img.rsImg {
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 77, ../sass/components/galleries/_gallery_content.scss */
+  /* line 79, ../sass/components/galleries/_gallery_content.scss */
   .gallery_content p.uppercase {
     text-align: left;
     width: 80%;
     margin: 1em auto;
   }
-  /* line 83, ../sass/components/galleries/_gallery_content.scss */
+  /* line 85, ../sass/components/galleries/_gallery_content.scss */
   .gallery_content .contentSlider {
     width: 120% !important;
     margin-left: -10%;
   }
-  /* line 87, ../sass/components/galleries/_gallery_content.scss */
+  /* line 89, ../sass/components/galleries/_gallery_content.scss */
   .gallery_content .contentSlider .rsBullets {
     visibility: visible !important;
   }
-  /* line 92, ../sass/components/galleries/_gallery_content.scss */
+  /* line 94, ../sass/components/galleries/_gallery_content.scss */
   .gallery_content .rsGCaption {
     width: 65% !important;
     margin: 1em auto !important;
     float: none;
   }
-  /* line 97, ../sass/components/galleries/_gallery_content.scss */
+  /* line 99, ../sass/components/galleries/_gallery_content.scss */
   .gallery_content .rsGCaption .rsCaption {
     width: 100% !important;
     text-align: left;
