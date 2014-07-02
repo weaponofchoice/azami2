@@ -25,7 +25,6 @@ var map;
 		map.addMarker({
 			lat: 52.080643,
 			lng: 4.307691,
-			title: 'UFS',
 			icon: image
 		});
 		
