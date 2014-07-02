@@ -3,7 +3,6 @@
  * @package WordPress
  * @subpackage HTML5_Boilerplate
  */
-
 // Removing upgrade message
 add_action('admin_menu','wphidenag');
 function wphidenag() {

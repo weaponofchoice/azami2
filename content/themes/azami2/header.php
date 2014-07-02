@@ -31,6 +31,10 @@
 	
 	<!-- WP_HEAD() -->
 	<?php wp_head(); ?>
+	
+	<script type="text/javascript">
+	var templateUrl = "<?php bloginfo('template_directory'); ?>/img/marker.png";
+	</script>
   </head>
 	
   <body <?php body_class(); ?> id="<?php echo the_title(); ?>">
