@@ -1,5 +1,4 @@
 var image = new google.maps.MarkerImage(
-		//'../content/themes/azami/img/marker.png',
     'http://azami2.woc-dev.nl/content/themes/azami2/img/marker.png',
     new google.maps.Size(66,66),    // size of the image
     new google.maps.Point(0,0), // origin, in this case top-left corner
@@ -20,11 +19,10 @@ var map;
 			        }
 		});
 		
-		
-		
 		map.addMarker({
 			lat: 52.080643,
 			lng: 4.307691,
+			title: 'Azami',
 			icon: image
 		});
 		

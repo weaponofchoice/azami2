@@ -76,10 +76,3 @@
 		<?php pll_the_languages(); ?>
 	</div>
 	<div id="content">
-		<!-- Sending all English pages to 'contruction.php' for now -->
-		<?php
-		$lang = get_locale();
-		if($lang == 'en'){
-			include('construction.php');
-		}
-		?>
