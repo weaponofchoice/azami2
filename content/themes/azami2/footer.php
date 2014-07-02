@@ -22,7 +22,7 @@
 						</li>
 						<li class="signup small-20 small-offset-2 medium-20 medium-offset-2 large-6 large-offset-2 columns">
 							<h4 class="uppercase">Newsletter</h4>
-							<?php mailchimpSF_signup_form(); ?>
+							<?php mc4wp_form(); ?>
 						</li>
 					</ul>
 				</div>

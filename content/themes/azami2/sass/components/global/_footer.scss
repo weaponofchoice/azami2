@@ -45,7 +45,8 @@ footer{
 		}
 	}
 	
-	input[type="text"]{
+	input[type="text"],
+	input[type="email"]{
 		background: $black;
 		border: none;
 		border-bottom: rem-calc(2) solid $white;
