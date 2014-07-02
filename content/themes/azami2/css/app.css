@@ -10130,8 +10130,8 @@ footer button:hover, footer button:active, footer button:focus {
 .followus .icon-social img {
   min-width: 2.5em;
   max-width: 2.5em;
-  margin-top: -2em;
-  margin-left: .5em;
+  margin-top: -.5em;
+  margin-right: .5em;
 }
 
 @media only screen and (min-width: 120.063em) {

@@ -15,10 +15,11 @@
 							<p>2514 GB Den Haag</p>
 							<p class="phonenumber">+31 (0)70 346 78 05</p>
 							<a href="mailto:info@azami.nl" class="email"><p>info@azami.nl</p></a>
-							<p class="followus">Volg ons op: 
+							<div class="followus">
+								<p>Volg ons op:</p>
 								<a class="icon-social" href="http://www.facebook.com/AzamiTheHague" target="blank"><img src="<?php bloginfo('template_directory'); ?>/img/icons_social/white_facebook.png" /></a>
 								<a class="icon-social" href="http://www.instagram.com/azamioptiek" target="blank"><img src="<?php bloginfo('template_directory'); ?>/img/icons_social/white_instagram.png" /></a>
-							</p>
+							</div>
 						</li>
 						<li class="signup small-20 small-offset-2 medium-20 medium-offset-2 large-6 large-offset-2 columns">
 							<h4 class="uppercase">Newsletter</h4>
