@@ -25038,13 +25038,13 @@
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/content\/themes\/azami2\/js\/menu_small.js",
+			"linkedFileAbbreviatedPath": "\/content\/themes\/azami2\/js\/gallery-content.js",
 			"position": 15,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/content\/themes\/azami2\/js\/gallery-content.js",
+			"linkedFileAbbreviatedPath": "\/content\/themes\/azami2\/js\/menu_small.js",
 			"position": 16,
 			"type": 0
 			}
