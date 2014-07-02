@@ -65,6 +65,10 @@ footer{
 		}
 	}
 	
+	::-webkit-input-placeholder{
+		color: $gray;
+	}
+	
 	button{
 		background: $black;
 		border: rem-calc(2) solid $white;

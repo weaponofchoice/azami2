@@ -10102,6 +10102,10 @@ footer input[type="email"]:focus {
   color: white;
 }
 /* line 68, ../sass/components/global/_footer.scss */
+footer ::-webkit-input-placeholder {
+  color: #58595b;
+}
+/* line 72, ../sass/components/global/_footer.scss */
 footer button {
   background: black;
   border: 0.125rem solid white;
@@ -10112,17 +10116,17 @@ footer button {
   font-size: 1rem;
   letter-spacing: 0.125rem;
 }
-/* line 81, ../sass/components/global/_footer.scss */
+/* line 85, ../sass/components/global/_footer.scss */
 footer button:hover, footer button:active, footer button:focus {
   background: white;
   color: black;
 }
 
-/* line 88, ../sass/components/global/_footer.scss */
+/* line 92, ../sass/components/global/_footer.scss */
 .followus {
   top: .7em;
 }
-/* line 92, ../sass/components/global/_footer.scss */
+/* line 96, ../sass/components/global/_footer.scss */
 .followus .icon-social img {
   min-width: 2.5em;
   max-width: 2.5em;
@@ -10131,29 +10135,29 @@ footer button:hover, footer button:active, footer button:focus {
 }
 
 @media only screen and (min-width: 120.063em) {
-  /* line 105, ../sass/components/global/_footer.scss */
+  /* line 109, ../sass/components/global/_footer.scss */
   #Homepage-EN footer,
   #Homepage-NL footer {
     margin-top: 9.375rem !important;
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 112, ../sass/components/global/_footer.scss */
+  /* line 116, ../sass/components/global/_footer.scss */
   footer {
     padding-top: 0;
   }
-  /* line 115, ../sass/components/global/_footer.scss */
+  /* line 119, ../sass/components/global/_footer.scss */
   footer #container-logo {
     display: none;
     /*width: 60%;
     margin-bottom: 0;
     margin-left: 10.33333%;*/
   }
-  /* line 123, ../sass/components/global/_footer.scss */
+  /* line 127, ../sass/components/global/_footer.scss */
   footer ul li {
     margin-top: 5em;
   }
-  /* line 130, ../sass/components/global/_footer.scss */
+  /* line 134, ../sass/components/global/_footer.scss */
   footer p,
   footer a,
   footer h4 {
@@ -10161,13 +10165,13 @@ footer button:hover, footer button:active, footer button:focus {
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 768px) {
-  /* line 137, ../sass/components/global/_footer.scss */
+  /* line 141, ../sass/components/global/_footer.scss */
   .signup {
     margin-top: 8em;
   }
 }
 @media only screen and (max-width: 640px) {
-  /* line 143, ../sass/components/global/_footer.scss */
+  /* line 147, ../sass/components/global/_footer.scss */
   .button {
     width: 100% !important;
     padding: 1.5em 3em !important;
@@ -11376,20 +11380,19 @@ img.rsImg {
 /* line 17, ../sass/components/other/_mailchimp.scss */
 .mc_merge_var input[type="text"],
 .mc_merge_var input[type="email"] {
-  text-indent: 1em;
   font-family: "Apercu Regular", sans-serif;
 }
-/* line 23, ../sass/components/other/_mailchimp.scss */
+/* line 22, ../sass/components/other/_mailchimp.scss */
 .mc_merge_var:nth-child(1), .mc_merge_var:nth-child(2) {
   width: 47%;
   float: left;
   z-index: 997;
 }
-/* line 29, ../sass/components/other/_mailchimp.scss */
+/* line 28, ../sass/components/other/_mailchimp.scss */
 .mc_merge_var:nth-child(2) {
   float: right;
 }
-/* line 33, ../sass/components/other/_mailchimp.scss */
+/* line 32, ../sass/components/other/_mailchimp.scss */
 .mc_merge_var input[type="radio"] {
   appearance: none !important;
   -webkit-appearance: none !important;
@@ -11398,29 +11401,29 @@ img.rsImg {
   border: 2px solid white !important;
   border-radius: 100%;
 }
-/* line 42, ../sass/components/other/_mailchimp.scss */
+/* line 41, ../sass/components/other/_mailchimp.scss */
 .mc_merge_var input[type="radio"]:checked {
   background: white;
 }
-/* line 47, ../sass/components/other/_mailchimp.scss */
+/* line 46, ../sass/components/other/_mailchimp.scss */
 .mc_merge_var .lang {
   display: inline;
 }
-/* line 51, ../sass/components/other/_mailchimp.scss */
+/* line 50, ../sass/components/other/_mailchimp.scss */
 .mc_merge_var .lang:nth-child(2), .mc_merge_var .lang:nth-child(3) {
   margin-left: .5em;
 }
 
-/* line 58, ../sass/components/other/_mailchimp.scss */
+/* line 57, ../sass/components/other/_mailchimp.scss */
 .mc_var_label {
   display: none !important;
 }
 
-/* line 63, ../sass/components/other/_mailchimp.scss */
+/* line 62, ../sass/components/other/_mailchimp.scss */
 .mc_signup_submit {
   text-align: left !important;
 }
-/* line 66, ../sass/components/other/_mailchimp.scss */
+/* line 65, ../sass/components/other/_mailchimp.scss */
 .mc_signup_submit #mc_signup_submit {
   width: auto;
   background: black;
@@ -11434,13 +11437,13 @@ img.rsImg {
   font-size: 1rem;
   letter-spacing: 0.125rem;
 }
-/* line 83, ../sass/components/other/_mailchimp.scss */
+/* line 82, ../sass/components/other/_mailchimp.scss */
 .mc_signup_submit #mc_signup_submit:hover, .mc_signup_submit #mc_signup_submit:active, .mc_signup_submit #mc_signup_submit:focus {
   background: white;
   color: black;
 }
 
-/* line 91, ../sass/components/other/_mailchimp.scss */
+/* line 90, ../sass/components/other/_mailchimp.scss */
 .mc4wp-alert {
   background: white;
   color: black;
@@ -11451,20 +11454,20 @@ img.rsImg {
   margin-top: 2em;
 }
 
-/* line 101, ../sass/components/other/_mailchimp.scss */
+/* line 100, ../sass/components/other/_mailchimp.scss */
 .mc4wp-error {
   border-radius: 0%;
   margin-top: 2em;
 }
 
 @media all and (max-width: 1280px) {
-  /* line 108, ../sass/components/other/_mailchimp.scss */
+  /* line 107, ../sass/components/other/_mailchimp.scss */
   .lang {
     display: block !important;
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 115, ../sass/components/other/_mailchimp.scss */
+  /* line 114, ../sass/components/other/_mailchimp.scss */
   .mc_input,
   #mc_signup_submit {
     font-size: 1.25rem !important;
