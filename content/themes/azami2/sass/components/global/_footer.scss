@@ -84,6 +84,19 @@ footer{
 	}
 }
 
+.followus{
+	top: .7em;
+	
+	.icon-social{
+		img{
+			min-width: 2.5em;
+			max-width: 2.5em;
+			margin-top: -2em;
+			margin-left: .5em;
+		}
+	}
+}
+
 //Media queries
 @media #{$xxlarge-up}{
 	#Homepage-EN,
