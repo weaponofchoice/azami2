@@ -11357,11 +11357,11 @@ img.rsImg {
 }
 /* line 50, ../sass/components/other/_lightbox.scss */
 #imagelightbox-close:before {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 /* line 2, ../sass/components/other/_mailchimp.scss */
