@@ -55,7 +55,6 @@
 	}
 	
 	#intro{
-		margin-top: rem-calc(-50);
 	}
 }
 
@@ -72,6 +71,7 @@
 @media #{$small-only}{
 	#intro{
 		max-height: rem-calc(300);
+		top: rem-calc(80);
 	}
 	
 	#logo_type{

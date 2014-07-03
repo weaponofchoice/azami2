@@ -9945,18 +9945,13 @@ body {
     margin-bottom: 5rem !important;
   }
 
-  /* line 70, ../sass/master/_general.scss */
-  .first {
-    margin-top: 7.5rem !important;
-  }
-
-  /* line 74, ../sass/master/_general.scss */
+  /* line 73, ../sass/master/_general.scss */
   #content {
     padding-top: 8.125rem !important;
   }
 }
 @media only screen and (max-width: 640px) {
-  /* line 80, ../sass/master/_general.scss */
+  /* line 79, ../sass/master/_general.scss */
   .first {
     margin-top: 4.5rem !important;
   }
@@ -11242,22 +11237,18 @@ img.rsImg {
   #logo_type {
     visibility: hidden;
   }
-
-  /* line 57, ../sass/components/other/_intro.scss */
-  #intro {
-    margin-top: -3.125rem;
-  }
 }
 @media only screen and (min-width: 641px) and (max-width: 768px) {
-  /* line 63, ../sass/components/other/_intro.scss */
+  /* line 62, ../sass/components/other/_intro.scss */
   #intro {
     max-height: 37.5rem !important;
   }
 }
 @media only screen and (max-width: 640px) {
-  /* line 73, ../sass/components/other/_intro.scss */
+  /* line 72, ../sass/components/other/_intro.scss */
   #intro {
     max-height: 18.75rem;
+    top: 5rem;
   }
 
   /* line 77, ../sass/components/other/_intro.scss */
@@ -11515,6 +11506,13 @@ img.rsImg {
     margin-top: -4.5rem;
   }
 }
+@media only screen and (max-width: 768px) {
+  /* line 4, ../sass/pages/_home.scss */
+  .home #content {
+    padding-top: 4.25rem !important;
+  }
+}
+
 /* line 3, ../sass/pages/_team.scss */
 #team-NL .gallery,
 #team-EN .gallery {
