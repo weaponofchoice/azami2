@@ -10101,11 +10101,14 @@ footer input[type="email"]:focus {
   border-color: white;
   color: white;
 }
-/* line 68, ../sass/components/global/_footer.scss */
-footer ::-webkit-input-placeholder {
+/* line 71, ../sass/components/global/_footer.scss */
+footer ::-webkit-input-placeholder,
+footer :-moz-placeholder,
+footer ::-moz-placeholder,
+footer :-ms-input-placeholder {
   color: #58595b;
 }
-/* line 72, ../sass/components/global/_footer.scss */
+/* line 75, ../sass/components/global/_footer.scss */
 footer button {
   background: black;
   border: 0.125rem solid white;
@@ -10116,17 +10119,17 @@ footer button {
   font-size: 1rem;
   letter-spacing: 0.125rem;
 }
-/* line 85, ../sass/components/global/_footer.scss */
+/* line 88, ../sass/components/global/_footer.scss */
 footer button:hover, footer button:active, footer button:focus {
   background: white;
   color: black;
 }
 
-/* line 92, ../sass/components/global/_footer.scss */
+/* line 95, ../sass/components/global/_footer.scss */
 .followus {
   top: .7em;
 }
-/* line 96, ../sass/components/global/_footer.scss */
+/* line 99, ../sass/components/global/_footer.scss */
 .followus .icon-social img {
   min-width: 2.5em;
   max-width: 2.5em;
@@ -10135,29 +10138,29 @@ footer button:hover, footer button:active, footer button:focus {
 }
 
 @media only screen and (min-width: 120.063em) {
-  /* line 109, ../sass/components/global/_footer.scss */
+  /* line 112, ../sass/components/global/_footer.scss */
   #Homepage-EN footer,
   #Homepage-NL footer {
     margin-top: 9.375rem !important;
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 116, ../sass/components/global/_footer.scss */
+  /* line 119, ../sass/components/global/_footer.scss */
   footer {
     padding-top: 0;
   }
-  /* line 119, ../sass/components/global/_footer.scss */
+  /* line 122, ../sass/components/global/_footer.scss */
   footer #container-logo {
     display: none;
     /*width: 60%;
     margin-bottom: 0;
     margin-left: 10.33333%;*/
   }
-  /* line 127, ../sass/components/global/_footer.scss */
+  /* line 130, ../sass/components/global/_footer.scss */
   footer ul li {
     margin-top: 5em;
   }
-  /* line 134, ../sass/components/global/_footer.scss */
+  /* line 137, ../sass/components/global/_footer.scss */
   footer p,
   footer a,
   footer h4 {
@@ -10165,13 +10168,13 @@ footer button:hover, footer button:active, footer button:focus {
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 768px) {
-  /* line 141, ../sass/components/global/_footer.scss */
+  /* line 144, ../sass/components/global/_footer.scss */
   .signup {
     margin-top: 8em;
   }
 }
 @media only screen and (max-width: 640px) {
-  /* line 147, ../sass/components/global/_footer.scss */
+  /* line 150, ../sass/components/global/_footer.scss */
   .button {
     width: 100% !important;
     padding: 1.5em 3em !important;
@@ -11354,12 +11357,20 @@ img.rsImg {
   margin-left: 0;
   position: absolute;
   -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
   top: 0.6875rem;
   left: 1.4375rem;
 }
 /* line 50, ../sass/components/other/_lightbox.scss */
 #imagelightbox-close:before {
-  -webkit-transform: rotate(-45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 /* line 2, ../sass/components/other/_mailchimp.scss */
