@@ -58,7 +58,7 @@ License: GPL2
                         'hierarchical'         => true,
                         'description'          => 'Registers a notes section for Admin only',
                         'supports'             => array( 'title', 'editor', 'author',  'revisions' ),
-                        'public'               => false,
+                        'public'               => true,
                         'show_ui'              => true,
                         'show_in_menu'         => true,
                         'menu_position'        => 10,
