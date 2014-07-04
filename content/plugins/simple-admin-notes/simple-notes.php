@@ -58,7 +58,7 @@ License: GPL2
                         'hierarchical'         => true,
                         'description'          => 'Registers a notes section for Admin only',
                         'supports'             => array( 'title', 'editor', 'author',  'revisions' ),
-                        'public'               => true,
+                        'public'               => false,
                         'show_ui'              => true,
                         'show_in_menu'         => true,
                         'menu_position'        => 10,
@@ -283,8 +283,8 @@ License: GPL2
         */
         function wp_menu_note_san() {
             remove_submenu_page( 'edit.php?post_type=note', 'edit.php?post_type=note' );
-            add_submenu_page( 'edit.php?post_type=note','My Notes', 'My Notes', 'manage_options', 'my_notes', 'my_notes_options_san' );
-            add_submenu_page( 'edit.php?post_type=note','Edit Notes', 'Edit Notes', 'manage_options', 'edit.php?post_type=note' );
+            add_submenu_page( 'edit.php?post_type=note','My Notes', 'My Notes', 'manage_notes', 'my_notes', 'my_notes_options_san' );
+            add_submenu_page( 'edit.php?post_type=note','Edit Notes', 'Edit Notes', 'manage_notes', 'edit.php?post_type=note' );
          }
         add_action( 'admin_menu', 'wp_menu_note_san' );
 
