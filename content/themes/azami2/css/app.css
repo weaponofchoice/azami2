@@ -11518,3 +11518,10 @@ img.rsImg {
 #team-EN .gallery {
   width: 80%;
 }
+
+/* line 1, ../sass/pages/_post.scss */
+.post {
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 2em;
+}
