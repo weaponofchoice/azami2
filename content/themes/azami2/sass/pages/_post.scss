@@ -1,9 +1,20 @@
 .post{
+	max-width: rem-calc(1920);
 	height: auto;
 	overflow: hidden;
+	margin: 0 auto;
 	margin-bottom: 2em;
 	
-	.post-title{
-		margin-bottom: 1em;
+	.post-image{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	article{
+		margin-top: 1em;
+		
+		.post-title{
+			margin-bottom: 1em;
+		}
 	}
 }

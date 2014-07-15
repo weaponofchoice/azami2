@@ -7,17 +7,19 @@
 			<!-- post image -->
 				<?php
 				if(has_post_thumbnail()) {
-					echo '<div class="post-image medium-10 medium-offset-1 columns">';
+					echo '<div class="post-image small-20 small-offset-2 medium-20 medium-offset-2 large-9 large-offset-2 columns">';
 						the_post_thumbnail();
 					echo '</div>';
 				} else {}
 				?>
 			
-			<!-- post title -->
-			<h2 class="post-title medium-10 medium-offset-1 columns"><?php the_title(); ?></h2>
-			
-			<!-- text/content -->
-			<div class="post-content medium-10 medium-offset-1 end columns"><?php the_content(); ?></div>
+			<article class="small-20 small-offset-2 medium-20 medium-offset-2 large-9 large-offset-2 columns end">
+				<!-- post title -->
+				<h2 class="post-title"><?php the_title(); ?></h2>
+				
+				<!-- text/content -->
+				<div class="post-content"><?php the_content(); ?></div>
+			</article>
 		</div>
 		
 	<?php endwhile; ?>

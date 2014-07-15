@@ -11539,11 +11539,22 @@ img.rsImg {
 
 /* line 1, ../sass/pages/_post.scss */
 .post {
+  max-width: 120rem;
   height: auto;
   overflow: hidden;
+  margin: 0 auto;
   margin-bottom: 2em;
 }
-/* line 6, ../sass/pages/_post.scss */
-.post .post-title {
+/* line 8, ../sass/pages/_post.scss */
+.post .post-image {
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 13, ../sass/pages/_post.scss */
+.post article {
+  margin-top: 1em;
+}
+/* line 16, ../sass/pages/_post.scss */
+.post article .post-title {
   margin-bottom: 1em;
 }
