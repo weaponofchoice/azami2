@@ -1,3 +1,5 @@
+			<div class="push-footer"></div>
+			</div><!-- end of content -->
 			<footer id="footer">
 				<?php
 				 $lang = get_locale();
@@ -66,7 +68,6 @@
 				}
 				?>
 			</footer>
-		</div><!-- end of content -->
 		
 		<!-- Gmaps plugin needs this -->
 		<script src="http://maps.google.com/maps/api/js?sensor=false&libraries=geometry&v=3.7"></script>

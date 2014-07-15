@@ -54,6 +54,21 @@ body{
 	margin-bottom: rem-calc(140) !important;
 }
 
+//
+// Sticky footer
+//
+html,
+body{
+	height: 100%;
+}
+
+#content{
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto auto;
+}
+
 //Media queries
 @media #{$medium-down}{
 	.text,

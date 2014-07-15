@@ -9932,8 +9932,22 @@ body {
   margin-bottom: 8.75rem !important;
 }
 
+/* line 61, ../sass/master/_general.scss */
+html,
+body {
+  height: 100%;
+}
+
+/* line 65, ../sass/master/_general.scss */
+#content {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto auto;
+}
+
 @media only screen and (max-width: 768px) {
-  /* line 66, ../sass/master/_general.scss */
+  /* line 81, ../sass/master/_general.scss */
   .text,
   .text_quote,
   .text_centered,
@@ -9945,13 +9959,13 @@ body {
     margin-bottom: 5rem !important;
   }
 
-  /* line 73, ../sass/master/_general.scss */
+  /* line 88, ../sass/master/_general.scss */
   #content {
     padding-top: 8.125rem !important;
   }
 }
 @media only screen and (max-width: 640px) {
-  /* line 79, ../sass/master/_general.scss */
+  /* line 94, ../sass/master/_general.scss */
   .first {
     margin-top: 4.5rem !important;
   }
@@ -10038,15 +10052,18 @@ footer {
   width: 100%;
   height: auto;
   overflow: hidden;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
   background: black;
 }
-/* line 10, ../sass/components/global/_footer.scss */
+/* line 8, ../sass/components/global/_footer.scss */
 footer * {
   color: white;
 }
-/* line 14, ../sass/components/global/_footer.scss */
+/* line 12, ../sass/components/global/_footer.scss */
+footer .row {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+/* line 17, ../sass/components/global/_footer.scss */
 footer #container-logo {
   width: 20%;
   height: auto;
@@ -10054,29 +10071,29 @@ footer #container-logo {
   margin-bottom: 3em;
   margin-left: 8.33333%;
 }
-/* line 22, ../sass/components/global/_footer.scss */
+/* line 25, ../sass/components/global/_footer.scss */
 footer p, footer a {
   font-size: 1rem;
   margin-bottom: 0;
 }
-/* line 28, ../sass/components/global/_footer.scss */
+/* line 31, ../sass/components/global/_footer.scss */
 footer .phonenumber a,
 footer .email {
   top: 0;
 }
-/* line 32, ../sass/components/global/_footer.scss */
+/* line 35, ../sass/components/global/_footer.scss */
 footer .email {
   cursor: pointer;
 }
-/* line 36, ../sass/components/global/_footer.scss */
+/* line 39, ../sass/components/global/_footer.scss */
 footer a {
   top: 1em;
 }
-/* line 42, ../sass/components/global/_footer.scss */
+/* line 45, ../sass/components/global/_footer.scss */
 footer ul li:last-child {
   float: left !important;
 }
-/* line 49, ../sass/components/global/_footer.scss */
+/* line 52, ../sass/components/global/_footer.scss */
 footer input[type="text"],
 footer input[type="email"] {
   background: black;
@@ -10088,7 +10105,7 @@ footer input[type="email"] {
   font-size: 1rem;
   color: white;
 }
-/* line 60, ../sass/components/global/_footer.scss */
+/* line 63, ../sass/components/global/_footer.scss */
 footer input[type="text"]:focus,
 footer input[type="email"]:focus {
   background: black;
@@ -10096,14 +10113,14 @@ footer input[type="email"]:focus {
   border-color: white;
   color: white;
 }
-/* line 71, ../sass/components/global/_footer.scss */
+/* line 74, ../sass/components/global/_footer.scss */
 footer ::-webkit-input-placeholder,
 footer :-moz-placeholder,
 footer ::-moz-placeholder,
 footer :-ms-input-placeholder {
   color: #58595b;
 }
-/* line 75, ../sass/components/global/_footer.scss */
+/* line 78, ../sass/components/global/_footer.scss */
 footer button {
   background: black;
   border: 0.125rem solid white;
@@ -10114,17 +10131,17 @@ footer button {
   font-size: 1rem;
   letter-spacing: 0.125rem;
 }
-/* line 88, ../sass/components/global/_footer.scss */
+/* line 91, ../sass/components/global/_footer.scss */
 footer button:hover, footer button:active, footer button:focus {
   background: white;
   color: black;
 }
 
-/* line 95, ../sass/components/global/_footer.scss */
+/* line 98, ../sass/components/global/_footer.scss */
 .followus {
   top: .7em;
 }
-/* line 99, ../sass/components/global/_footer.scss */
+/* line 102, ../sass/components/global/_footer.scss */
 .followus .icon-social img {
   min-width: 2.5em;
   max-width: 2.5em;
@@ -10133,29 +10150,29 @@ footer button:hover, footer button:active, footer button:focus {
 }
 
 @media only screen and (min-width: 120.063em) {
-  /* line 112, ../sass/components/global/_footer.scss */
+  /* line 115, ../sass/components/global/_footer.scss */
   #Homepage-EN footer,
   #Homepage-NL footer {
     margin-top: 9.375rem !important;
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 119, ../sass/components/global/_footer.scss */
+  /* line 122, ../sass/components/global/_footer.scss */
   footer {
     padding-top: 0;
   }
-  /* line 122, ../sass/components/global/_footer.scss */
+  /* line 125, ../sass/components/global/_footer.scss */
   footer #container-logo {
     display: none;
     /*width: 60%;
     margin-bottom: 0;
     margin-left: 10.33333%;*/
   }
-  /* line 130, ../sass/components/global/_footer.scss */
+  /* line 133, ../sass/components/global/_footer.scss */
   footer ul li {
     margin-top: 5em;
   }
-  /* line 137, ../sass/components/global/_footer.scss */
+  /* line 140, ../sass/components/global/_footer.scss */
   footer p,
   footer a,
   footer h4 {
@@ -10163,13 +10180,13 @@ footer button:hover, footer button:active, footer button:focus {
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 768px) {
-  /* line 144, ../sass/components/global/_footer.scss */
+  /* line 147, ../sass/components/global/_footer.scss */
   .signup {
     margin-top: 8em;
   }
 }
 @media only screen and (max-width: 640px) {
-  /* line 150, ../sass/components/global/_footer.scss */
+  /* line 153, ../sass/components/global/_footer.scss */
   .button {
     width: 100% !important;
     padding: 1.5em 3em !important;

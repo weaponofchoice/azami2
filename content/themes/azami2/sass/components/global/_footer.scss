@@ -2,13 +2,16 @@ footer{
 	width: 100%;
 	height: auto;
 	overflow: hidden;
-	padding-top: rem-calc(80);
-	padding-bottom: rem-calc(80);
 	
 	background: $black;
 	
 	*{
 		color: $white;
+	}
+	
+	.row{
+		padding-top: rem-calc(80);
+		padding-bottom: rem-calc(80);
 	}
 	
 	#container-logo{
