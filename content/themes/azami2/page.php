@@ -7,7 +7,7 @@
  */
 get_header();
 
-if( have_rows('page_elements') ): 
+if( have_rows('page_elements') ):
 	while ( have_rows('page_elements') ) : the_row();
 		
 		require('includes/scaled-images.php');

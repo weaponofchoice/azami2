@@ -3,6 +3,10 @@
  * @package WordPress
  * @subpackage HTML5_Boilerplate
  */
+/**
+ * Register our sidebars and widgetized areas.
+ *
+ */
 // Adding custom wordpress menu item for footer information/content
 // add_action( 'admin_menu', 'register_my_custom_menu_page' );
 //
@@ -31,7 +35,6 @@
 // 	'after_title' => '</h4>',
 // 	));
 // }
-
 // Removing upgrade message
 add_action('admin_menu','wphidenag');
 function wphidenag() {
