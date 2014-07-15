@@ -7,34 +7,6 @@
  * Register our sidebars and widgetized areas.
  *
  */
-// Adding custom wordpress menu item for footer information/content
-// add_action( 'admin_menu', 'register_my_custom_menu_page' );
-//
-// function register_my_custom_menu_page(){
-//     add_menu_page( 'Footer', 'footer', 'manage_options', 'custompage', 'my_custom_menu_page', plugins_url( 'myplugin/images/icon.png' ), 6 );
-// }
-//
-// function my_custom_menu_page(){
-//     include('includes/footer_information.php');
-// }
-//
-// if ( function_exists('register_sidebar') ) {
-// 	register_sidebar(array(
-// 	'name' => 'Footer NL',
-// 	'before_widget' => '',
-// 	'after_widget' => '',
-// 	'before_title' => '<h4 class="uppercase">',
-// 	'after_title' => '</h4>',
-// 	));
-//
-// 	register_sidebar(array(
-// 	'name' => 'Footer EN',
-// 	'before_widget' => '<div class="row">',
-// 	'after_widget' => '</div>',
-// 	'before_title' => '<h4 class="uppercase">',
-// 	'after_title' => '</h4>',
-// 	));
-// }
 // Removing upgrade message
 add_action('admin_menu','wphidenag');
 function wphidenag() {
