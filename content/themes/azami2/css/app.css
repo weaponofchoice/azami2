@@ -11542,3 +11542,7 @@ img.rsImg {
   overflow: hidden;
   margin-bottom: 2em;
 }
+/* line 6, ../sass/pages/_post.scss */
+.post .post-title {
+  margin-bottom: 1em;
+}
