@@ -44,7 +44,16 @@ if( have_rows('page_elements') ):
 		endif; 
 			
 	endwhile; 
-endif; 
+endif;
+
+// Footer information
+if( have_rows('footer') ): 
+	while ( have_rows('footer') ) : the_row();
+
+		include('footer.php');
+		
+	endwhile; 
+endif;
 
 get_footer();
 ?>

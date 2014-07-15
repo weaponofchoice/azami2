@@ -7,10 +7,10 @@
  					<ul>
  						<li class="small-20 small-offset-2 medium-10 medium-offset-2 large-5 large-offset-2 columns">
  							<h4 class="uppercase">Business hours</h4>
- 							<p>Tuesday - Friday : 9.30am - 06.00pm</p>
- 							<p>Thursday evening : 07.00pm - 09.00pm</p>
- 							<p>Saturday : 9.30am - 05.00pm</p>
- 							<p>1st Sunday : 01.00pm - 05.00pm</p>
+ 							<p>Tuesday - Friday 9.30 am - 06.00 pm</p>
+ 							<p>Thursday evening 07.00 pm - 09.00 pm</p>
+ 							<p>Saturday 9.30 am - 05.00 pm</p>
+ 							<p>1st Sunday 01.00 pm - 05.00 pm</p>
  							<a class="underlined" href="<?php home_url(); ?>/info">Exceptions</a>
  						</li>
  						<li class="small-20 small-offset-2 medium-10 medium-offset-1 large-5 large-offset-2 columns">
@@ -42,7 +42,7 @@
 							<p>Donderdagavond : 19.00 - 21.00 uur</p>
 							<p>Zaterdag : 9.30 - 17.00 uur</p>
 							<p>1e zondag : 13.00 - 17.00 uur</p>
-							<a class="underlined" href="<?php home_url(); ?>/info">Uitzonderingen</a>
+							<a class="underlined" href="<?php home_url(); ?>/info-EN">Uitzonderingen</a>
 						</li>
 						<li class="small-20 small-offset-2 medium-10 medium-offset-1 large-5 large-offset-2 columns">
 							<h4 class="uppercase">Contact</h4>
