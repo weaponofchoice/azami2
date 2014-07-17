@@ -9,10 +9,10 @@
  					<ul>
  						<li class="small-20 small-offset-2 medium-10 medium-offset-2 large-5 large-offset-2 columns">
  							<h4 class="uppercase">Business hours</h4>
- 							<p>Tuesday - Friday 9.30 am - 06.00 pm</p>
- 							<p>Thursday evening 07.00 pm - 09.00 pm</p>
- 							<p>Saturday 9.30 am - 05.00 pm</p>
- 							<p>1st Sunday 01.00 pm - 05.00 pm</p>
+ 							<p>Tuesday - Friday 9.30 am - 6.00 pm</p>
+ 							<p>Thursday evening 7.00 pm - 9.00 pm</p>
+ 							<p>Saturday 9.30 am - 5.00 pm</p>
+ 							<p>1st Sunday 1.00 pm - 5.00 pm</p>
  							<a class="underlined" href="<?php home_url(); ?>/info">Exceptions</a>
  						</li>
  						<li class="small-20 small-offset-2 medium-10 medium-offset-1 large-5 large-offset-2 columns">

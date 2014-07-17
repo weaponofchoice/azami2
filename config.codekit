@@ -11771,13 +11771,13 @@
 	"\/content\/themes\/azami2\/coffee\/height.coffee": {
 		"createSourceMap": 0,
 		"fileType": 32,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/content\/themes\/azami2\/coffee\/height.coffee",
 		"minifyOutput": 1,
-		"outputAbbreviatedPath": "\/content\/themes\/azami2\/coffee\/height.js",
+		"outputAbbreviatedPath": "\/content\/themes\/azami2\/js\/height.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 0,
 		"syntaxCheckerStyle": 1
 		},

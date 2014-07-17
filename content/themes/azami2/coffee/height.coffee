@@ -17,7 +17,7 @@ if $('body').length > 0
 	gallery.css "height", viewport / 1.25
 	intro.css "height", viewport
 	footer.css "height", footer_height
-	push.css "height", footer_height
+	push.css "height", footer_height + 200
 	content.css "margin-bottom", -footer_height
 	
 	$(window).on 'resize', ->
