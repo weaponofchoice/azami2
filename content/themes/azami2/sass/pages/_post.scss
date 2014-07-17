@@ -1,4 +1,5 @@
-.post{
+.post,
+.single-post{
 	max-width: rem-calc(1920);
 	height: auto;
 	overflow: hidden;
@@ -16,5 +17,9 @@
 		.post-title{
 			margin-bottom: 1em;
 		}
+	}
+	
+	.push-footer{
+		margin-bottom: rem-calc(150);
 	}
 }

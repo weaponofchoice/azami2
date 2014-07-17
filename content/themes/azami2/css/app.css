@@ -11537,24 +11537,33 @@ img.rsImg {
   width: 80%;
 }
 
-/* line 1, ../sass/pages/_post.scss */
-.post {
+/* line 2, ../sass/pages/_post.scss */
+.post,
+.single-post {
   max-width: 120rem;
   height: auto;
   overflow: hidden;
   margin: 0 auto;
   margin-bottom: 2em;
 }
-/* line 8, ../sass/pages/_post.scss */
-.post .post-image {
+/* line 9, ../sass/pages/_post.scss */
+.post .post-image,
+.single-post .post-image {
   padding-left: 0;
   padding-right: 0;
 }
-/* line 13, ../sass/pages/_post.scss */
-.post article {
+/* line 14, ../sass/pages/_post.scss */
+.post article,
+.single-post article {
   margin-top: 1em;
 }
-/* line 16, ../sass/pages/_post.scss */
-.post article .post-title {
+/* line 17, ../sass/pages/_post.scss */
+.post article .post-title,
+.single-post article .post-title {
   margin-bottom: 1em;
+}
+/* line 22, ../sass/pages/_post.scss */
+.post .push-footer,
+.single-post .push-footer {
+  margin-bottom: 9.375rem;
 }
