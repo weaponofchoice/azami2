@@ -11538,8 +11538,7 @@ img.rsImg {
 }
 
 /* line 2, ../sass/pages/_post.scss */
-.post,
-.single-post {
+.single-post .post {
   max-width: 120rem;
   height: auto;
   overflow: hidden;
@@ -11547,23 +11546,19 @@ img.rsImg {
   margin-bottom: 2em;
 }
 /* line 9, ../sass/pages/_post.scss */
-.post .post-image,
-.single-post .post-image {
+.single-post .post .post-image {
   padding-left: 0;
   padding-right: 0;
 }
 /* line 14, ../sass/pages/_post.scss */
-.post article,
-.single-post article {
+.single-post .post article {
   margin-top: 1em;
 }
 /* line 17, ../sass/pages/_post.scss */
-.post article .post-title,
-.single-post article .post-title {
+.single-post .post article .post-title {
   margin-bottom: 1em;
 }
-/* line 22, ../sass/pages/_post.scss */
-.post .push-footer,
+/* line 23, ../sass/pages/_post.scss */
 .single-post .push-footer {
   margin-bottom: 9.375rem;
 }
