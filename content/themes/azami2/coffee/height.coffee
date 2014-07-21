@@ -21,8 +21,10 @@ if $('body').length > 0
 	content.css "margin-bottom", -footer_height
 	
 	$(window).on 'resize', ->
-			# Recalculate window height
+			# Recalculate heights
 			viewport = window.innerHeight
+			article_height = article.height()
+			footer_height = footer.height()
 			
 			# Reapply heights
 			article.css "height", article_height
