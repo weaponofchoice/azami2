@@ -10052,7 +10052,7 @@ footer {
   width: 100%;
   height: auto;
   overflow: hidden;
-  z-index: 9999;
+  z-index: 998;
   background: black;
 }
 /* line 9, ../sass/components/global/_footer.scss */
@@ -10985,7 +10985,7 @@ img.rsImg {
   display: inline;
   padding-left: 8.33335%;
   padding-right: 8.33335%;
-  z-index: 1001;
+  z-index: 999;
   background: black;
 }
 /* line 15, ../sass/components/navigation/_menu.scss */
