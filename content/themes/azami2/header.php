@@ -38,7 +38,6 @@
   </head>
 	
   <body <?php body_class(); ?> id="<?php echo the_title(); ?>">
-	<?php include_once('analytics.php'); ?>
 	<div id="menu_small" class="menu row">
 		<ul class="small-20 small-centered columns">
 			<li class="logo columns"><a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/typelogo.png"></a></li>
