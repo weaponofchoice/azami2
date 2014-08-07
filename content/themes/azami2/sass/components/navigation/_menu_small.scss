@@ -77,3 +77,16 @@
 		}
 	}
 }
+
+// Mozilla only
+@-moz-document url-prefix(){
+	#menu_small{
+		.logo{
+			a{
+				img{
+					max-height: rem-calc(40) !important;
+				}
+			}
+		}
+	}
+}
