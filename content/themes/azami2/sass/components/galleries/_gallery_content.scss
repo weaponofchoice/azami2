@@ -103,3 +103,33 @@
 		}
 	}
 }
+
+// Mozilla only
+@-moz-document url-prefix(){
+	.gallery_content{
+		.contentSlider{
+			.rsGCaption{
+				float: left;
+				max-width: none;
+				
+				.rsCaption{
+					max-width: rem-calc(900);
+				}
+			}
+		}
+	}
+	
+	@media #{$medium-down}{
+		.gallery_content{
+			.rsGCaption{
+				width: 100% !important;
+				text-align: center !important;
+				
+				.rsCaption{
+					width: 80% !important;
+					padding: 0 7%;
+				}
+			}
+		}
+	}
+}

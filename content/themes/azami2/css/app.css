@@ -10937,6 +10937,31 @@ img.rsImg {
     text-align: left;
   }
 }
+@-moz-document url-prefix() {
+  /* line 111, ../sass/components/galleries/_gallery_content.scss */
+  .gallery_content .contentSlider .rsGCaption {
+    float: left;
+    max-width: none;
+  }
+  /* line 115, ../sass/components/galleries/_gallery_content.scss */
+  .gallery_content .contentSlider .rsGCaption .rsCaption {
+    max-width: 56.25rem;
+  }
+
+  @media only screen and (max-width: 768px) {
+    /* line 124, ../sass/components/galleries/_gallery_content.scss */
+    .gallery_content .rsGCaption {
+      width: 100% !important;
+      text-align: center !important;
+    }
+    /* line 128, ../sass/components/galleries/_gallery_content.scss */
+    .gallery_content .rsGCaption .rsCaption {
+      width: 80% !important;
+      padding: 0 7%;
+    }
+}
+}
+
 /* line 3, ../sass/components/galleries/_gallery_clients.scss */
 .gallery_clients .royalSlider .rsBullets {
   visibility: hidden;
