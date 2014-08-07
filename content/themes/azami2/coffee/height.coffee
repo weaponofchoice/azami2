@@ -21,15 +21,25 @@ if $('body').length > 0
 	content.css "margin-bottom", -footer_height
 	
 	$(window).on 'resize', ->
-			# Recalculate heights
-			viewport = window.innerHeight
-			article_height = article.height()
-			footer_height = footer.height()
-			
-			# Reapply heights
-			article.css "height", article_height
-			gallery.css "height", viewport
-			intro.css "height", viewport
-			footer.css "height", footer_height
-			push.css "height", footer_height
-			content.css "margin-bottom", -footer_height
+		article = $('.text_quote .row')
+		gallery = $('.gallery')
+		intro = $('#intro')
+		footer = $('footer')
+		push = $('.push-footer')
+		content = $('#content')
+		
+		footer.css "height", "auto"
+		
+		# Recalculate heights
+		viewport = window.innerHeight
+		article_height = article.height()
+		footer_height = footer.height()
+		
+		# Reapply heights
+		article.css "height", article_height
+		gallery.css "height", viewport
+		intro.css "height", viewport
+		
+		footer.css "height", footer_height
+		push.css "height", footer_height
+		content.css "margin-bottom", -footer_height

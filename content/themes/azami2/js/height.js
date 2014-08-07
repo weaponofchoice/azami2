@@ -18,6 +18,13 @@ if ($('body').length > 0) {
   push.css("height", footer_height);
   content.css("margin-bottom", -footer_height);
   $(window).on('resize', function() {
+    article = $('.text_quote .row');
+    gallery = $('.gallery');
+    intro = $('#intro');
+    footer = $('footer');
+    push = $('.push-footer');
+    content = $('#content');
+    footer.css("height", "auto");
     viewport = window.innerHeight;
     article_height = article.height();
     footer_height = footer.height();
