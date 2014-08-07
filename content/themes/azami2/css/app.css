@@ -11501,6 +11501,21 @@ img.rsImg {
     font-size: 1.25rem !important;
   }
 }
+@-moz-document url-prefix() {
+  /* line 122, ../sass/components/other/_mailchimp.scss */
+  .form .mc_merge_var {
+    float: left !important;
+  }
+  /* line 125, ../sass/components/other/_mailchimp.scss */
+  .form .mc_merge_var:nth-child(2) {
+    margin-left: 6%;
+  }
+  /* line 129, ../sass/components/other/_mailchimp.scss */
+  .form .mc_merge_var:nth-child(3) {
+    width: 100%;
+  }
+}
+
 /* line 1, ../sass/components/other/_map.scss */
 #map {
   width: 100%;
