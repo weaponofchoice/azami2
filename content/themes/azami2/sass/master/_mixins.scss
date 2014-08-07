@@ -12,10 +12,23 @@
 	     -o-transform: $transforms;
 	    -ms-transform: $transforms;
 	-webkit-transform: $transforms;
-          transform: $transforms;
+          	transform: $transforms;
 }
 
 // rotate
 @mixin rotate ($deg) {
   @include transform(rotate(#{$deg}deg));
+}
+
+// translate3d
+@mixin translate3d ($x,$y,$z) {
+	@include transform(translate3d($x,$y,$z))
+}
+
+@mixin transition($transition-time){	
+	-moz-transition: $transition-time;
+	-o-transition: $transition-time;
+	-ms-transition: $transition-time;
+	-webkit-transition: $transition-time;
+	transition: $transition-time;
 }

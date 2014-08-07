@@ -11102,8 +11102,16 @@ img.rsImg {
 }
 /* line 25, ../sass/components/navigation/_menu_small.scss */
 #menu_small ul#menu_small_collapsed {
+  -moz-transform: translate3d(0, 0, -100%);
+  -o-transform: translate3d(0, 0, -100%);
+  -ms-transform: translate3d(0, 0, -100%);
   -webkit-transform: translate3d(0, 0, -100%);
-  -webkit-transition: .2s;
+  transform: translate3d(0, 0, -100%);
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   position: absolute;
   background: black;
   z-index: 998;
@@ -11150,6 +11158,13 @@ img.rsImg {
     display: inline;
   }
 }
+@-moz-document url-prefix() {
+  /* line 86, ../sass/components/navigation/_menu_small.scss */
+  #menu_small .logo a img {
+    max-height: 2.5rem !important;
+  }
+}
+
 /* line 4, ../sass/components/navigation/_button_lang.scss */
 .menu li.lang-item {
   height: auto;
