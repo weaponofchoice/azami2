@@ -10695,14 +10695,22 @@ img.rsImg {
 .gallery .rsArrow.rsArrowLeft,
 .gallery_content .rsArrow.rsArrowLeft {
   top: 4.5em;
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 /* line 89, ../sass/components/galleries/royalslider/_rs-default.scss */
 .gallery .rsArrow.rsArrowRight,
 .gallery_content .rsArrow.rsArrowRight {
   top: -4.5em;
   right: 0;
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
 }
 /* line 96, ../sass/components/galleries/royalslider/_rs-default.scss */
 .gallery .rsArrow.rsArrowDisabled .rsArrowIcn,
@@ -11186,10 +11194,10 @@ img.rsImg {
   margin-left: -20px;
   z-index: 1000;
   cursor: pointer;
-  -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   border-bottom: 0.3125rem solid white;
   border-right: 0.3125rem solid white;
@@ -11365,21 +11373,21 @@ img.rsImg {
   margin-top: 0;
   margin-left: 0;
   position: absolute;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
+  -moz-transform: rotate(45degdeg);
+  -o-transform: rotate(45degdeg);
+  -ms-transform: rotate(45degdeg);
+  -webkit-transform: rotate(45degdeg);
+  transform: rotate(45degdeg);
   top: 0.6875rem;
   left: 1.4375rem;
 }
 /* line 50, ../sass/components/other/_lightbox.scss */
 #imagelightbox-close:before {
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+  -moz-transform: rotate(-45degdeg);
+  -o-transform: rotate(-45degdeg);
+  -ms-transform: rotate(-45degdeg);
+  -webkit-transform: rotate(-45degdeg);
+  transform: rotate(-45degdeg);
 }
 
 /* line 2, ../sass/components/other/_mailchimp.scss */

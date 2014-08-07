@@ -83,13 +83,13 @@
 		
 		&.rsArrowLeft{
 			top: 4.5em; 
-			-webkit-transform: rotate(-45deg);
+			@include transform(rotate(-45deg));
 		}
 		
 		&.rsArrowRight{
 			top: -4.5em; 
 			right: 0;
-			-webkit-transform: rotate(135deg);
+			@include transform(rotate(135deg));
 		}
 		
 		&.rsArrowDisabled{
