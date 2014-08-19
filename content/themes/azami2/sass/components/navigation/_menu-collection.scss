@@ -1,5 +1,6 @@
 .menu-collection{
 	width: 100%;
+	margin-bottom: rem-calc(140 - 80); // Same as margin-bottom of content minus header height (5rem)
 	text-align: center;
 	
 	li{
