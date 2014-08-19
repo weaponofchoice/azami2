@@ -11168,21 +11168,22 @@ img.rsImg {
 /* line 1, ../sass/components/navigation/_menu-collection.scss */
 .menu-collection {
   width: 100%;
-  margin-bottom: 3.75rem;
+  margin-bottom: 2rem;
+  margin-top: -2rem;
   text-align: center;
 }
-/* line 6, ../sass/components/navigation/_menu-collection.scss */
+/* line 7, ../sass/components/navigation/_menu-collection.scss */
 .menu-collection li {
   display: inline-block;
   margin: 1em 2em;
 }
-/* line 10, ../sass/components/navigation/_menu-collection.scss */
+/* line 11, ../sass/components/navigation/_menu-collection.scss */
 .menu-collection li a {
   color: black;
   text-align: center;
   text-transform: capitalize;
 }
-/* line 15, ../sass/components/navigation/_menu-collection.scss */
+/* line 16, ../sass/components/navigation/_menu-collection.scss */
 .menu-collection li a:after {
   content: ' ';
   width: 40%;
@@ -11190,15 +11191,31 @@ img.rsImg {
   margin: .5em auto 0;
   border-bottom: 2px solid transparent;
 }
-/* line 24, ../sass/components/navigation/_menu-collection.scss */
+/* line 25, ../sass/components/navigation/_menu-collection.scss */
 .menu-collection li a:hover:after {
   border-bottom: 2px solid black;
 }
-/* line 32, ../sass/components/navigation/_menu-collection.scss */
+/* line 33, ../sass/components/navigation/_menu-collection.scss */
 .menu-collection li.current-menu-item a:after {
   border-bottom: 2px solid black;
 }
 
+@media only screen and (max-width: 640px) {
+  /* line 43, ../sass/components/navigation/_menu-collection.scss */
+  .menu-collection {
+    width: 65%;
+    text-align: left;
+  }
+  /* line 47, ../sass/components/navigation/_menu-collection.scss */
+  .menu-collection li {
+    display: block;
+  }
+  /* line 51, ../sass/components/navigation/_menu-collection.scss */
+  .menu-collection li a:after {
+    margin: .5em 0 0 .5em;
+    width: 20%;
+  }
+}
 /* line 4, ../sass/components/navigation/_button_lang.scss */
 .menu li.lang-item {
   height: auto;
