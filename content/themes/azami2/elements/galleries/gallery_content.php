@@ -9,7 +9,7 @@
 			
 			// scaled images module
 			$gcontent = get_sub_field('image');
-			$gcontent_url = $gcontent['sizes']['medium'];
+			$gcontent_url = $gcontent['sizes']['small'];
 			
 			if (is_mobile()){
 				$gcontent_url = $gcontent['sizes']['small'];
