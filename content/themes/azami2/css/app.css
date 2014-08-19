@@ -11055,8 +11055,8 @@ img.rsImg {
 .menu li.menu-item a:hover:after {
   border-bottom: 2px solid white;
 }
-/* line 57, ../sass/components/navigation/_menu.scss */
-.menu li.menu-item.current-menu-item a:after {
+/* line 58, ../sass/components/navigation/_menu.scss */
+.menu li.menu-item.current-menu-item a:after, .menu li.menu-item.current-page-ancestor a:after {
   content: ' ';
   width: 20%;
   display: block;
@@ -11064,17 +11064,17 @@ img.rsImg {
   border-bottom: 2px solid white;
 }
 
-/* line 70, ../sass/components/navigation/_menu.scss */
+/* line 71, ../sass/components/navigation/_menu.scss */
 .sticky-wrapper {
   height: 0 !important;
 }
-/* line 74, ../sass/components/navigation/_menu.scss */
+/* line 75, ../sass/components/navigation/_menu.scss */
 .sticky-wrapper.is-sticky .menu {
   top: 0 !important;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 82, ../sass/components/navigation/_menu.scss */
+  /* line 83, ../sass/components/navigation/_menu.scss */
   #menu {
     visibility: hidden;
   }
@@ -11163,6 +11163,39 @@ img.rsImg {
   #menu_small .logo a img {
     max-height: 2.5rem !important;
   }
+}
+
+/* line 1, ../sass/components/navigation/_menu-collection.scss */
+.menu-collection {
+  width: 100%;
+  text-align: center;
+}
+/* line 5, ../sass/components/navigation/_menu-collection.scss */
+.menu-collection li {
+  display: inline-block;
+  margin: 1em 2em;
+}
+/* line 9, ../sass/components/navigation/_menu-collection.scss */
+.menu-collection li a {
+  color: black;
+  text-align: center;
+  text-transform: capitalize;
+}
+/* line 14, ../sass/components/navigation/_menu-collection.scss */
+.menu-collection li a:after {
+  content: ' ';
+  width: 40%;
+  display: block;
+  margin: .5em auto 0;
+  border-bottom: 2px solid transparent;
+}
+/* line 23, ../sass/components/navigation/_menu-collection.scss */
+.menu-collection li a:hover:after {
+  border-bottom: 2px solid black;
+}
+/* line 31, ../sass/components/navigation/_menu-collection.scss */
+.menu-collection li.current-menu-item a:after {
+  border-bottom: 2px solid black;
 }
 
 /* line 4, ../sass/components/navigation/_button_lang.scss */

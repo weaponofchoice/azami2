@@ -1,7 +1,4 @@
 <div class="gallery_content">
-	
-	<p class="uppercase"><?php the_sub_field('collection_title')?></p>
-	
 	<?php if(have_rows('gallery_slide')): ?>
     <div class="royalSlider rsDefault contentSlider rsAutoHeight rsHor">
 		<?php
