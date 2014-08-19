@@ -17,7 +17,7 @@
 			}
 		?>
 			<div>
-            	<img class="image" src="<?php echo $gcontent_url; ?>" />
+        <img class="image" src="<?php echo $gcontent_url; ?>" />
 				<figure class="rsCaption"><h2><?php the_sub_field('title'); ?></h2></figure>
 				<figure class="rsCaption"><?php the_sub_field('text'); ?></figure>
 			</div>
