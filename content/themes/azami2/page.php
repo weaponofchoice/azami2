@@ -7,6 +7,15 @@
  */
 get_header();
 
+if ( has_parent('collectie') || has_parent('collectie-en') ) {
+	wp_nav_menu( array( 
+		'container' => 'div',
+		'container_class' => 'menu-collection',
+		'items_wrap' => '%3$s',
+		'theme_location' => 'sub_menu'
+	) );
+}
+
 if( have_rows('page_elements') ):
 	while ( have_rows('page_elements') ) : the_row();
 		

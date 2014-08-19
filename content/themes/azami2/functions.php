@@ -7,6 +7,15 @@
  * Register our sidebars and widgetized areas.
  *
  */
+// Needed to check for parent page at collection pages
+function has_parent() {
+	global $post;
+	if ( $post->post_parent ) {
+		return true;
+	} else {
+		return false;
+	}
+}
 // Removing upgrade message
 add_action('admin_menu','wphidenag');
 function wphidenag() {
