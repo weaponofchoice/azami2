@@ -11638,6 +11638,18 @@ img.rsImg {
     margin-top: -4.5rem;
   }
 }
+/* line 1, ../sass/components/other/_select.scss */
+select {
+  width: 100%;
+  margin: 0;
+  top: -2.34375rem;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background: #f1f2f2;
+  border: none;
+  box-shadow: none;
+}
+
 @media only screen and (max-width: 768px) {
   /* line 4, ../sass/pages/_home.scss */
   .home #content {

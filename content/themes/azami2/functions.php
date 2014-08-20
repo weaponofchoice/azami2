@@ -3,10 +3,45 @@
  * @package WordPress
  * @subpackage HTML5_Boilerplate
  */
-/**
- * Register our sidebars and widgetized areas.
- *
- */
+register_nav_menus(
+    array(
+        'select-menu' => 'Select Menu',
+    )
+);
+
+function wp_nav_menu_select( $args = array() ) {
+ 
+    $defaults = array(
+        'theme_location' => 'sub_menu',
+        'menu_class' => 'select-menu',
+    );
+ 
+    $args = wp_parse_args( $args, $defaults );
+ 
+    if ( ( $menu_locations = get_nav_menu_locations() ) && isset( $menu_locations[ $args['theme_location'] ] ) ) {
+        $menu = wp_get_nav_menu_object( $menu_locations[ $args['theme_location'] ] );
+ 
+        $menu_items = wp_get_nav_menu_items( $menu->term_id );
+        ?>
+            <select id="menu-<?php echo $args['theme_location'] ?>" class="<?php echo $args['menu_class'] ?>">
+                <option value=""><?php _e( 'Select collection' ); ?></option>
+                <?php foreach( (array) $menu_items as $key => $menu_item ) : ?>
+                    <option value="<?php echo $menu_item->url ?>"><?php echo $menu_item->title ?></option>
+                <?php endforeach; ?>
+            </select>
+        <?php
+    }
+ 
+    else {
+        ?>
+            <select class="menu-not-found">
+                <option value=""><?php _e( 'Menu Not Found' ); ?></option>
+            </select>
+        <?php
+    }
+ 
+}
+
 // Needed to check for parent page at collection pages
 function has_parent() {
 	global $post;

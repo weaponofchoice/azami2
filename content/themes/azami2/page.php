@@ -8,23 +8,21 @@
 get_header();
 
 if ( has_parent('collectie') || has_parent('collectie-en') ) {
-	if( is_mobile() ){
-    wp_nav_menu( array( 
-  		'container' => 'div',
-  		'container_class' => 'menu-collection',
-  		'theme_location' => 'sub_menu',
-      'items_wrap' => '<select>%3$s</select>',
-      'before'     => '<option value="">',
-      'after'      => '</option>'
-  	) );
+  if( is_mobile() ){
+    wp_nav_menu_select(
+        array(
+            'theme_location' => 'sub_menu',
+            'menu_class' => 'menu-select'
+        )
+    );
 	} else {
-    wp_nav_menu( array( 
-  		'container' => 'div',
-  		'container_class' => 'menu-collection',
-  		'theme_location' => 'sub_menu',
+    wp_nav_menu( array(
+      'container' => 'div',
+      'container_class' => 'menu-collection',
+      'theme_location' => 'sub_menu',
       'items_wrap' => '%3$s'
-  	) );
-	}
+    ) );
+  }
 }
 
 if( have_rows('page_elements') ):
