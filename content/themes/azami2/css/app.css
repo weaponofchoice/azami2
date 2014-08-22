@@ -11203,14 +11203,20 @@ img.rsImg {
 @media only screen and (max-width: 640px) {
   /* line 43, ../sass/components/navigation/_menu-collection.scss */
   .menu-collection {
-    width: 65%;
+    width: 83.33333%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.35156rem;
+    padding-right: 0.35156rem;
+    float: none !important;
     text-align: left;
   }
-  /* line 47, ../sass/components/navigation/_menu-collection.scss */
+  /* line 52, ../sass/components/navigation/_menu-collection.scss */
   .menu-collection li {
     display: block;
+    margin-left: 0;
   }
-  /* line 51, ../sass/components/navigation/_menu-collection.scss */
+  /* line 57, ../sass/components/navigation/_menu-collection.scss */
   .menu-collection li a:after {
     margin: .5em 0 0 .5em;
     width: 20%;

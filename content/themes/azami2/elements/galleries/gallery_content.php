@@ -9,7 +9,7 @@
 			$gcontent_url = $gcontent['sizes']['medium'];
 			
 			if (is_tablet()){
-				$gcontent_url = $gcontent['sizes']['small'];
+				$gcontent_url = $gcontent['sizes']['medium'];
 			}
 			
 			if (is_mobile()){

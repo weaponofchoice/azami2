@@ -41,11 +41,17 @@
 //Media queries
 @media #{$small-only}{	
 	.menu-collection{
-	  width: 65%;
+	  width: 83.33333%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: rem-calc(5.625);
+    padding-right: rem-calc(5.625);
+    float: none !important;
     text-align: left;
     
     li{
       display: block;
+      margin-left: 0;
       
       a{
         &:after{
