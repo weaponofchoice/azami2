@@ -9,13 +9,25 @@
 						
 							// scaled images module
 							$gclients_url = get_sub_field('client');
+              
+              if( is_mobile()){
 							?>
+							<a 
+								class="lightbox"
+								style="background:url('<?php echo $gclients_url['sizes']['small']; ?>');">
+							</a>
+              <?php
+            } else {
+              ?>
 							<a 
 								class="lightbox"
 								href="<?php echo $gclients_url['sizes']['medium']; ?>" 
 								data-imagelightbox="overlay"
 								style="background:url('<?php echo $gclients_url['sizes']['small']; ?>');">
 							</a>
+              <?php
+            }
+              ?>
 						<?php endwhile; ?>
 					<?php endif; ?>
 				</div>

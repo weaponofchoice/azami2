@@ -42,12 +42,12 @@
 		margin-top: 0;
 		margin-left: 0;
 		position: absolute;
-		@include rotate(45deg);
+		@include rotate(45);
 		top: rem-calc(11);
 		left: rem-calc(23);
 	}
 	
 	&:before{
-		@include rotate(-45deg);
+		@include rotate(-45);
 	}
 }

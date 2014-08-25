@@ -11470,21 +11470,21 @@ img.rsImg {
   margin-top: 0;
   margin-left: 0;
   position: absolute;
-  -moz-transform: rotate(45degdeg);
-  -o-transform: rotate(45degdeg);
-  -ms-transform: rotate(45degdeg);
-  -webkit-transform: rotate(45degdeg);
-  transform: rotate(45degdeg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
   top: 0.6875rem;
   left: 1.4375rem;
 }
 /* line 50, ../sass/components/other/_lightbox.scss */
 #imagelightbox-close:before {
-  -moz-transform: rotate(-45degdeg);
-  -o-transform: rotate(-45degdeg);
-  -ms-transform: rotate(-45degdeg);
-  -webkit-transform: rotate(-45degdeg);
-  transform: rotate(-45degdeg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 /* line 2, ../sass/components/other/_mailchimp.scss */
