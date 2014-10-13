@@ -1,0 +1,20 @@
+.AlpinePhotoTiles_inpost_container{
+  .AlpinePhotoTiles_container_class{
+    height: 100%;
+    
+    .AlpinePhotoTiles_parent_class{
+      height: 100%;
+      
+      a.AlpinePhotoTiles-link{
+        width: 25%;
+        height: 50%;
+        float: left;
+        
+        img{
+          max-width: none !important;
+          min-height: 100%;
+        }
+      }
+    }
+  }
+}

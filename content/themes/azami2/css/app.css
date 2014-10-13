@@ -11009,6 +11009,26 @@ img.rsImg {
     padding: 0;
   }
 }
+/* line 2, ../sass/components/galleries/_alpinetiles.scss */
+.AlpinePhotoTiles_inpost_container .AlpinePhotoTiles_container_class {
+  height: 100%;
+}
+/* line 5, ../sass/components/galleries/_alpinetiles.scss */
+.AlpinePhotoTiles_inpost_container .AlpinePhotoTiles_container_class .AlpinePhotoTiles_parent_class {
+  height: 100%;
+}
+/* line 8, ../sass/components/galleries/_alpinetiles.scss */
+.AlpinePhotoTiles_inpost_container .AlpinePhotoTiles_container_class .AlpinePhotoTiles_parent_class a.AlpinePhotoTiles-link {
+  width: 25%;
+  height: 50%;
+  float: left;
+}
+/* line 13, ../sass/components/galleries/_alpinetiles.scss */
+.AlpinePhotoTiles_inpost_container .AlpinePhotoTiles_container_class .AlpinePhotoTiles_parent_class a.AlpinePhotoTiles-link img {
+  max-width: none !important;
+  min-height: 100%;
+}
+
 /* line 1, ../sass/components/navigation/_menu.scss */
 .menu {
   width: 100% !important;
