@@ -9927,7 +9927,7 @@ body {
 .gallery,
 .gallery_content,
 .gallery_clients,
-.AlpinePhotoTiles_inpost_container,
+.alpines,
 .image,
 .employee {
   margin-bottom: 8.75rem !important;
@@ -9955,7 +9955,7 @@ body {
   .gallery,
   .gallery_content,
   .gallery_clients,
-  .AlpinePhotoTiles_inpost_container
+  .alpines,
   .image,
   .employee {
     margin-bottom: 5rem !important;
