@@ -6,7 +6,7 @@ if $('body').length > 0
   footer = $('footer')
   push = $('.push-footer')
   content = $('#content')
-  alpine = $('.AlpinePhotoTiles_inpost_container')
+  alpine = $('.alpines')
   
   # Determine heights
   viewport = window.innerHeight

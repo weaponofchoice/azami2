@@ -9920,25 +9920,26 @@ body {
   z-index: 997;
 }
 
-/* line 53, ../sass/master/_general.scss */
+/* line 54, ../sass/master/_general.scss */
 .text,
 .text_quote,
 .text_centered,
 .gallery,
 .gallery_content,
 .gallery_clients,
+.AlpinePhotoTiles_inpost_container,
 .image,
 .employee {
   margin-bottom: 8.75rem !important;
 }
 
-/* line 61, ../sass/master/_general.scss */
+/* line 62, ../sass/master/_general.scss */
 html,
 body {
   height: 100%;
 }
 
-/* line 65, ../sass/master/_general.scss */
+/* line 66, ../sass/master/_general.scss */
 #content {
   min-height: 100%;
   height: auto !important;
@@ -9947,25 +9948,26 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 81, ../sass/master/_general.scss */
+  /* line 83, ../sass/master/_general.scss */
   .text,
   .text_quote,
   .text_centered,
   .gallery,
   .gallery_content,
   .gallery_clients,
+  .AlpinePhotoTiles_inpost_container
   .image,
   .employee {
     margin-bottom: 5rem !important;
   }
 
-  /* line 88, ../sass/master/_general.scss */
+  /* line 90, ../sass/master/_general.scss */
   #content {
     padding-top: 8.125rem !important;
   }
 }
 @media only screen and (max-width: 640px) {
-  /* line 94, ../sass/master/_general.scss */
+  /* line 96, ../sass/master/_general.scss */
   .first {
     margin-top: 4.5rem !important;
   }
@@ -10788,44 +10790,51 @@ img.rsImg {
 }
 
 @media only screen and (min-width: 120.063em) {
-  /* line 36, ../sass/components/galleries/_gallery.scss */
-  .gallery {
+  /* line 37, ../sass/components/galleries/_gallery.scss */
+  .gallery,
+  .alpines {
     padding-left: 12.5%;
     padding-right: 12.5%;
   }
-  /* line 40, ../sass/components/galleries/_gallery.scss */
-  .gallery.gallery_intro {
+  /* line 41, ../sass/components/galleries/_gallery.scss */
+  .gallery.gallery_intro,
+  .alpines.gallery_intro {
     width: 49.99999%;
     padding-left: 0;
     padding-right: 0;
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  /* line 49, ../sass/components/galleries/_gallery.scss */
-  .gallery {
+  /* line 51, ../sass/components/galleries/_gallery.scss */
+  .gallery,
+  .alpines {
     max-height: 37.5rem;
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 55, ../sass/components/galleries/_gallery.scss */
-  .gallery {
+  /* line 58, ../sass/components/galleries/_gallery.scss */
+  .gallery,
+  .alpines {
     width: 80%;
     max-height: 31.25rem;
     margin: 0 auto;
   }
-  /* line 61, ../sass/components/galleries/_gallery.scss */
-  .gallery .royalSlider .rsBullets {
+  /* line 64, ../sass/components/galleries/_gallery.scss */
+  .gallery .royalSlider .rsBullets,
+  .alpines .royalSlider .rsBullets {
     visibility: visible !important;
   }
 }
 @media only screen and (max-width: 640px) {
-  /* line 69, ../sass/components/galleries/_gallery.scss */
-  .gallery {
+  /* line 73, ../sass/components/galleries/_gallery.scss */
+  .gallery,
+  .alpines {
     width: 100%;
     max-height: 15.625rem;
   }
-  /* line 73, ../sass/components/galleries/_gallery.scss */
-  .gallery a {
+  /* line 77, ../sass/components/galleries/_gallery.scss */
+  .gallery a,
+  .alpines a {
     font-size: 2.125rem;
     padding: 0 0.5em;
     margin-top: -.8em;
@@ -11010,25 +11019,50 @@ img.rsImg {
   }
 }
 /* line 2, ../sass/components/galleries/_alpinetiles.scss */
-.AlpinePhotoTiles_inpost_container .AlpinePhotoTiles_container_class {
+.alpines .AlpinePhotoTiles_inpost_container {
   height: 100%;
 }
 /* line 5, ../sass/components/galleries/_alpinetiles.scss */
-.AlpinePhotoTiles_inpost_container .AlpinePhotoTiles_container_class .AlpinePhotoTiles_parent_class {
+.alpines .AlpinePhotoTiles_inpost_container .AlpinePhotoTiles_container_class {
   height: 100%;
 }
 /* line 8, ../sass/components/galleries/_alpinetiles.scss */
-.AlpinePhotoTiles_inpost_container .AlpinePhotoTiles_container_class .AlpinePhotoTiles_parent_class a.AlpinePhotoTiles-link {
+.alpines .AlpinePhotoTiles_inpost_container .AlpinePhotoTiles_container_class .AlpinePhotoTiles_parent_class {
+  height: 100%;
+}
+/* line 11, ../sass/components/galleries/_alpinetiles.scss */
+.alpines .AlpinePhotoTiles_inpost_container .AlpinePhotoTiles_container_class .AlpinePhotoTiles_parent_class a.AlpinePhotoTiles-link {
   width: 25%;
   height: 50%;
   float: left;
+  overflow: hidden;
+  margin: -1px;
 }
-/* line 13, ../sass/components/galleries/_alpinetiles.scss */
-.AlpinePhotoTiles_inpost_container .AlpinePhotoTiles_container_class .AlpinePhotoTiles_parent_class a.AlpinePhotoTiles-link img {
+/* line 18, ../sass/components/galleries/_alpinetiles.scss */
+.alpines .AlpinePhotoTiles_inpost_container .AlpinePhotoTiles_container_class .AlpinePhotoTiles_parent_class a.AlpinePhotoTiles-link img {
   max-width: none !important;
   min-height: 100%;
+  left: -25%;
 }
 
+@media only screen and (max-width: 768px) {
+  /* line 31, ../sass/components/galleries/_alpinetiles.scss */
+  .alpines {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 640px) {
+  /* line 37, ../sass/components/galleries/_alpinetiles.scss */
+  .alpines {
+    max-height: 25rem;
+  }
+  /* line 40, ../sass/components/galleries/_alpinetiles.scss */
+  .alpines a.AlpinePhotoTiles-link {
+    width: 50% !important;
+    padding: 0;
+    margin: 0 !important;
+  }
+}
 /* line 1, ../sass/components/navigation/_menu.scss */
 .menu {
   width: 100% !important;
