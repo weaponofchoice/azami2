@@ -11036,7 +11036,7 @@ img.rsImg {
   height: 50%;
   float: left;
   overflow: hidden;
-  margin-bottom: -1px;
+  margin-bottom: -1px !important;
 }
 /* line 18, ../sass/components/galleries/_alpinetiles.scss */
 .alpines .AlpinePhotoTiles_inpost_container .AlpinePhotoTiles_container_class .AlpinePhotoTiles_parent_class a.AlpinePhotoTiles-link img {
@@ -11047,7 +11047,11 @@ img.rsImg {
 @media (max-width: 1440px) {
   /* line 31, ../sass/components/galleries/_alpinetiles.scss */
   a.AlpinePhotoTiles-link img {
-    left: -25%;
+    -moz-transform: translateX(-25%);
+    -o-transform: translateX(-25%);
+    -ms-transform: translateX(-25%);
+    -webkit-transform: translateX(-25%);
+    transform: translateX(-25%);
   }
 }
 @media only screen and (max-width: 768px) {
@@ -11061,11 +11065,21 @@ img.rsImg {
   .alpines {
     max-height: 25rem;
   }
-  /* line 47, ../sass/components/galleries/_alpinetiles.scss */
-  .alpines a.AlpinePhotoTiles-link {
+  /* line 50, ../sass/components/galleries/_alpinetiles.scss */
+  .alpines .AlpinePhotoTiles_inpost_container .AlpinePhotoTiles_container_class .AlpinePhotoTiles_parent_class a.AlpinePhotoTiles-link {
     width: 50% !important;
     padding: 0;
     margin: 0 !important;
+    margin-bottom: -1px !important;
+  }
+  /* line 56, ../sass/components/galleries/_alpinetiles.scss */
+  .alpines .AlpinePhotoTiles_inpost_container .AlpinePhotoTiles_container_class .AlpinePhotoTiles_parent_class a.AlpinePhotoTiles-link img {
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    max-width: 100% !important;
   }
 }
 /* line 1, ../sass/components/navigation/_menu.scss */

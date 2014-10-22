@@ -13,7 +13,7 @@
           height: 50%;
           float: left;
           overflow: hidden;
-          margin-bottom: -1px;
+          margin-bottom: -1px !important;
         
           img{
             max-width: none !important;
@@ -29,7 +29,7 @@
 @media (max-width: 1440px){
   a.AlpinePhotoTiles-link{
     img{
-      left: -25%;
+      @include transform(translateX(-25%));
     }
   }
 }
@@ -44,10 +44,22 @@
   .alpines{
     max-height: rem-calc(400);
     
-    a.AlpinePhotoTiles-link{
-      width: 50% !important;
-      padding: 0;
-      margin: 0 !important;
+    .AlpinePhotoTiles_inpost_container{
+      .AlpinePhotoTiles_container_class{
+        .AlpinePhotoTiles_parent_class{
+          a.AlpinePhotoTiles-link{
+            width: 50% !important;
+            padding: 0;
+            margin: 0 !important;
+            margin-bottom: -1px !important;
+        
+            img{
+              @include transform(translateX(0));
+              max-width: 100% !important;
+            }
+          }
+        }
+      }
     }
   }
 }
