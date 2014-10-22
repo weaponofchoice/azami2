@@ -13,12 +13,11 @@
           height: 50%;
           float: left;
           overflow: hidden;
-          margin: -1px;
+          margin-bottom: -1px;
         
           img{
             max-width: none !important;
             min-height: 100%;
-            left: -25%;
           }
         }
       }
@@ -27,6 +26,14 @@
 }
 
 //Media queries
+@media (max-width: 1440px){
+  a.AlpinePhotoTiles-link{
+    img{
+      left: -25%;
+    }
+  }
+}
+
 @media #{$medium-down}{
   .alpines{
     width: 100% !important;

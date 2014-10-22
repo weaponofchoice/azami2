@@ -11036,27 +11036,32 @@ img.rsImg {
   height: 50%;
   float: left;
   overflow: hidden;
-  margin: -1px;
+  margin-bottom: -1px;
 }
 /* line 18, ../sass/components/galleries/_alpinetiles.scss */
 .alpines .AlpinePhotoTiles_inpost_container .AlpinePhotoTiles_container_class .AlpinePhotoTiles_parent_class a.AlpinePhotoTiles-link img {
   max-width: none !important;
   min-height: 100%;
-  left: -25%;
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 1440px) {
   /* line 31, ../sass/components/galleries/_alpinetiles.scss */
+  a.AlpinePhotoTiles-link img {
+    left: -25%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* line 38, ../sass/components/galleries/_alpinetiles.scss */
   .alpines {
     width: 100% !important;
   }
 }
 @media only screen and (max-width: 640px) {
-  /* line 37, ../sass/components/galleries/_alpinetiles.scss */
+  /* line 44, ../sass/components/galleries/_alpinetiles.scss */
   .alpines {
     max-height: 25rem;
   }
-  /* line 40, ../sass/components/galleries/_alpinetiles.scss */
+  /* line 47, ../sass/components/galleries/_alpinetiles.scss */
   .alpines a.AlpinePhotoTiles-link {
     width: 50% !important;
     padding: 0;
