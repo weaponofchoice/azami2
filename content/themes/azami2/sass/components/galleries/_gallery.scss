@@ -33,8 +33,7 @@
 
 //Media queries
 @media #{$xxlarge-up}{
-	.gallery,
-  .alpines{
+	.gallery{
 		padding-left: 12.5%;
 		padding-right: 12.5%;
 		
@@ -47,15 +46,13 @@
 }
 
 @media #{$large-only}{
-	.gallery,
-  .alpines{
+	.gallery{
 		max-height: rem-calc(600);
 	}
 }
 
 @media #{$medium-down}{
-	.gallery,
-  .alpines{
+	.gallery{
 		width: 80%;
 		max-height: rem-calc(500);
 		margin: 0 auto;
@@ -69,8 +66,7 @@
 }
 
 @media #{$small-only}{
-	.gallery,
-  .alpines{
+	.gallery{
 		width: 100%;
 		max-height: rem-calc(250);
 			

@@ -10,13 +10,14 @@ if $('body').length > 0
   
   # Determine heights
   viewport = window.innerHeight
+  viewport_width = window.innerWidth
   article_height = article.height()
   footer_height = footer.height()
 
   # Apply heights
   article.css "height", article_height
   gallery.css "height", viewport / 1.25
-  alpine.css "height", viewport / 1.25
+  alpine.css "height", viewport_width / 2
   intro.css "height", viewport
   footer.css "height", footer_height
   push.css "height", footer_height
@@ -34,13 +35,14 @@ if $('body').length > 0
 
     # Recalculate heights
     viewport = window.innerHeight
+    viewport_width = window.innerWidth
     article_height = article.height()
     footer_height = footer.height()
 
     # Reapply heights
     article.css "height", article_height
     gallery.css "height", viewport
-    alpine.css "height", viewport / 1.25
+    alpine.css "height", viewport_width / 2
     intro.css "height", viewport
 
     footer.css "height", footer_height

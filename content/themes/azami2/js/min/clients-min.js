@@ -1,0 +1,1 @@
+$(".AlpinePhotoTiles-image").each(function(){var i=$(this).width(),h=$(this).height();$(this).addClass(i>h?"wide-img":h>i?"tall-img":"square")});
