@@ -13485,17 +13485,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/content\/themes\/azami2\/js\/app.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/content\/themes\/azami2\/js\/app.js",
-		"outputAbbreviatedPath": "\/content\/themes\/azami2\/js\/app.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
 	"\/content\/themes\/azami2\/js\/vendor\/gmaps.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -27358,50 +27347,6 @@
 			"followForSyntaxChecking": 1,
 			"linkedFileAbbreviatedPath": "\/content\/themes\/azami2\/coffee\/menu_small.coffee",
 			"position": 13,
-			"type": 0
-			}
-		],
-	"\/content\/themes\/azami2\/js\/app.js": [
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/content\/themes\/azami2\/js\/vendor\/modernizr-2.6.2.min.js",
-			"position": 0,
-			"type": 0
-			},
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/content\/themes\/azami2\/js\/vendor\/royalslider.js",
-			"position": 1,
-			"type": 0
-			},
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/content\/themes\/azami2\/js\/vendor\/imagelightbox.js",
-			"position": 2,
-			"type": 0
-			},
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/content\/themes\/azami2\/js\/vendor\/gmaps.js",
-			"position": 3,
-			"type": 0
-			},
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/content\/themes\/azami2\/js\/vendor\/sticky.js",
-			"position": 4,
-			"type": 0
-			},
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/content\/themes\/azami2\/js\/vendor\/scrollto.js",
-			"position": 5,
-			"type": 0
-			},
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/content\/themes\/azami2\/js\/vendor\/select.js",
-			"position": 6,
 			"type": 0
 			}
 		]
