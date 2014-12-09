@@ -8,14 +8,14 @@
 .gm-style label { width: auto; display: inline; }
 
 //Media queries
-@media #{$small-only}{
-	#map{
-		margin-bottom: rem-calc(-30);
-	}
-}
-
 @media screen and (min-width: 1920px){
 	#map{
 		height: rem-calc(800);
+	}
+}
+
+@media #{$medium-down}{
+	#map{
+		margin-top: rem-calc(-72);
 	}
 }

@@ -1,5 +1,8 @@
-#home-NL{
-	.menu{
-		top: inherit;
+.home{
+	//Media queries
+	@media #{$medium-down}{
+		#content{
+			padding-top: rem-calc(68) !important;
+		}
 	}
 }

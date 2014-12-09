@@ -12,6 +12,7 @@ if $('.gallery_left').length > 0
 		transitionSpeed: 250,
 		transitionType: 'fade',
 		controlNavigation: 'none',
+		navigateByClick: false,
 		arrowsNav: false,
 		autoplay:
 			enabled: true,
@@ -32,6 +33,7 @@ if $('.gallery_right').length > 0
 		transitionSpeed: 250,
 		transitionType: 'fade',
 		controlNavigation: 'none',
+		navigateByClick: false,
 		arrowsNav: false,
 		autoplay:
 			enabled: true,

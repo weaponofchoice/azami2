@@ -39,7 +39,7 @@ body{
 #content{
 	//max-width: 1920px;
 	margin: 0 auto;
-	padding-top: rem-calc(220) !important;
+	padding-top: rem-calc(150) !important;
 	z-index: 997; //Is set because of lightbox
 }
 
@@ -49,13 +49,25 @@ body{
 .gallery,
 .gallery_content,
 .gallery_clients,
+.alpines,
 .image,
 .employee{
 	margin-bottom: rem-calc(140) !important;
 }
 
-.first{
-	margin-top: rem-calc(220) !important;
+//
+// Sticky footer
+//
+html,
+body{
+	height: 100%;
+}
+
+#content{
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto auto;
 }
 
 //Media queries
@@ -66,12 +78,22 @@ body{
 	.gallery,
 	.gallery_content,
 	.gallery_clients,
+  .alpines,
 	.image,
 	.employee{
 		margin-bottom: rem-calc(80) !important;
 	}
 	
 	.first{
-		margin-top:rem-calc(120) !important;
+	}
+	
+	#content{
+		padding-top: rem-calc(130) !important;
+	}
+}
+
+@media #{$small-only}{
+	.first{
+		margin-top: rem-calc(72) !important;
 	}
 }

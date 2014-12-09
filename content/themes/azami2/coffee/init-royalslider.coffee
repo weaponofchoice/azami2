@@ -6,10 +6,13 @@ if $('.gallery').length or $('.gallery_content').length > 0
 		# options go here
 		keyboardNavEnabled: true,
 		imageScaleMode: 'fill',
+		imageAlignCenter: true,	
+		autoScaleSlider: false,
 		slidesSpacing: 0,
 		loop: true,
 		transitionSpeed: 200,
-		controlNavigation: 'none',
+		controlNavigation: 'bullets',
 		arrowsNav: true,
+		arrowsNavAutoHide: true,
 		arrowsNavHideOnTouch: true,
 		globalCaption: true

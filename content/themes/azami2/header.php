@@ -31,31 +31,19 @@
 	
 	<!-- WP_HEAD() -->
 	<?php wp_head(); ?>
+	
+	<script type="text/javascript">
+	var templateUrl = "<?php bloginfo('template_directory'); ?>/img/marker.png";
+	</script>
   </head>
 	
   <body <?php body_class(); ?> id="<?php echo the_title(); ?>">
-	  <div id="content">
-	  	<!-- Sending all English pages to 'contruction.php' for now -->
-	  	<?php
-	  	$lang = get_locale();
-	  	if($lang == 'en'){
-	  		include('construction.php');
-	  	}
-	  	?>
-		
-		<?php if( have_rows('page_elements') ): ?>
-			<?php while( have_rows('page_elements') ): the_row(); ?>
-		
-				<?php if ( get_row_layout() == 'intro'): ?>
-					<?php include(locate_template('elements/other/intro.php')); ?>
-				<?php endif; ?>
-				
-			<?php endwhile; ?>
-		<?php endif; ?>
-		  
-  		<div id="menu" class="menu row">
-			<li class="logo medium-4 columns"><a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/typelogo.png"></a></li>
-			
+	<div id="menu_small" class="menu row">
+		<ul class="small-20 small-centered columns">
+			<li class="logo columns"><a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/typelogo.png"></a></li>
+			<li id="hamburger"><a></a></li>
+		</ul>
+		<ul id="menu_small_collapsed" class="columns">
 			<?php wp_nav_menu( array( 
 				'container' => '',
 				'items_wrap' => '%3$s',
@@ -63,19 +51,28 @@
 			) );
 			?>
 			<?php pll_the_languages(); ?>
-  		</div>
+		</ul>
+	</div>
+	
+	<?php if( have_rows('page_elements') ): ?>
+		<?php while( have_rows('page_elements') ): the_row(); ?>
+	
+			<?php if ( get_row_layout() == 'intro'): ?>
+				<?php include(locate_template('elements/other/intro.php')); ?>
+			<?php endif; ?>
+			
+		<?php endwhile; ?>
+	<?php endif; ?>
+	  
+	<div id="menu" class="menu row">
+		<li class="logo medium-4 columns"><a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/typelogo.png"></a></li>
 		
-		<div id="menu_small" class="menu row">
-			<ul class="small-20 small-centered columns">
-				<li class="logo columns"><a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/typelogo.png"></a></li>
-				<li id="hamburger"><a></a></li>
-			</ul>
-			<ul id="menu_small_collapsed">
-				<?php wp_nav_menu( array( 
-					'container' => '',
-					'items_wrap' => '%3$s',
-					'theme_location' => 'main_menu'
-				) );
-				?>
-			</ul>
-		</div>
+		<?php wp_nav_menu( array( 
+			'container' => '',
+			'items_wrap' => '%3$s',
+			'theme_location' => 'main_menu'
+		) );
+		?>
+		<?php pll_the_languages(); ?>
+	</div>
+	<div id="content">

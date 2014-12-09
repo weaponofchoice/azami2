@@ -1,7 +1,6 @@
 .menu{
 	li{
 		//Language buttons
-		&.button_lang,
 		&.lang-item{
 			height: auto;
 			margin: 1.2em .5em;
@@ -14,6 +13,7 @@
 				background: $white;
 				
 				a{
+					font-size: rem-calc(20);
 					color: $black;
 				}
 			}
@@ -29,8 +29,18 @@
 			}
 	
 			a{
-				font-size: rem-calc(14);
+				font-size: rem-calc(14) !important;
 			}
+		}
+	}
+}
+
+#menu_small{
+	#menu_small_collapsed{
+		.lang-item{
+			float: none;
+			padding: 1em;
+			top: 4em;
 		}
 	}
 }

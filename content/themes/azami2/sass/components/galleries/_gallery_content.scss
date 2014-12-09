@@ -4,7 +4,6 @@
 	overflow: hidden;
 	
 	p.uppercase{
-		//margin-top: rem-calc(140);
 		text-align: center;
 	}
 	
@@ -19,8 +18,14 @@
 			padding-bottom: 56.25% !important;//16:9
 			
 			img{
+				width: 100%;
 				margin-top: 0 !important;
+				margin-left: 0 !important;
 			}
+		}
+		
+		.rsArrow{
+			top: 0;
 		}
 		
 		.rsBullets{
@@ -29,9 +34,12 @@
 		
 		.rsGCaption{
 			width: 100%;
+			max-width: rem-calc(900);
 			height: auto;
 			overflow: hidden;
-			margin: 1em 0 0;
+			margin: 1em auto 0;
+			top: 1em;
+			float: none;
 			text-align: center;
 		
 			.rsCaption{
@@ -67,13 +75,16 @@
 
 //Media queries
 @media #{$medium-down}{
-	.gallery_content{
+	.gallery_content{		
 		p.uppercase{
-			margin-top: rem-calc(80);
+			text-align: left;
+			width: 80%;
+			margin: 1em auto;
 		}
 		
 		.contentSlider{
-			width: 100% !important;
+			width: 120% !important;
+			margin-left: -10%;
 			
 			.rsBullets{
 				visibility: visible !important;
@@ -81,13 +92,43 @@
 		}
 		
 		.rsGCaption{
-			width: 80% !important;
+			width: 65% !important;
 			margin: 1em auto !important;
 			float: none;
 			
 			.rsCaption{
 				width: 100% !important;
 				text-align: left;
+			}
+		}
+	}
+}
+
+// Mozilla only
+@-moz-document url-prefix(){
+	.gallery_content{
+		.contentSlider{
+			.rsGCaption{
+				float: left;
+				max-width: none;
+				
+				.rsCaption{
+					max-width: rem-calc(900);
+				}
+			}
+		}
+	}
+	
+	@media #{$medium-down}{
+		.gallery_content{
+			.rsGCaption{
+				width: 100% !important;
+				text-align: center !important;
+				
+				.rsCaption{
+					width: 80% !important;
+					padding: 0 7%;
+				}
 			}
 		}
 	}

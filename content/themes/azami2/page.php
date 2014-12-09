@@ -7,7 +7,16 @@
  */
 get_header();
 
-if( have_rows('page_elements') ): 
+if ( has_parent('collectie') || has_parent('collectie-en') ) {
+  wp_nav_menu( array(
+    'container' => 'div',
+    'container_class' => 'menu-collection',
+    'theme_location' => 'sub_menu',
+    'items_wrap' => '%3$s'
+  ) );
+}
+
+if( have_rows('page_elements') ):
 	while ( have_rows('page_elements') ) : the_row();
 		
 		require('includes/scaled-images.php');
@@ -44,7 +53,16 @@ if( have_rows('page_elements') ):
 		endif; 
 			
 	endwhile; 
-endif; 
+endif;
+
+// Footer information
+if( have_rows('footer') ): 
+	while ( have_rows('footer') ) : the_row();
+
+		include('footer.php');
+		
+	endwhile; 
+endif;
 
 get_footer();
 ?>

@@ -1,5 +1,9 @@
 .gallery_clients{
 	.royalSlider{
+		.rsBullets{
+			visibility: hidden;
+		}
+		
 		li{
 			width: 100%;
 			height: 100%;
@@ -32,8 +36,16 @@
 }
 
 //Media queries
+@media #{$medium-down}{
+	.gallery_clients{
+		width: 100% !important;
+	}
+}
+
 @media #{$small-only}{
 	.gallery_clients{
+		max-height: rem-calc(400);
+		
 		.royalSlider{
 			li{
 				.rsContent{

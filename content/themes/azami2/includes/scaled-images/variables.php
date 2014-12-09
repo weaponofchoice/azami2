@@ -14,4 +14,5 @@ $image_promo = get_sub_field('image_promo');
 
 // element: other > EMPLOYEE
 $emp = get_sub_field('picture');
+$emp_idol = get_sub_field('idol');
 ?>

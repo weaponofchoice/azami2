@@ -2,7 +2,7 @@
 	width: 100% !important;
 	height: rem-calc(80);
 	position: absolute;
-	top: 0;
+	top: inherit !important;
 	display: inline;
 	
 	//Recreating a Foundation 20 column class
@@ -52,7 +52,8 @@
 				}
 			}
 			
-			&.current-menu-item{
+			&.current-menu-item,
+			&.current-page-ancestor{
 				a{
 					&:after{
 						content: ' ';
@@ -63,6 +64,16 @@
 					}
 				}
 			}
+		}
+	}
+}
+
+.sticky-wrapper{
+	height: 0 !important;
+	
+	&.is-sticky{
+		.menu{
+			top: 0 !important;
 		}
 	}
 }
