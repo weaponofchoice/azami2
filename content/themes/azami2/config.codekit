@@ -355,13 +355,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/icons_social\/black_twitter.png": {
+	"\/img\/icons_social\/black_tumblr.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 1005,
-		"inputAbbreviatedPath": "\/img\/icons_social\/black_twitter.png",
-		"outputAbbreviatedPath": "\/img\/icons_social\/black_twitter.png",
+		"inputAbbreviatedPath": "\/img\/icons_social\/black_tumblr.png",
+		"outputAbbreviatedPath": "\/img\/icons_social\/black_tumblr.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -399,13 +399,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/icons_social\/white_twitter.png": {
+	"\/img\/icons_social\/white_tumblr.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 1194,
-		"inputAbbreviatedPath": "\/img\/icons_social\/white_twitter.png",
-		"outputAbbreviatedPath": "\/img\/icons_social\/white_twitter.png",
+		"inputAbbreviatedPath": "\/img\/icons_social\/white_tumblr.png",
+		"outputAbbreviatedPath": "\/img\/icons_social\/white_tumblr.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -758,8 +758,8 @@
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/sass\/app.scss",
 		"outputAbbreviatedPath": "\/css\/app.css",
 		"outputPathIsOutsideProject": 0,

@@ -1,3 +1,12 @@
+.alpines > a{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background: transparent;
+  z-index: 9999;
+}
+
 .alpines{
   max-width: none !important;
   
