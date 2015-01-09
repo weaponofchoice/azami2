@@ -29778,7 +29778,8 @@ img.rsImg {
   }
 
   /* line 44, ../sass/components/other/_employee.scss */
-  .employee img:active {
+  .employee img:active,
+  .employee img:focus {
     opacity: 0;
   }
 }
