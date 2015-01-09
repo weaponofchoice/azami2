@@ -29778,8 +29778,7 @@ img.rsImg {
   }
 
   /* line 44, ../sass/components/other/_employee.scss */
-  .employee img:active,
-  .employee img:focus {
+  .employee img.picture-mobile-active {
     opacity: 0;
   }
 }

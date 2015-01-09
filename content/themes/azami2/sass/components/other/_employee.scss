@@ -41,8 +41,7 @@
     opacity: 1;
   }
   
-  .employee img:active,
-  .employee img:focus{
+  .employee img.picture-mobile-active{
     opacity: 0;
   }
 }
