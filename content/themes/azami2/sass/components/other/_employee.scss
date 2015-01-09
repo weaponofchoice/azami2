@@ -41,7 +41,8 @@
     opacity: 1;
   }
   
-  .employee img:active{
+  .employee img:active,
+  .employee img:focus{
     opacity: 0;
   }
 }
