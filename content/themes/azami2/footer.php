@@ -7,15 +7,15 @@
 				 ?>
  				<div class="row">
  					<ul>
- 						<li class="small-20 small-offset-2 medium-10 medium-offset-2 large-5 large-offset-2 columns">
+ 						<li class="small-20 small-offset-2 medium-12 medium-offset-2 large-8 large-offset-2 columns">
  							<h4 class="uppercase">Business hours</h4>
- 							<p>Tuesday - Friday 9.30 am - 6.00 pm</p>
- 							<p>Thursday evening 7.00 pm - 9.00 pm</p>
- 							<p>Saturday 9.30 am - 5.00 pm</p>
+ 							<p>tuesday, wednesday and friday 9.30 am - 5.30 pm</p>
+ 							<p>thursday 9.30 pm - 9.00 pm</p>
+ 							<p>saturday 9.30 am - 5.00 pm</p>
  							<p>1st Sunday 1.00 pm - 5.00 pm</p>
  							<a class="underlined" href="<?php home_url(); ?>/info-en">Exceptions</a>
  						</li>
- 						<li class="small-20 small-offset-2 medium-10 medium-offset-1 large-5 large-offset-2 columns">
+ 						<li class="small-20 small-offset-2 medium-8 medium-offset-1 large-4 large-offset-1 columns">
  							<h4 class="uppercase">Contact</h4>
  							<p>Noordeinde 29</p>
  							<p>2514 GB Den Haag</p>
@@ -28,7 +28,7 @@
                 <a class="icon-social" href="http://azamioptiek.tumblr.com/" target="blank"><img src="<?php bloginfo('template_directory'); ?>/img/icons_social/white_tumblr.png" /></a>
  							</div>
  						</li>
- 						<li class="signup small-20 small-offset-2 medium-20 medium-offset-2 large-6 large-offset-2 columns">
+ 						<li class="signup small-20 small-offset-2 medium-20 medium-offset-2 large-6 large-offset-1 columns">
  							<h4 class="uppercase">Newsletter</h4>
  							<?php mc4wp_form(); ?>
  						</li>
@@ -39,15 +39,15 @@
 				 ?>
 				<div class="row">
 					<ul>
-						<li class="small-20 small-offset-2 medium-10 medium-offset-2 large-5 large-offset-2 columns">
+						<li class="small-20 small-offset-2 medium-12 medium-offset-2 large-8 large-offset-2 columns">
 							<h4 class="uppercase">Openingstijden</h4>
-							<p>Dinsdag - vrijdag : 9.30 - 18.00 uur</p>
-							<p>Donderdagavond : 19.00 - 21.00 uur</p>
-							<p>Zaterdag : 9.30 - 17.00 uur</p>
-							<p>1e zondag : 13.00 - 17.00 uur</p>
+              <p>dinsdag, woensdag en vrijdag 9.30 – 17.30 uur</p>
+              <p>donderdag 9.30 – 21.00</p>
+              <p>zaterdag 9.30 – 17.00 uur</p>
+              <p>elke 1e zondag van de maand 13.00 – 17.00 uur</p>
 							<a class="underlined" href="<?php home_url(); ?>/info">Uitzonderingen</a>
 						</li>
-						<li class="small-20 small-offset-2 medium-10 medium-offset-1 large-5 large-offset-2 columns">
+						<li class="small-20 small-offset-2 medium-8 medium-offset-1 large-4 large-offset-1 columns">
 							<h4 class="uppercase">Contact</h4>
 							<p>Noordeinde 29</p>
 							<p>2514 GB Den Haag</p>
@@ -60,7 +60,7 @@
                 <a class="icon-social" href="http://azamioptiek.tumblr.com/" target="blank"><img src="<?php bloginfo('template_directory'); ?>/img/icons_social/white_tumblr.png" /></a>
 							</div>
 						</li>
-						<li class="signup small-20 small-offset-2 medium-20 medium-offset-2 large-6 large-offset-2 columns">
+						<li class="signup small-20 small-offset-2 medium-20 medium-offset-2 large-6 large-offset-1 columns">
 							<h4 class="uppercase">Newsletter</h4>
 							<?php mc4wp_form(); ?>
 						</li>
@@ -70,10 +70,10 @@
 				}
 				?>
 			</footer>
-		
+
 		<!-- Gmaps plugin needs this -->
 		<script src="http://maps.google.com/maps/api/js?sensor=false&libraries=geometry&v=3.7"></script>
-		
-		<?php wp_footer(); ?>	
+
+		<?php wp_footer(); ?>
 	</body>
 </html>
