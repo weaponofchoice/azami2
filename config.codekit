@@ -13400,6 +13400,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/content\/themes\/azami2\/img\/icons_social\/white_twitter.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2896,
+		"inputAbbreviatedPath": "\/content\/themes\/azami2\/img\/icons_social\/white_twitter.png",
+		"outputAbbreviatedPath": "\/content\/themes\/azami2\/img\/icons_social\/white_twitter.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/content\/themes\/azami2\/img\/icons_social\/white_youtube.png": {
 		"fileType": 32768,
 		"ignore": 0,
