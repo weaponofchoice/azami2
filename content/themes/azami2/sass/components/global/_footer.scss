@@ -3,18 +3,18 @@ footer{
 	height: auto;
 	overflow: hidden;
 	z-index: 998;
-	
+
 	background: $black;
-	
+
 	*{
 		color: $white;
 	}
-	
+
 	.row{
 		padding-top: rem-calc(80);
 		padding-bottom: rem-calc(80);
 	}
-	
+
 	#container-logo{
 		width: 20%;
 		height: auto;
@@ -22,25 +22,25 @@ footer{
 		margin-bottom: 3em;
 		margin-left: 8.33333%;
 	}
-	
+
 	p,a{
 		font-size: rem-calc(16);
 		margin-bottom: 0;
 	}
-	
+
 	.phonenumber a,
 	.email{
 		top: 0;
 	}
-	
+
 	.email{
 		cursor: pointer;
 	}
-	
+
 	a{
 		top: 1em;
 	}
-	
+
 	ul{
 		li{
 			&:last-child{
@@ -48,7 +48,7 @@ footer{
 			}
 		}
 	}
-	
+
 	input[type="text"],
 	input[type="email"]{
 		background: $black;
@@ -56,11 +56,11 @@ footer{
 		border-bottom: rem-calc(2) solid $white;
 		box-shadow: none;
 		cursor: text;
-		
+
 		font-family: "Apercu Bold", sans-serif;
 		font-size: rem-calc(16);
 		color: $white;
-		
+
 		&:focus{
 			background: $black;
 			box-shadow: none;
@@ -68,25 +68,25 @@ footer{
 			color: $white;
 		}
 	}
-	
+
 	::-webkit-input-placeholder,
 	:-moz-placeholder,
 	::-moz-placeholder,
 	:-ms-input-placeholder{
 		color: $gray;
 	}
-	
+
 	button{
 		background: $black;
 		border: rem-calc(2) solid $white;
 		padding: .5em 3em;
 		margin-top: 1em;
-		
+
 		text-transform: uppercase;
 		font-family: "Apercu Bold", sans-serif;
 		font-size: rem-calc(16);
 		letter-spacing: rem-calc(2);
-				
+
 		&:hover,
 		&:active,
 		&:focus{
@@ -98,11 +98,11 @@ footer{
 
 .followus{
 	top: .7em;
-	
+
 	.icon-social{
 		img{
-			min-width: 2.5em;
-			max-width: 2.5em;
+			min-width: 25px;
+			max-width: 25px;
 			margin-top: -.5em;
 			margin-right: .5em;
 		}
@@ -122,20 +122,20 @@ footer{
 @media #{$medium-down}{
 	footer{
 		padding-top: 0;
-		
+
 		#container-logo{
 			display: none;
 			/*width: 60%;
 			margin-bottom: 0;
 			margin-left: 10.33333%;*/
 		}
-		
+
 		ul{
 			li{
 				margin-top: 5em;
 			}
 		}
-		
+
 		p,
 		a,
 		h4{
@@ -144,7 +144,7 @@ footer{
 	}
 }
 
-@media #{$medium-only}{	
+@media #{$medium-only}{
 	.signup{
 		margin-top: 8em;
 	}
