@@ -29,6 +29,8 @@ DS_Store
 local-config.php
 *.tmproj
 
+config.codekit
+/config.codekit
 !/content/plugins/*
 /content/plugins/.DS_Store
 /content/w3tc
