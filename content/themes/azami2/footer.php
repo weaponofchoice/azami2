@@ -26,6 +26,7 @@
  								<a class="icon-social" href="http://www.facebook.com/AzamiTheHague" target="blank"><img src="<?php bloginfo('template_directory'); ?>/img/icons_social/white_facebook.png" /></a>
  								<a class="icon-social" href="http://www.instagram.com/azamioptiek" target="blank"><img src="<?php bloginfo('template_directory'); ?>/img/icons_social/white_instagram.png" /></a>
                 <a class="icon-social" href="http://azamioptiek.tumblr.com/" target="blank"><img src="<?php bloginfo('template_directory'); ?>/img/icons_social/white_tumblr.png" /></a>
+                <a class="icon-social" href="https://twitter.com/Azami_optiek" target="blank"><img src="<?php bloginfo('template_directory'); ?>/img/icons_social/white_twitter.png" /></a>
  							</div>
  						</li>
  						<li class="signup small-20 small-offset-2 medium-20 medium-offset-2 large-6 large-offset-1 columns">
@@ -58,6 +59,7 @@
 								<a class="icon-social" href="http://www.facebook.com/AzamiTheHague" target="blank"><img src="<?php bloginfo('template_directory'); ?>/img/icons_social/white_facebook.png" /></a>
 								<a class="icon-social" href="http://www.instagram.com/azamioptiek" target="blank"><img src="<?php bloginfo('template_directory'); ?>/img/icons_social/white_instagram.png" /></a>
                 <a class="icon-social" href="http://azamioptiek.tumblr.com/" target="blank"><img src="<?php bloginfo('template_directory'); ?>/img/icons_social/white_tumblr.png" /></a>
+                <a class="icon-social" href="https://twitter.com/Azami_optiek" target="blank"><img src="<?php bloginfo('template_directory'); ?>/img/icons_social/white_twitter.png" /></a>
 							</div>
 						</li>
 						<li class="signup small-20 small-offset-2 medium-20 medium-offset-2 large-6 large-offset-1 columns">
