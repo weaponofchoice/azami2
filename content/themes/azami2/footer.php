@@ -10,7 +10,7 @@
  						<li class="small-20 small-offset-2 medium-12 medium-offset-2 large-8 large-offset-2 columns">
  							<h4 class="uppercase">Business hours</h4>
  							<p>tuesday, wednesday and friday 9.30 am - 5.30 pm</p>
- 							<p>thursday 9.30 pm - 6.00 pm and 19.00 pm - 21.00 pm</p>
+ 							<p>thursday 9.30 pm - 6.00 pm and 19.00 pm - 20.00 pm</p>
  							<p>saturday 9.30 am - 5.00 pm</p>
  							<p>1st Sunday 1.00 pm - 5.00 pm</p>
  							<a class="underlined" href="<?php home_url(); ?>/info-en">Exceptions</a>
