@@ -43,7 +43,7 @@
 						<li class="small-20 small-offset-2 medium-12 medium-offset-2 large-8 large-offset-2 columns">
 							<h4 class="uppercase">Openingstijden</h4>
               <p>dinsdag, woensdag en vrijdag 9.30 – 17.30 uur</p>
-              <p>donderdag 9.30 – 18.00 uur en 19.00 - 21.00 uur</p>
+              <p>donderdag 9.30 – 20:00 uur</p>
               <p>zaterdag 9.30 – 17.00 uur</p>
               <p>elke 1e zondag van de maand 13.00 – 17.00 uur</p>
 							<a class="underlined" href="<?php home_url(); ?>/info">Uitzonderingen</a>
